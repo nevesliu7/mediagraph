@@ -3,13 +3,15 @@
 
 A graph-based media intelligence system for exploring creative networks across Chinese and American film industries.
 
+Curated demo dataset: 194 people, 126 films, 3,521 relationships.
+
 [Live demo placeholder](#) · [Screenshot placeholder](assets/screenshots/)
 
 ## Why I built this
 
 Most media tools treat films, creators, awards, genres, and platforms as separate tables. MediaGraph models the industry as a connected network so you can see how talent, taste, recognition, and distribution shape strategic opportunities.
 
-This is designed to feel like an internal tool for a streaming platform, studio, talent agency, or entertainment investor, not a basic movie browser.
+The goal is to feel like an internal strategy product for a streaming platform, studio, talent agency, or entertainment investor, not a basic movie browser.
 
 ## What it does
 
@@ -214,6 +216,18 @@ mediagraph/
 - The README and app intentionally avoid claiming prediction accuracy.
 - The project does not scrape private data or use non-public personal information.
 
+## Portfolio relevance
+
+MediaGraph demonstrates:
+- graph database thinking
+- connected data modeling
+- media strategy and talent discovery
+- recommendation logic and scoring design
+- explainable insight generation
+- cross-cultural entertainment analysis
+- interactive visualization and data storytelling
+- product-oriented UX for a recruiter-facing portfolio
+
 ## Future improvements
 
 - Replace demo data with verified public datasets from TMDb, IMDb, Wikidata, or official award feeds
@@ -221,19 +235,6 @@ mediagraph/
 - Add saved searches and bookmarks
 - Add deeper community detection and path explanations
 - Add richer filtering by audience segment and distribution window
-
-## Portfolio relevance
-
-MediaGraph demonstrates:
-- graph database thinking
-- connected data modeling
-- media strategy judgment
-- recommendation logic
-- explainable insight generation
-- cross-cultural entertainment analysis
-- interactive dashboard design
-- data storytelling
-- product thinking
 
 ## Repository metadata
 
