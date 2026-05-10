@@ -1,0 +1,9 @@
+
+streamlit>=1.36
+pandas>=2.2
+networkx>=3.3
+plotly>=5.22
+numpy>=1.26
+pyvis>=0.3.2
+scikit-learn>=1.5
+neo4j>=5.23

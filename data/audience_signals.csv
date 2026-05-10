@@ -1,0 +1,127 @@
+film_title,audience_segment,rating_source,critic_like_score,popularity_index,sentiment_label,note
+Red Sorghum,Mainstream audience,Demo composite,82.0,73,Positive,domestic
+Raise the Red Lantern,Prestige-drama audience,Demo composite,85.0,71,Positive,festival
+The Story of Qiu Ju,Prestige-drama audience,Demo composite,84.0,66,Positive,festival
+Farewell My Concubine,Prestige-drama audience,Demo composite,90.0,86,Positive,international
+Chungking Express,Mainstream audience,Demo composite,86.0,82,Positive,international
+In the Heat of the Sun,Youth audience,Demo composite,83.0,63,Positive,domestic
+Comrades: Almost a Love Story,Prestige-drama audience,Demo composite,85.0,74,Positive,international
+The Godfather,Mainstream audience,Demo composite,92.0,95,Positive,classic
+Star Wars: A New Hope,Action franchise audience,Demo composite,86.0,99,Positive,franchise
+Jaws,Action franchise audience,Demo composite,81.0,93,Positive,classic
+Taxi Driver,Mainstream audience,Demo composite,82.0,88,Positive,classic
+The Killer,Action franchise audience,Demo composite,78.0,69,Positive,international
+Eat Drink Man Woman,Prestige-drama audience,Demo composite,79.0,68,Positive,international
+"Crouching Tiger, Hidden Dragon",Action franchise audience,Demo composite,78.0,96,Positive,cross-cultural
+Hero,Action franchise audience,Demo composite,79.0,90,Positive,cross-cultural
+House of Flying Daggers,Action franchise audience,Demo composite,76.0,78,Positive,international
+The Grandmaster,Prestige-drama audience,Demo composite,66.0,72,Mixed,international
+The Wild Goose Lake,Mainstream audience,Demo composite,72.0,58,Mixed,festival
+Still Life,Prestige-drama audience,Demo composite,80.0,64,Positive,festival
+A Touch of Sin,Prestige-drama audience,Demo composite,75.0,61,Positive,festival
+Ash Is Purest White,Prestige-drama audience,Demo composite,69.0,54,Mixed,festival
+Aftershock,Mainstream audience,Demo composite,76.0,67,Positive,domestic
+Back to 1942,Mainstream audience,Demo composite,69.0,52,Mixed,domestic
+Let the Bullets Fly,Action franchise audience,Demo composite,72.0,70,Positive,domestic
+The Hidden Man,Action franchise audience,Demo composite,64.0,55,Mixed,domestic
+Suzhou River,Mainstream audience,Demo composite,78.0,56,Positive,festival
+Summer Palace,Prestige-drama audience,Demo composite,74.0,53,Positive,festival
+Mystery,Prestige-drama audience,Demo composite,71.0,47,Mixed,festival
+Long Day's Journey into Night,Prestige-drama audience,Demo composite,72.0,52,Mixed,festival
+The World,Prestige-drama audience,Demo composite,74.0,43,Positive,festival
+The Promise,Action franchise audience,Demo composite,56.0,49,Mixed,international
+The Warlords,Prestige-drama audience,Demo composite,70.0,66,Positive,international
+Dearest,Mainstream audience,Demo composite,77.0,61,Positive,domestic
+A Simple Life,Prestige-drama audience,Demo composite,80.0,60,Positive,festival
+The Golden Era,Prestige-drama audience,Demo composite,68.0,48,Mixed,festival
+Shaolin Soccer,Action franchise audience,Demo composite,73.0,84,Positive,international
+Kung Fu Hustle,Action franchise audience,Demo composite,77.0,88,Positive,international
+The Mermaid,Mainstream audience,Demo composite,62.0,86,Mixed,domestic
+The Wandering Earth,Action franchise audience,Demo composite,71.0,91,Positive,cross-cultural
+The Wandering Earth II,Action franchise audience,Demo composite,72.0,90,Positive,cross-cultural
+Crazy Stone,Mainstream audience,Demo composite,76.0,63,Positive,domestic
+Crazy Alien,Mainstream audience,Demo composite,64.0,74,Mixed,domestic
+"Black Coal, Thin Ice",Mainstream audience,Demo composite,71.0,57,Mixed,festival
+Lost in Thailand,Action franchise audience,Demo composite,72.0,75,Positive,domestic
+Pegasus,Mainstream audience,Demo composite,63.0,70,Mixed,domestic
+The Continent,Mainstream audience,Demo composite,61.0,57,Mixed,domestic
+Duckweed,Mainstream audience,Demo composite,68.0,56,Mixed,domestic
+"Hi, Mom",Mainstream audience,Demo composite,78.0,89,Positive,domestic
+Better Days,Global streaming audience,Demo composite,75.0,83,Positive,cross-cultural
+The Battle at Lake Changjin,Mainstream audience,Demo composite,59.0,93,Mixed,domestic
+Ne Zha,Action franchise audience,Demo composite,74.0,88,Positive,domestic
+Operation Red Sea,Action franchise audience,Demo composite,67.0,76,Mixed,domestic
+The Three-Body Problem,Mainstream audience,Demo composite,70.0,68,Positive,domestic
+The Flowers of War,Prestige-drama audience,Demo composite,75.0,77,Positive,international
+Heroic Age of the East,Mainstream audience,Demo composite,64.0,35,Mixed,sample
+E.T. the Extra-Terrestrial,Mainstream audience,Demo composite,86.0,92,Positive,classic
+Schindler's List,Prestige-drama audience,Demo composite,94.0,96,Positive,prestige
+Saving Private Ryan,Prestige-drama audience,Demo composite,90.0,94,Positive,prestige
+Goodfellas,Prestige-drama audience,Demo composite,91.0,90,Positive,prestige
+The Irishman,Prestige-drama audience,Demo composite,82.0,88,Positive,prestige
+Inception,Global streaming audience,Demo composite,88.0,97,Positive,global
+Interstellar,Global streaming audience,Demo composite,87.0,95,Positive,global
+Oppenheimer,Prestige-drama audience,Demo composite,88.0,98,Positive,prestige
+Pulp Fiction,Mainstream audience,Demo composite,89.0,90,Positive,classic
+Django Unchained,Prestige-drama audience,Demo composite,88.0,89,Positive,prestige
+Once Upon a Time in Hollywood,Prestige-drama audience,Demo composite,80.0,91,Positive,prestige
+Lady Bird,Prestige-drama audience,Demo composite,78.0,82,Positive,prestige
+Barbie,Global streaming audience,Demo composite,68.0,99,Mixed,global
+Lost in Translation,Prestige-drama audience,Demo composite,81.0,80,Positive,prestige
+Marie Antoinette,Prestige-drama audience,Demo composite,69.0,60,Mixed,festival
+The Hurt Locker,Mainstream audience,Demo composite,79.0,74,Positive,prestige
+Zero Dark Thirty,Prestige-drama audience,Demo composite,78.0,72,Positive,prestige
+Get Out,Mainstream audience,Demo composite,77.0,93,Positive,cultural
+Nope,Mainstream audience,Demo composite,68.0,84,Mixed,cultural
+Creed,Mainstream audience,Demo composite,76.0,81,Positive,mainstream
+Black Panther,Action franchise audience,Demo composite,73.0,99,Positive,global
+Avatar,Action franchise audience,Demo composite,78.0,98,Positive,global
+Titanic,Global streaming audience,Demo composite,79.0,99,Positive,global
+Aliens,Action franchise audience,Demo composite,84.0,88,Positive,classic
+Se7en,Mainstream audience,Demo composite,90.0,88,Positive,prestige
+The Social Network,Prestige-drama audience,Demo composite,82.0,90,Positive,prestige
+Gone Girl,Prestige-drama audience,Demo composite,85.0,86,Positive,prestige
+The Grand Budapest Hotel,Prestige-drama audience,Demo composite,85.0,84,Positive,festival
+Asteroid City,Mainstream audience,Demo composite,68.0,64,Mixed,festival
+Arrival,Prestige-drama audience,Demo composite,84.0,84,Positive,prestige
+Dune,Action franchise audience,Demo composite,80.0,97,Positive,global
+Blade Runner 2049,Mainstream audience,Demo composite,84.0,79,Positive,prestige
+Whiplash,Prestige-drama audience,Demo composite,89.0,80,Positive,prestige
+La La Land,Mainstream audience,Demo composite,84.0,89,Positive,prestige
+Moonlight,Prestige-drama audience,Demo composite,78.0,79,Positive,prestige
+If Beale Street Could Talk,Prestige-drama audience,Demo composite,75.0,61,Positive,prestige
+Do the Right Thing,Prestige-drama audience,Demo composite,84.0,81,Positive,prestige
+BlacKkKlansman,Prestige-drama audience,Demo composite,79.0,80,Positive,prestige
+Alien,Mainstream audience,Demo composite,85.0,86,Positive,classic
+Gladiator,Action franchise audience,Demo composite,89.0,89,Positive,prestige
+The Martian,Action franchise audience,Demo composite,80.0,84,Positive,mainstream
+The Godfather Part II,Mainstream audience,Demo composite,90.0,92,Positive,classic
+Apocalypse Now,Mainstream audience,Demo composite,85.0,85,Positive,classic
+American Graffiti,Mainstream audience,Demo composite,74.0,70,Positive,classic
+There Will Be Blood,Prestige-drama audience,Demo composite,86.0,78,Positive,prestige
+Licorice Pizza,Prestige-drama audience,Demo composite,74.0,58,Positive,festival
+Hereditary,Mainstream audience,Demo composite,73.0,81,Positive,horror
+Midsommar,Mainstream audience,Demo composite,71.0,75,Positive,horror
+Beau Is Afraid,Mainstream audience,Demo composite,69.0,50,Mixed,festival
+Nomadland,Prestige-drama audience,Demo composite,78.0,76,Positive,prestige
+The Rider,Prestige-drama audience,Demo composite,77.0,58,Positive,festival
+Eternals,Action franchise audience,Demo composite,64.0,72,Mixed,global
+Crazy Rich Asians,Global streaming audience,Demo composite,69.0,84,Mixed,bridge
+In the Heights,Global streaming audience,Demo composite,70.0,59,Positive,bridge
+Precious,Prestige-drama audience,Demo composite,77.0,60,Positive,prestige
+The Butler,Prestige-drama audience,Demo composite,76.0,58,Positive,prestige
+Sleepless in Seattle,Mainstream audience,Demo composite,68.0,67,Mixed,classic
+Julie & Julia,Prestige-drama audience,Demo composite,74.0,54,Positive,prestige
+Selma,Prestige-drama audience,Demo composite,79.0,65,Positive,prestige
+When They See Us,Prestige-drama audience,Demo composite,92.0,70,Positive,prestige
+Everything Everywhere All at Once,Action franchise audience,Demo composite,80.0,97,Positive,cross-cultural
+The Farewell,Global streaming audience,Demo composite,76.0,83,Positive,cross-cultural
+Shang-Chi and the Legend of the Ten Rings,Action franchise audience,Demo composite,74.0,92,Positive,cross-cultural
+Mulan,Action franchise audience,Demo composite,58.0,79,Mixed,cross-cultural
+Minari,Global streaming audience,Demo composite,74.0,74,Positive,cross-cultural
+A Sample Slate for a Pan-Asian Thriller,Mainstream audience,Demo composite,66.0,44,Mixed,sample
+A Sample Slate for Prestige Sci-Fi,Mainstream audience,Demo composite,68.0,46,Mixed,sample
+A Sample Slate for Awards-Season Ensemble Drama,Mainstream audience,Demo composite,67.0,41,Mixed,sample
+A Sample Slate for Youth Culture Crime,Youth audience,Demo composite,63.0,39,Mixed,sample
+A Sample Slate for Festival Romance,Mainstream audience,Demo composite,64.0,38,Mixed,sample
+A Sample Slate for Franchise Action,Action franchise audience,Demo composite,65.0,42,Mixed,sample

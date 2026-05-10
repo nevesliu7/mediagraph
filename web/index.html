@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediaGraph | Graph Intelligence for Film Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head>
+<body>
+  <div class="bg-orbs"></div>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">MediaGraph</div>
+      <h1>Graph-based media intelligence for Chinese and American film networks</h1>
+      <p class="lede">Explore creators, films, awards, genres, platforms, and audience signals as a living network. Drag bubbles, filter the graph, and inspect strategy from the network itself.</p>
+    </div>
+    <div class="pill-row">
+      <span class="pill">Vercel-ready web view</span>
+      <span class="pill">Streamlit strategy engine</span>
+      <span class="pill">Neo4j-compatible graph model</span>
+    </div>
+    <div class="microbar">
+      <span>Curated demo dataset · 313 people · 126 films</span>
+      <span>Bridge analysis · Creative fit · Explainable strategy</span>
+      <span>Drag, hover, and filter the graph</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero-grid">
+      <div class="hero-copy panel">
+        <div class="metric-grid" id="metricGrid"></div>
+        <div class="hero-actions">
+          <input id="searchBox" class="search" placeholder="Search a person, film, award, or platform…" />
+          <button id="resetBtn" class="btn primary">Reset view</button>
+        </div>
+        <div class="filters" id="filters"></div>
+        <div class="card">
+          <span class="badge">Strategy lens</span>
+          <div style="margin-top:8px;line-height:1.6;color:var(--muted)">MediaGraph helps strategy teams map creative ecosystems, identify bridge figures, and compare cross-market talent pathways without treating the industry as isolated tables.</div>
+        </div>
+        <div class="mini-note">Bubbles are sized by graph importance. Larger nodes tend to be more connected or strategically central.</div>
+      </div>
+      <div class="hero-graph panel">
+        <div class="panel-head">
+          <div>
+            <div class="section-kicker">Global Creative Network</div>
+            <h2>Interactive bubble graph</h2>
+          </div>
+          <div class="legend" id="legend"></div>
+        </div>
+        <div id="graphWrap" class="graph-wrap">
+          <svg id="graph"></svg>
+          <div id="tooltip" class="tooltip hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <aside class="panel details-panel">
+        <div class="panel-head"><div><div class="section-kicker">Node intelligence</div><h2 id="selectedTitle">Select a node</h2></div></div>
+        <div id="selectedBody" class="stack"></div>
+      </aside>
+      <section class="panel insights-panel">
+        <div class="panel-head"><div><div class="section-kicker">Bridge analysis</div><h2>Top cross-market creators and films</h2></div></div>
+        <div class="split-cols">
+          <div>
+            <h3>Bridge creators</h3>
+            <div id="bridgePeople" class="list"></div>
+          </div>
+          <div>
+            <h3>Bridge films</h3>
+            <div id="bridgeFilms" class="list"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="content-grid lower-grid">
+      <section class="panel strategy-panel">
+        <div class="panel-head"><div><div class="section-kicker">Story positioning assistant</div><h2>Enter a project idea</h2></div></div>
+        <textarea id="storyInput" class="textarea" rows="4" placeholder="A female-led sci-fi thriller about memory, family, and identity for a global streaming audience."></textarea>
+        <div class="hero-actions"><button id="storyBtn" class="btn primary">Generate positioning</button></div>
+        <div id="storyOutput" class="stack"></div>
+      </section>
+      <section class="panel explain-panel">
+        <div class="panel-head"><div><div class="section-kicker">Graph-based explanation demo</div><h2>Ask why a creator matters</h2></div></div>
+        <div class="chip-row" id="questionChips"></div>
+        <div id="explainOutput" class="stack"></div>
+      </section>
+    </section>
+
+    <section class="footer-note panel">
+      <div>
+        <h3>Built for portfolio impact</h3>
+        <p>This demo is designed to feel like an internal media strategy tool: network exploration, creative fit scoring, bridge analysis, and explainable insight generation.</p>
+      </div>
+      <a class="btn ghost" href="#" title="Add your deployed Streamlit URL when you publish">Open Streamlit analyst view →</a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

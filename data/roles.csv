@@ -1,0 +1,447 @@
+film_title,person_name,role_type,billing_order
+Red Sorghum,Zhang Yimou,Director,0
+Red Sorghum,Gong Li,Actor/Actress,1
+Raise the Red Lantern,Zhang Yimou,Director,0
+Raise the Red Lantern,Gong Li,Actor/Actress,1
+Raise the Red Lantern,He Caifei,Actor/Actress,2
+The Story of Qiu Ju,Zhang Yimou,Director,0
+The Story of Qiu Ju,Gong Li,Actor/Actress,1
+Farewell My Concubine,Chen Kaige,Director,0
+Farewell My Concubine,Leslie Cheung,Actor/Actress,1
+Farewell My Concubine,Zhang Fengyi,Actor/Actress,2
+Farewell My Concubine,Gong Li,Actor/Actress,3
+Chungking Express,Wong Kar-wai,Director,0
+Chungking Express,Brigitte Lin,Actor/Actress,1
+Chungking Express,Takeshi Kaneshiro,Actor/Actress,2
+Chungking Express,Faye Wong,Actor/Actress,3
+Chungking Express,Tony Leung Chiu-wai,Actor/Actress,4
+In the Heat of the Sun,Jiang Wen,Director,0
+In the Heat of the Sun,Xia Yu,Actor/Actress,1
+In the Heat of the Sun,Wang Xueqi,Actor/Actress,2
+Comrades: Almost a Love Story,Peter Chan,Director,0
+Comrades: Almost a Love Story,Maggie Cheung,Actor/Actress,1
+Comrades: Almost a Love Story,Leon Lai,Actor/Actress,2
+Comrades: Almost a Love Story,Eric Tsang,Actor/Actress,3
+The Godfather,Francis Ford Coppola,Director,0
+The Godfather,Marlon Brando,Actor/Actress,1
+The Godfather,Al Pacino,Actor/Actress,2
+The Godfather,James Caan,Actor/Actress,3
+Star Wars: A New Hope,George Lucas,Director,0
+Star Wars: A New Hope,Mark Hamill,Actor/Actress,1
+Star Wars: A New Hope,Carrie Fisher,Actor/Actress,2
+Star Wars: A New Hope,Harrison Ford,Actor/Actress,3
+Jaws,Steven Spielberg,Director,0
+Jaws,Roy Scheider,Actor/Actress,1
+Jaws,Richard Dreyfuss,Actor/Actress,2
+Jaws,Robert Shaw,Actor/Actress,3
+Taxi Driver,Martin Scorsese,Director,0
+Taxi Driver,Robert De Niro,Actor/Actress,1
+Taxi Driver,Jodie Foster,Actor/Actress,2
+Taxi Driver,Harvey Keitel,Actor/Actress,3
+The Killer,John Woo,Director,0
+The Killer,Chow Yun-fat,Actor/Actress,1
+The Killer,Danny Lee,Actor/Actress,2
+The Killer,Sally Yeh,Actor/Actress,3
+Eat Drink Man Woman,Ang Lee,Director,0
+Eat Drink Man Woman,Sihung Lung,Actor/Actress,1
+Eat Drink Man Woman,Yang Kuei-mei,Actor/Actress,2
+Eat Drink Man Woman,Chien-lien Wu,Actor/Actress,3
+"Crouching Tiger, Hidden Dragon",Ang Lee,Director,0
+"Crouching Tiger, Hidden Dragon",Michelle Yeoh,Actor/Actress,1
+"Crouching Tiger, Hidden Dragon",Chow Yun-fat,Actor/Actress,2
+"Crouching Tiger, Hidden Dragon",Zhang Ziyi,Actor/Actress,3
+Hero,Zhang Yimou,Director,0
+Hero,Jet Li,Actor/Actress,1
+Hero,Tony Leung Chiu-wai,Actor/Actress,2
+Hero,Maggie Cheung,Actor/Actress,3
+Hero,Zhang Ziyi,Actor/Actress,4
+House of Flying Daggers,Zhang Yimou,Director,0
+House of Flying Daggers,Zhang Ziyi,Actor/Actress,1
+House of Flying Daggers,Andy Lau,Actor/Actress,2
+House of Flying Daggers,Takeshi Kaneshiro,Actor/Actress,3
+The Grandmaster,Wong Kar-wai,Director,0
+The Grandmaster,Tony Leung Chiu-wai,Actor/Actress,1
+The Grandmaster,Zhang Ziyi,Actor/Actress,2
+The Grandmaster,Zhang Jin,Actor/Actress,3
+The Wild Goose Lake,Diao Yinan,Director,0
+The Wild Goose Lake,Hu Ge,Actor/Actress,1
+The Wild Goose Lake,Gwei Lun-mei,Actor/Actress,2
+Still Life,Jia Zhangke,Director,0
+Still Life,Zhao Tao,Actor/Actress,1
+Still Life,Han Sanming,Actor/Actress,2
+A Touch of Sin,Jia Zhangke,Director,0
+A Touch of Sin,Jiang Wu,Actor/Actress,1
+A Touch of Sin,Zhao Tao,Actor/Actress,2
+A Touch of Sin,Wang Baoqiang,Actor/Actress,3
+Ash Is Purest White,Jia Zhangke,Director,0
+Ash Is Purest White,Zhao Tao,Actor/Actress,1
+Ash Is Purest White,Liao Fan,Actor/Actress,2
+Aftershock,Feng Xiaogang,Director,0
+Aftershock,Xu Fan,Actor/Actress,1
+Aftershock,Zhang Jingchu,Actor/Actress,2
+Aftershock,Chen Daoming,Actor/Actress,3
+Back to 1942,Feng Xiaogang,Director,0
+Back to 1942,Zhang Guoli,Actor/Actress,1
+Back to 1942,Xu Fan,Actor/Actress,2
+Back to 1942,Chen Daoming,Actor/Actress,3
+Let the Bullets Fly,Jiang Wen,Director,0
+Let the Bullets Fly,Jiang Wen,Actor/Actress,1
+Let the Bullets Fly,Chow Yun-fat,Actor/Actress,2
+Let the Bullets Fly,Ge You,Actor/Actress,3
+The Hidden Man,Jiang Wen,Director,0
+The Hidden Man,Jiang Wen,Actor/Actress,1
+The Hidden Man,Peng Yuyan,Actor/Actress,2
+The Hidden Man,Zhou Yun,Actor/Actress,3
+Suzhou River,Lou Ye,Director,0
+Suzhou River,Zhou Xun,Actor/Actress,1
+Suzhou River,Jia Hongsheng,Actor/Actress,2
+Summer Palace,Lou Ye,Director,0
+Summer Palace,Hao Lei,Actor/Actress,1
+Summer Palace,Guo Xiaodong,Actor/Actress,2
+Mystery,Lou Ye,Director,0
+Mystery,Hao Lei,Actor/Actress,1
+Mystery,Qin Hao,Actor/Actress,2
+Long Day's Journey into Night,Bi Gan,Director,0
+Long Day's Journey into Night,Huang Jue,Actor/Actress,1
+Long Day's Journey into Night,Tang Wei,Actor/Actress,2
+The World,Jia Zhangke,Director,0
+The World,Zhao Tao,Actor/Actress,1
+The World,Jing Jue,Actor/Actress,2
+The Promise,Chen Kaige,Director,0
+The Promise,Cecilia Cheung,Actor/Actress,1
+The Promise,Jang Dong-gun,Actor/Actress,2
+The Promise,Hiroyuki Sanada,Actor/Actress,3
+The Warlords,Peter Chan,Director,0
+The Warlords,Jet Li,Actor/Actress,1
+The Warlords,Andy Lau,Actor/Actress,2
+The Warlords,Takeshi Kaneshiro,Actor/Actress,3
+Dearest,Peter Chan,Director,0
+Dearest,Zhao Wei,Actor/Actress,1
+Dearest,Huang Bo,Actor/Actress,2
+Dearest,Tong Dawei,Actor/Actress,3
+A Simple Life,Ann Hui,Director,0
+A Simple Life,Andy Lau,Actor/Actress,1
+A Simple Life,Deanie Ip,Actor/Actress,2
+The Golden Era,Ann Hui,Director,0
+The Golden Era,Tang Wei,Actor/Actress,1
+The Golden Era,Feng Shaofeng,Actor/Actress,2
+Shaolin Soccer,Stephen Chow,Director,0
+Shaolin Soccer,Stephen Chow,Actor/Actress,1
+Shaolin Soccer,Ng Man-tat,Actor/Actress,2
+Shaolin Soccer,Zhao Wei,Actor/Actress,3
+Kung Fu Hustle,Stephen Chow,Director,0
+Kung Fu Hustle,Stephen Chow,Actor/Actress,1
+Kung Fu Hustle,Yuen Wah,Actor/Actress,2
+Kung Fu Hustle,Huang Shengyi,Actor/Actress,3
+The Mermaid,Stephen Chow,Director,0
+The Mermaid,Deng Chao,Actor/Actress,1
+The Mermaid,Lin Yun,Actor/Actress,2
+The Mermaid,Show Luo,Actor/Actress,3
+The Wandering Earth,Frant Gwo,Director,0
+The Wandering Earth,Wu Jing,Actor/Actress,1
+The Wandering Earth,Qu Chuxiao,Actor/Actress,2
+The Wandering Earth,Li Guangjie,Actor/Actress,3
+The Wandering Earth II,Frant Gwo,Director,0
+The Wandering Earth II,Wu Jing,Actor/Actress,1
+The Wandering Earth II,Andy Lau,Actor/Actress,2
+The Wandering Earth II,Li Xuejian,Actor/Actress,3
+Crazy Stone,Ning Hao,Director,0
+Crazy Stone,Guo Tao,Actor/Actress,1
+Crazy Stone,Huang Bo,Actor/Actress,2
+Crazy Alien,Ning Hao,Director,0
+Crazy Alien,Huang Bo,Actor/Actress,1
+Crazy Alien,Shen Teng,Actor/Actress,2
+"Black Coal, Thin Ice",Diao Yinan,Director,0
+"Black Coal, Thin Ice",Liao Fan,Actor/Actress,1
+"Black Coal, Thin Ice",Gwei Lun-mei,Actor/Actress,2
+Lost in Thailand,Xu Zheng,Director,0
+Lost in Thailand,Xu Zheng,Actor/Actress,1
+Lost in Thailand,Wang Baoqiang,Actor/Actress,2
+Lost in Thailand,Huang Bo,Actor/Actress,3
+Pegasus,Han Han,Director,0
+Pegasus,Shen Teng,Actor/Actress,1
+Pegasus,Huang Jingyu,Actor/Actress,2
+Pegasus,Yin Zheng,Actor/Actress,3
+The Continent,Han Han,Director,0
+The Continent,Deng Chao,Actor/Actress,1
+The Continent,Lin Gengxin,Actor/Actress,2
+Duckweed,Han Han,Director,0
+Duckweed,Deng Chao,Actor/Actress,1
+Duckweed,Eddie Peng,Actor/Actress,2
+Duckweed,Zhao Liying,Actor/Actress,3
+"Hi, Mom",Jia Ling,Director,0
+"Hi, Mom",Jia Ling,Actor/Actress,1
+"Hi, Mom",Shen Teng,Actor/Actress,2
+"Hi, Mom",Zhang Xiaofei,Actor/Actress,3
+Better Days,Derek Tsang,Director,0
+Better Days,Zhou Dongyu,Actor/Actress,1
+Better Days,Jackson Yee,Actor/Actress,2
+The Battle at Lake Changjin,Dante Lam,Director,0
+The Battle at Lake Changjin,Wu Jing,Actor/Actress,1
+The Battle at Lake Changjin,Jackson Yee,Actor/Actress,2
+Ne Zha,Jiaozi,Director,0
+Ne Zha,Lü Yanting,Actor/Actress,1
+Operation Red Sea,Dante Lam,Director,0
+Operation Red Sea,Zhang Yi,Actor/Actress,1
+Operation Red Sea,Huang Jingyu,Actor/Actress,2
+The Three-Body Problem,Liu Tao,Actor/Actress,1
+The Flowers of War,Zhang Yimou,Director,0
+The Flowers of War,Christian Bale,Actor/Actress,1
+The Flowers of War,Ni Ni,Actor/Actress,2
+Heroic Age of the East,Zhang Yi,Actor/Actress,1
+Heroic Age of the East,Liu Tao,Actor/Actress,2
+E.T. the Extra-Terrestrial,Steven Spielberg,Director,0
+E.T. the Extra-Terrestrial,Henry Thomas,Actor/Actress,1
+E.T. the Extra-Terrestrial,Drew Barrymore,Actor/Actress,2
+Schindler's List,Steven Spielberg,Director,0
+Schindler's List,Liam Neeson,Actor/Actress,1
+Schindler's List,Ben Kingsley,Actor/Actress,2
+Schindler's List,Ralph Fiennes,Actor/Actress,3
+Saving Private Ryan,Steven Spielberg,Director,0
+Saving Private Ryan,Tom Hanks,Actor/Actress,1
+Saving Private Ryan,Matt Damon,Actor/Actress,2
+Goodfellas,Martin Scorsese,Director,0
+Goodfellas,Robert De Niro,Actor/Actress,1
+Goodfellas,Ray Liotta,Actor/Actress,2
+Goodfellas,Joe Pesci,Actor/Actress,3
+The Irishman,Martin Scorsese,Director,0
+The Irishman,Robert De Niro,Actor/Actress,1
+The Irishman,Al Pacino,Actor/Actress,2
+The Irishman,Joe Pesci,Actor/Actress,3
+Inception,Christopher Nolan,Director,0
+Inception,Leonardo DiCaprio,Actor/Actress,1
+Inception,Joseph Gordon-Levitt,Actor/Actress,2
+Inception,Elliot Page,Actor/Actress,3
+Interstellar,Christopher Nolan,Director,0
+Interstellar,Matthew McConaughey,Actor/Actress,1
+Interstellar,Anne Hathaway,Actor/Actress,2
+Interstellar,Jessica Chastain,Actor/Actress,3
+Oppenheimer,Christopher Nolan,Director,0
+Oppenheimer,Cillian Murphy,Actor/Actress,1
+Oppenheimer,Emily Blunt,Actor/Actress,2
+Oppenheimer,Robert Downey Jr.,Actor/Actress,3
+Pulp Fiction,Quentin Tarantino,Director,0
+Pulp Fiction,John Travolta,Actor/Actress,1
+Pulp Fiction,Uma Thurman,Actor/Actress,2
+Pulp Fiction,Samuel L. Jackson,Actor/Actress,3
+Django Unchained,Quentin Tarantino,Director,0
+Django Unchained,Jamie Foxx,Actor/Actress,1
+Django Unchained,Christoph Waltz,Actor/Actress,2
+Django Unchained,Leonardo DiCaprio,Actor/Actress,3
+Once Upon a Time in Hollywood,Quentin Tarantino,Director,0
+Once Upon a Time in Hollywood,Leonardo DiCaprio,Actor/Actress,1
+Once Upon a Time in Hollywood,Brad Pitt,Actor/Actress,2
+Once Upon a Time in Hollywood,Margot Robbie,Actor/Actress,3
+Lady Bird,Greta Gerwig,Director,0
+Lady Bird,Saoirse Ronan,Actor/Actress,1
+Lady Bird,Laurie Metcalf,Actor/Actress,2
+Lady Bird,Timothée Chalamet,Actor/Actress,3
+Barbie,Greta Gerwig,Director,0
+Barbie,Margot Robbie,Actor/Actress,1
+Barbie,Ryan Gosling,Actor/Actress,2
+Barbie,America Ferrera,Actor/Actress,3
+Lost in Translation,Sofia Coppola,Director,0
+Lost in Translation,Scarlett Johansson,Actor/Actress,1
+Lost in Translation,Bill Murray,Actor/Actress,2
+Marie Antoinette,Sofia Coppola,Director,0
+Marie Antoinette,Kirsten Dunst,Actor/Actress,1
+Marie Antoinette,Jason Schwartzman,Actor/Actress,2
+The Hurt Locker,Kathryn Bigelow,Director,0
+The Hurt Locker,Jeremy Renner,Actor/Actress,1
+The Hurt Locker,Anthony Mackie,Actor/Actress,2
+Zero Dark Thirty,Kathryn Bigelow,Director,0
+Zero Dark Thirty,Jessica Chastain,Actor/Actress,1
+Zero Dark Thirty,Jason Clarke,Actor/Actress,2
+Get Out,Jordan Peele,Director,0
+Get Out,Daniel Kaluuya,Actor/Actress,1
+Get Out,Allison Williams,Actor/Actress,2
+Get Out,Catherine Keener,Actor/Actress,3
+Nope,Jordan Peele,Director,0
+Nope,Daniel Kaluuya,Actor/Actress,1
+Nope,Keke Palmer,Actor/Actress,2
+Nope,Steven Yeun,Actor/Actress,3
+Creed,Ryan Coogler,Director,0
+Creed,Michael B. Jordan,Actor/Actress,1
+Creed,Sylvester Stallone,Actor/Actress,2
+Creed,Tessa Thompson,Actor/Actress,3
+Black Panther,Ryan Coogler,Director,0
+Black Panther,Chadwick Boseman,Actor/Actress,1
+Black Panther,Michael B. Jordan,Actor/Actress,2
+Black Panther,Lupita Nyong'o,Actor/Actress,3
+Avatar,James Cameron,Director,0
+Avatar,Sam Worthington,Actor/Actress,1
+Avatar,Zoe Saldana,Actor/Actress,2
+Avatar,Sigourney Weaver,Actor/Actress,3
+Titanic,James Cameron,Director,0
+Titanic,Leonardo DiCaprio,Actor/Actress,1
+Titanic,Kate Winslet,Actor/Actress,2
+Titanic,Billy Zane,Actor/Actress,3
+Aliens,James Cameron,Director,0
+Aliens,Sigourney Weaver,Actor/Actress,1
+Aliens,Michael Biehn,Actor/Actress,2
+Se7en,David Fincher,Director,0
+Se7en,Brad Pitt,Actor/Actress,1
+Se7en,Morgan Freeman,Actor/Actress,2
+Se7en,Gwyneth Paltrow,Actor/Actress,3
+The Social Network,David Fincher,Director,0
+The Social Network,Jesse Eisenberg,Actor/Actress,1
+The Social Network,Andrew Garfield,Actor/Actress,2
+The Social Network,Justin Timberlake,Actor/Actress,3
+Gone Girl,David Fincher,Director,0
+Gone Girl,Ben Affleck,Actor/Actress,1
+Gone Girl,Rosamund Pike,Actor/Actress,2
+The Grand Budapest Hotel,Wes Anderson,Director,0
+The Grand Budapest Hotel,Ralph Fiennes,Actor/Actress,1
+The Grand Budapest Hotel,Tony Revolori,Actor/Actress,2
+The Grand Budapest Hotel,Saoirse Ronan,Actor/Actress,3
+Asteroid City,Wes Anderson,Director,0
+Asteroid City,Jason Schwartzman,Actor/Actress,1
+Asteroid City,Scarlett Johansson,Actor/Actress,2
+Asteroid City,Tom Hanks,Actor/Actress,3
+Arrival,Denis Villeneuve,Director,0
+Arrival,Amy Adams,Actor/Actress,1
+Arrival,Jeremy Renner,Actor/Actress,2
+Arrival,Forest Whitaker,Actor/Actress,3
+Dune,Denis Villeneuve,Director,0
+Dune,Timothée Chalamet,Actor/Actress,1
+Dune,Zendaya,Actor/Actress,2
+Dune,Rebecca Ferguson,Actor/Actress,3
+Blade Runner 2049,Denis Villeneuve,Director,0
+Blade Runner 2049,Ryan Gosling,Actor/Actress,1
+Blade Runner 2049,Harrison Ford,Actor/Actress,2
+Blade Runner 2049,Ana de Armas,Actor/Actress,3
+Whiplash,Damien Chazelle,Director,0
+Whiplash,Miles Teller,Actor/Actress,1
+Whiplash,J.K. Simmons,Actor/Actress,2
+La La Land,Damien Chazelle,Director,0
+La La Land,Emma Stone,Actor/Actress,1
+La La Land,Ryan Gosling,Actor/Actress,2
+Moonlight,Barry Jenkins,Director,0
+Moonlight,Trevante Rhodes,Actor/Actress,1
+Moonlight,Mahershala Ali,Actor/Actress,2
+Moonlight,Naomie Harris,Actor/Actress,3
+If Beale Street Could Talk,Barry Jenkins,Director,0
+If Beale Street Could Talk,KiKi Layne,Actor/Actress,1
+If Beale Street Could Talk,Stephan James,Actor/Actress,2
+If Beale Street Could Talk,Regina King,Actor/Actress,3
+Do the Right Thing,Spike Lee,Director,0
+Do the Right Thing,Danny Aiello,Actor/Actress,1
+Do the Right Thing,Ossie Davis,Actor/Actress,2
+Do the Right Thing,Ruby Dee,Actor/Actress,3
+BlacKkKlansman,Spike Lee,Director,0
+BlacKkKlansman,John David Washington,Actor/Actress,1
+BlacKkKlansman,Adam Driver,Actor/Actress,2
+BlacKkKlansman,Laura Harrier,Actor/Actress,3
+Alien,Ridley Scott,Director,0
+Alien,Sigourney Weaver,Actor/Actress,1
+Alien,Tom Skerritt,Actor/Actress,2
+Alien,John Hurt,Actor/Actress,3
+Gladiator,Ridley Scott,Director,0
+Gladiator,Russell Crowe,Actor/Actress,1
+Gladiator,Joaquin Phoenix,Actor/Actress,2
+Gladiator,Connie Nielsen,Actor/Actress,3
+The Martian,Ridley Scott,Director,0
+The Martian,Matt Damon,Actor/Actress,1
+The Martian,Jessica Chastain,Actor/Actress,2
+The Martian,Chiwetel Ejiofor,Actor/Actress,3
+The Godfather Part II,Francis Ford Coppola,Director,0
+The Godfather Part II,Al Pacino,Actor/Actress,1
+The Godfather Part II,Robert De Niro,Actor/Actress,2
+The Godfather Part II,Diane Keaton,Actor/Actress,3
+Apocalypse Now,Francis Ford Coppola,Director,0
+Apocalypse Now,Martin Sheen,Actor/Actress,1
+Apocalypse Now,Marlon Brando,Actor/Actress,2
+Apocalypse Now,Robert Duvall,Actor/Actress,3
+American Graffiti,George Lucas,Director,0
+American Graffiti,Richard Dreyfuss,Actor/Actress,1
+American Graffiti,Ron Howard,Actor/Actress,2
+American Graffiti,Cindy Williams,Actor/Actress,3
+There Will Be Blood,Paul Thomas Anderson,Director,0
+There Will Be Blood,Daniel Day-Lewis,Actor/Actress,1
+There Will Be Blood,Paul Dano,Actor/Actress,2
+Licorice Pizza,Paul Thomas Anderson,Director,0
+Licorice Pizza,Alana Haim,Actor/Actress,1
+Licorice Pizza,Cooper Hoffman,Actor/Actress,2
+Licorice Pizza,Sean Penn,Actor/Actress,3
+Hereditary,Ari Aster,Director,0
+Hereditary,Toni Collette,Actor/Actress,1
+Hereditary,Alex Wolff,Actor/Actress,2
+Hereditary,Milly Shapiro,Actor/Actress,3
+Midsommar,Ari Aster,Director,0
+Midsommar,Florence Pugh,Actor/Actress,1
+Midsommar,Jack Reynor,Actor/Actress,2
+Midsommar,Will Poulter,Actor/Actress,3
+Beau Is Afraid,Ari Aster,Director,0
+Beau Is Afraid,Joaquin Phoenix,Actor/Actress,1
+Beau Is Afraid,Patti LuPone,Actor/Actress,2
+Nomadland,Chloé Zhao,Director,0
+Nomadland,Frances McDormand,Actor/Actress,1
+Nomadland,David Strathairn,Actor/Actress,2
+Nomadland,Linda May,Actor/Actress,3
+The Rider,Chloé Zhao,Director,0
+The Rider,Brady Jandreau,Actor/Actress,1
+The Rider,Tim Jandreau,Actor/Actress,2
+The Rider,Lilly Jandreau,Actor/Actress,3
+Eternals,Chloé Zhao,Director,0
+Eternals,Gemma Chan,Actor/Actress,1
+Eternals,Richard Madden,Actor/Actress,2
+Eternals,Angelina Jolie,Actor/Actress,3
+Crazy Rich Asians,Jon M. Chu,Director,0
+Crazy Rich Asians,Constance Wu,Actor/Actress,1
+Crazy Rich Asians,Henry Golding,Actor/Actress,2
+Crazy Rich Asians,Michelle Yeoh,Actor/Actress,3
+In the Heights,Jon M. Chu,Director,0
+In the Heights,Anthony Ramos,Actor/Actress,1
+In the Heights,Melissa Barrera,Actor/Actress,2
+In the Heights,Leslie Grace,Actor/Actress,3
+Precious,Lee Daniels,Director,0
+Precious,Gabourey Sidibe,Actor/Actress,1
+Precious,Mo'Nique,Actor/Actress,2
+The Butler,Lee Daniels,Director,0
+The Butler,Forest Whitaker,Actor/Actress,1
+The Butler,Oprah Winfrey,Actor/Actress,2
+Sleepless in Seattle,Nora Ephron,Director,0
+Sleepless in Seattle,Tom Hanks,Actor/Actress,1
+Sleepless in Seattle,Meg Ryan,Actor/Actress,2
+Julie & Julia,Nora Ephron,Director,0
+Julie & Julia,Meryl Streep,Actor/Actress,1
+Julie & Julia,Amy Adams,Actor/Actress,2
+Selma,Ava DuVernay,Director,0
+Selma,David Oyelowo,Actor/Actress,1
+Selma,Carmen Ejogo,Actor/Actress,2
+When They See Us,Ava DuVernay,Director,0
+When They See Us,Jharrel Jerome,Actor/Actress,1
+When They See Us,Asante Blackk,Actor/Actress,2
+Everything Everywhere All at Once,Daniel Kwan,Director,0
+Everything Everywhere All at Once,Daniel Scheinert,Director,0
+Everything Everywhere All at Once,Michelle Yeoh,Actor/Actress,1
+Everything Everywhere All at Once,Ke Huy Quan,Actor/Actress,2
+Everything Everywhere All at Once,Stephanie Hsu,Actor/Actress,3
+The Farewell,Lulu Wang,Director,0
+The Farewell,Awkwafina,Actor/Actress,1
+The Farewell,Zhao Shuzhen,Actor/Actress,2
+The Farewell,Tzi Ma,Actor/Actress,3
+Shang-Chi and the Legend of the Ten Rings,Destin Daniel Cretton,Director,0
+Shang-Chi and the Legend of the Ten Rings,Simu Liu,Actor/Actress,1
+Shang-Chi and the Legend of the Ten Rings,Awkwafina,Actor/Actress,2
+Shang-Chi and the Legend of the Ten Rings,Tony Leung Chiu-wai,Actor/Actress,3
+Mulan,Niki Caro,Director,0
+Mulan,Liu Yifei,Actor/Actress,1
+Mulan,Donnie Yen,Actor/Actress,2
+Mulan,Gong Li,Actor/Actress,3
+Minari,Lee Isaac Chung,Director,0
+Minari,Steven Yeun,Actor/Actress,1
+Minari,Han Ye-ri,Actor/Actress,2
+Minari,Youn Yuh-jung,Actor/Actress,3
+A Sample Slate for a Pan-Asian Thriller,Michelle Yeoh,Actor/Actress,1
+A Sample Slate for a Pan-Asian Thriller,Simu Liu,Actor/Actress,2
+A Sample Slate for Prestige Sci-Fi,Cillian Murphy,Actor/Actress,1
+A Sample Slate for Prestige Sci-Fi,Zhang Ziyi,Actor/Actress,2
+A Sample Slate for Awards-Season Ensemble Drama,Meryl Streep,Actor/Actress,1
+A Sample Slate for Awards-Season Ensemble Drama,Tony Leung Chiu-wai,Actor/Actress,2
+A Sample Slate for Youth Culture Crime,Zendaya,Actor/Actress,1
+A Sample Slate for Youth Culture Crime,Jackson Yee,Actor/Actress,2
+A Sample Slate for Festival Romance,Tang Wei,Actor/Actress,1
+A Sample Slate for Festival Romance,Ryan Gosling,Actor/Actress,2
+A Sample Slate for Franchise Action,Donnie Yen,Actor/Actress,1
+A Sample Slate for Franchise Action,Denzel Washington,Actor/Actress,2

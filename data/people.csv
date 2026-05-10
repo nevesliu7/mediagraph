@@ -1,0 +1,195 @@
+name,country_or_region,primary_role,gender,active_decades,known_for,international_recognition_score,genre_diversity_score,award_score,collaboration_score,cross_market_score,profile_notes
+Zhang Yimou,China,Director,M,1980s|1990s|2000s|2010s|2020s,Red Sorghum|Hero,92,54,42,45,38,auteur|festival|bridge
+Chen Kaige,China,Director,M,1980s|1990s|2000s|2010s,Farewell My Concubine|The Promise,63,54,42,45,38,auteur|festival
+Wong Kar-wai,Hong Kong,Director,M,1980s|1990s|2000s|2010s,In the Mood for Love|The Grandmaster,92,54,42,45,50,auteur|festival|bridge
+Ang Lee,Taiwan,Director,M,1990s|2000s|2010s|2020s,"Crouching Tiger, Hidden Dragon|Life of Pi",92,54,42,45,50,bridge|award|global
+Jia Zhangke,China,Director,M,1990s|2000s|2010s|2020s,Still Life|A Touch of Sin,63,54,42,45,38,auteur|festival
+Feng Xiaogang,China,Director,M,1990s|2000s|2010s|2020s,Aftershock|Back to 1942,63,54,42,45,38,mainstream|award
+Jiang Wen,China,Director,M,1990s|2000s|2010s,Let the Bullets Fly|The Hidden Man,63,54,42,45,38,auteur|actor|bridge
+Lou Ye,China,Director,M,2000s|2010s|2020s,Suzhou River|Summer Palace,63,54,42,45,38,festival|auteur
+Bi Gan,China,Director,M,2010s|2020s,Long Day's Journey into Night|Kaili Blues,63,54,42,45,38,festival|auteur
+Peter Chan,Hong Kong,Director,M,1990s|2000s|2010s|2020s,Comrades: Almost a Love Story|Dearest,63,54,42,45,50,bridge|award
+Ann Hui,Hong Kong,Director,F,1980s|1990s|2000s|2010s|2020s,A Simple Life|The Golden Era,63,54,42,45,50,award|auteur
+Stephen Chow,Hong Kong,Director,M,1990s|2000s|2010s,Kung Fu Hustle|The Mermaid,63,54,42,45,50,comedy|star|bridge
+John Woo,Hong Kong,Director,M,1980s|1990s|2000s|2010s,The Killer|Red Cliff,63,54,42,45,50,bridge|action
+Tsui Hark,Hong Kong,Director,M,1980s|1990s|2000s|2010s,Once Upon a Time in China|Detective Dee and the Mystery of the Phantom Flame,63,54,42,45,50,action|bridge
+Guo Fan,China,Director,M,2010s|2020s,The Wandering Earth|The Wandering Earth II,63,54,42,45,38,sci-fi|mainstream
+Frant Gwo,China,Director,M,2010s|2020s,The Wandering Earth|The Wandering Earth II,63,54,42,45,38,sci-fi|mainstream
+Ning Hao,China,Director,M,2000s|2010s|2020s,Crazy Stone|Crazy Alien,63,54,42,45,38,mainstream|satire
+Diao Yinan,China,Director,M,2000s|2010s,"Black Coal, Thin Ice|The Wild Goose Lake",63,54,42,45,38,festival|neo-noir
+Xu Zheng,China,Director,M,2010s|2020s,Lost in Thailand|Pegasus,63,54,42,45,38,mainstream|comedy|actor
+Chen Sicheng,China,Director,M,2010s|2020s,Detective Chinatown|Detective Chinatown 2,63,54,42,45,38,commercial|mystery
+Derek Tsang,Hong Kong,Director,M,2010s|2020s,Better Days,63,54,42,45,50,festival|youth
+Jia Ling,China,Director,F,2020s,"Hi, Mom",63,54,42,45,38,comedy|emotion|actor
+Dante Lam,Hong Kong,Director,M,2000s|2010s|2020s,Operation Red Sea|The Battle at Lake Changjin,63,54,42,45,50,action|mainstream
+Jiaozi,China,Director,M,2010s|2020s,Ne Zha,63,54,42,45,38,animation|mainstream
+Lee Isaac Chung,United States,Director,M,2000s|2010s|2020s,Minari,63,54,42,45,38,bridge|family
+Lulu Wang,United States,Director,F,2010s|2020s,The Farewell,63,54,42,45,38,bridge|family
+Daniel Kwan,United States,Director,M,2010s|2020s,Everything Everywhere All at Once,63,54,42,45,38,bridge|multiverse
+Daniel Scheinert,United States,Director,M,2010s|2020s,Everything Everywhere All at Once,63,54,42,45,38,bridge|multiverse
+Niki Caro,New Zealand,Director,F,2000s|2010s|2020s,Mulan,63,54,42,45,38,bridge|studio
+Steven Spielberg,United States,Director,M,1970s|1980s|1990s|2000s|2010s|2020s,Jaws|Schindler's List,92,54,42,45,38,mainstream|award|legend
+Martin Scorsese,United States,Director,M,1970s|1980s|1990s|2000s|2010s|2020s,Goodfellas|The Irishman,92,54,42,45,38,auteur|award|legend
+Christopher Nolan,United States,Director,M,1990s|2000s|2010s|2020s,Inception|Oppenheimer,92,54,42,45,38,prestige|global
+Quentin Tarantino,United States,Director,M,1990s|2000s|2010s|2020s,Pulp Fiction|Once Upon a Time in Hollywood,92,54,42,45,38,auteur|prestige
+Greta Gerwig,United States,Director,F,2010s|2020s,Lady Bird|Barbie,92,54,42,45,38,voice|cultural
+Sofia Coppola,United States,Director,F,1990s|2000s|2010s|2020s,Lost in Translation|Marie Antoinette,63,54,42,45,38,auteur|festival
+Kathryn Bigelow,United States,Director,F,1980s|1990s|2000s|2010s,The Hurt Locker|Zero Dark Thirty,63,54,42,45,38,award|thriller
+Jordan Peele,United States,Director,M,2010s|2020s,Get Out|Nope,92,54,42,45,38,horror|cultural
+Ryan Coogler,United States,Director,M,2010s|2020s,Black Panther|Creed,63,54,42,45,38,franchise|cultural
+James Cameron,United States,Director,M,1980s|1990s|2000s|2010s|2020s,Titanic|Avatar,92,54,42,45,38,blockbuster|global
+David Fincher,United States,Director,M,1990s|2000s|2010s|2020s,The Social Network|Gone Girl,63,54,42,45,38,prestige|thriller
+Wes Anderson,United States,Director,M,1990s|2000s|2010s|2020s,The Grand Budapest Hotel|Asteroid City,63,54,42,45,38,style|festival
+Denis Villeneuve,Canada,Director,M,2000s|2010s|2020s,Arrival|Dune,63,54,42,45,50,sci-fi|prestige
+Damien Chazelle,United States,Director,M,2010s|2020s,La La Land|Whiplash,63,54,42,45,38,music|prestige
+Barry Jenkins,United States,Director,M,2010s|2020s,Moonlight|If Beale Street Could Talk,63,54,42,45,38,prestige|award
+Spike Lee,United States,Director,M,1980s|1990s|2000s|2010s|2020s,Do the Right Thing|BlacKkKlansman,92,54,42,45,38,cultural|prestige
+Ridley Scott,United Kingdom,Director,M,1970s|1980s|1990s|2000s|2010s|2020s,Alien|Gladiator,63,54,42,45,50,epic|global
+Francis Ford Coppola,United States,Director,M,1970s|1980s|1990s|2000s|2010s,The Godfather|Apocalypse Now,63,54,42,45,38,legend|award
+George Lucas,United States,Director,M,1970s|1980s|1990s,Star Wars: A New Hope|American Graffiti,63,54,42,45,38,franchise|industry
+Paul Thomas Anderson,United States,Director,M,1990s|2000s|2010s|2020s,There Will Be Blood|Licorice Pizza,63,54,42,45,38,auteur|prestige
+Ari Aster,United States,Director,M,2010s|2020s,Hereditary|Midsommar,63,54,42,45,38,horror|auteur
+Chloé Zhao,United States,Director,F,2010s|2020s,Nomadland|The Rider,92,54,42,45,38,bridge|award|global
+Jon M. Chu,United States,Director,M,2000s|2010s|2020s,Crazy Rich Asians|In the Heights,63,54,42,45,38,bridge|studio
+Lee Daniels,United States,Director,M,2000s|2010s|2020s,Precious|The Butler,63,54,42,45,38,award|cultural
+Nora Ephron,United States,Director,F,1990s|2000s,Sleepless in Seattle|Julie & Julia,63,54,42,45,38,romance|writer
+Ava DuVernay,United States,Director,F,2010s|2020s,Selma|When They See Us,63,54,42,45,38,award|cultural
+Gong Li,China,Actress,F,1980s|1990s|2000s|2010s|2020s,Red Sorghum|Raise the Red Lantern,58,51,42,45,38,award|festival|bridge
+Zhang Ziyi,China,Actress,F,1990s|2000s|2010s|2020s,"Crouching Tiger, Hidden Dragon|Hero",58,51,42,45,38,bridge|global|award
+Maggie Cheung,Hong Kong,Actress,F,1980s|1990s|2000s,In the Mood for Love|Clean,58,51,42,45,50,auteur|festival|bridge
+Tony Leung Chiu-wai,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,In the Mood for Love|Hero,58,51,42,45,50,bridge|award|global
+Andy Lau,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,House of Flying Daggers|A Simple Life,58,51,42,45,50,star|bridge
+Jackie Chan,Hong Kong,Actor,M,1970s|1980s|1990s|2000s|2010s|2020s,Project A|Police Story,58,51,42,45,50,action|global|bridge
+Jet Li,China,Actor,M,1980s|1990s|2000s|2010s,Hero|The Warlords,58,51,42,45,38,action|global|bridge
+Donnie Yen,Hong Kong,Actor,M,1990s|2000s|2010s|2020s,Ip Man|Mulan,58,51,42,45,50,action|bridge
+Chow Yun-fat,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,"The Killer|Crouching Tiger, Hidden Dragon",58,51,42,45,50,legend|bridge
+Zhou Xun,China,Actress,F,1990s|2000s|2010s|2020s,Suzhou River|The Legend of Hei,58,51,42,45,38,festival|global
+Fan Bingbing,China,Actress,F,1990s|2000s|2010s|2020s,Cell Phone|The Warlords,58,51,42,45,38,star|festival
+Liu Yifei,China,Actress,F,2000s|2010s|2020s,Mulan|The Four,58,51,42,45,38,bridge|global
+Tang Wei,China,Actress,F,2000s|2010s|2020s,Long Day's Journey into Night|Decision to Leave,58,51,42,45,38,festival|bridge
+Zhao Tao,China,Actress,F,2000s|2010s|2020s,Still Life|Ash Is Purest White,58,51,42,45,38,auteur|festival
+Ge You,China,Actor,M,1980s|1990s|2000s|2010s|2020s,Let the Bullets Fly|To Live,58,51,42,45,38,star|award
+Huang Bo,China,Actor,M,2000s|2010s|2020s,Crazy Stone|Crazy Alien,58,51,42,45,38,star|comedy
+Wang Baoqiang,China,Actor,M,2000s|2010s|2020s,A Touch of Sin|Detective Chinatown 2,58,51,42,45,38,star|comedy
+Shen Teng,China,Actor,M,2010s|2020s,"Hi, Mom|Full River Red",58,51,42,45,38,comedy|mainstream
+Wu Jing,China,Actor,M,2000s|2010s|2020s,The Wandering Earth|The Battle at Lake Changjin,58,51,42,45,38,action|mainstream
+Jackson Yee,China,Actor,M,2010s|2020s,Better Days|Full River Red,58,51,42,45,38,youth|bridge
+Lei Jiayin,China,Actor,M,2010s|2020s,Full River Red|Article 20,58,51,42,45,38,drama|mainstream
+Ma Li,China,Actress,F,2010s|2020s,"Hi, Mom",58,51,42,45,38,comedy|mainstream
+Ni Ni,China,Actress,F,2010s|2020s,The Flowers of War|Lost in the Stars,58,51,42,45,38,drama|fashion
+Shu Qi,Taiwan,Actress,F,1990s|2000s|2010s|2020s,Millennium Mambo|The Assassin,58,51,42,45,50,auteur|bridge
+Michelle Yeoh,Malaysia,Actress,F,1980s|1990s|2000s|2010s|2020s,"Crouching Tiger, Hidden Dragon|Everything Everywhere All at Once",58,51,42,45,50,bridge|award|global
+Liu Haoran,China,Actor,M,2010s|2020s,Detective Chinatown|The Eight Hundred,58,51,42,45,38,youth|mainstream
+Zhang Yi,China,Actor,M,2000s|2010s|2020s,The Eight Hundred|Cliff Walkers,58,51,42,45,38,drama|award
+Chen Kun,China,Actor,M,2000s|2010s|2020s,The Flying Swords of Dragon Gate|Painted Skin,58,51,42,45,38,star|fantasy
+Dilraba Dilmurat,China,Actress,F,2010s|2020s,The Long Ballad|Mr. Pride vs Miss Prejudice,58,51,42,45,38,star|fashion
+Zhang Fengyi,China,Actor,M,1980s|1990s|2000s,Farewell My Concubine|The Emperor and the Assassin,58,51,42,45,38,award|legend
+Sihung Lung,Taiwan,Actor,M,1980s|1990s,Eat Drink Man Woman,58,51,42,45,50,legend|family
+Yang Kuei-mei,Taiwan,Actress,F,1990s|2000s|2010s,Eat Drink Man Woman|The Tag-Along,58,51,42,45,50,festival|family
+Chien-lien Wu,Taiwan,Actress,F,1980s|1990s,Eat Drink Man Woman,58,51,42,45,50,family|award
+Deng Chao,China,Actor,M,2000s|2010s|2020s,Shadow|The Mermaid,58,51,42,45,38,mainstream|star
+Sun Li,China,Actress,F,2000s|2010s|2020s,Shadow,58,51,42,45,38,drama|mainstream
+Zheng Kai,China,Actor,M,2010s|2020s,Shadow,58,51,42,45,38,supporting|mainstream
+Cecilia Cheung,Hong Kong,Actress,F,1990s|2000s|2010s,The Promise,58,51,42,45,50,star|bridge
+Jang Dong-gun,South Korea,Actor,M,1990s|2000s|2010s,The Promise,58,51,42,45,50,regional|bridge
+Hiroyuki Sanada,Japan,Actor,M,1980s|1990s|2000s|2010s|2020s,The Promise,58,51,42,45,50,global|bridge
+Brigitte Lin,Taiwan,Actress,F,1980s|1990s,Chungking Express|Peking Opera Blues,58,51,42,45,50,legend|bridge
+Faye Wong,Hong Kong,Singer/Actress,F,1990s|2000s|2010s,Chungking Express,58,51,42,45,50,icon|bridge
+Takeshi Kaneshiro,Taiwan,Actor,M,1990s|2000s|2010s,Chungking Express|House of Flying Daggers,58,51,42,45,50,bridge|star
+Leon Lai,Hong Kong,Actor,M,1990s|2000s,Comrades: Almost a Love Story,58,51,42,45,50,legend|bridge
+Eric Tsang,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,Comrades: Almost a Love Story,58,51,42,45,50,star|supporting
+Miao Miao,China,Actress,F,2010s|2020s,Youth,58,51,42,45,38,newcomer|drama
+Huang Xuan,China,Actor,M,2010s|2020s,Youth,58,51,42,45,38,drama|fashion
+Zhong Chuxi,China,Actress,F,2010s|2020s,Youth,58,51,42,45,38,drama|fashion
+Qin Hao,China,Actor,M,2000s|2010s|2020s,Mystery|The Long Season,58,51,42,45,38,festival|drama
+Hao Lei,China,Actress,F,2000s|2010s|2020s,Summer Palace|Mystery,58,51,42,45,38,festival|auteur
+Hu Ge,China,Actor,M,2000s|2010s|2020s,The Wild Goose Lake,58,51,42,45,38,star|drama
+Gwei Lun-mei,Taiwan,Actress,F,2000s|2010s|2020s,"Black Coal, Thin Ice|The Wild Goose Lake",58,51,42,45,50,festival|bridge
+Xu Fan,China,Actress,F,1990s|2000s|2010s|2020s,Aftershock|Back to 1942,58,51,42,45,38,mainstream|award
+Chen Daoming,China,Actor,M,1990s|2000s|2010s|2020s,Aftershock|Back to 1942,58,51,42,45,38,award|legend
+Zhang Jingchu,China,Actress,F,2000s|2010s|2020s,Aftershock,58,51,42,45,38,drama|mainstream
+Zhang Guoli,China,Actor,M,1990s|2000s|2010s|2020s,Back to 1942,58,51,42,45,38,legend|drama
+Huang Jue,China,Actor,M,2000s|2010s|2020s,Long Day's Journey into Night,58,51,42,45,38,indie|festival
+Tong Dawei,China,Actor,M,2000s|2010s|2020s,Dearest,58,51,42,45,38,drama|mainstream
+Zhao Wei,China,Actress,F,1990s|2000s|2010s|2020s,Dearest|Shaolin Soccer,58,51,42,45,38,star|bridge
+Show Luo,Taiwan,Performer,M,2000s|2010s|2020s,The Mermaid,58,51,42,45,50,pop|mainstream
+Yuen Wah,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,Kung Fu Hustle,58,51,42,45,50,action|legend
+Huang Shengyi,China,Actress,F,2000s|2010s|2020s,Kung Fu Hustle,58,51,42,45,38,star|fantasy
+Ng Man-tat,Hong Kong,Actor,M,1980s|1990s|2000s,Shaolin Soccer,58,51,42,45,50,supporting|legend
+Yuen Biao,Hong Kong,Actor,M,1980s|1990s|2000s,Once Upon a Time in China,58,51,42,45,50,action|legend
+Rosamund Kwan,Hong Kong,Actress,F,1980s|1990s|2000s,Once Upon a Time in China,58,51,42,45,50,legend|bridge
+Li Bingbing,China,Actress,F,1990s|2000s|2010s,Detective Dee and the Mystery of the Phantom Flame,58,51,42,45,38,star|action
+Tony Leung Ka-fai,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,Detective Dee and the Mystery of the Phantom Flame,58,51,42,45,50,legend|bridge
+Qu Chuxiao,China,Actor,M,2010s|2020s,The Wandering Earth,58,51,42,45,38,newcomer|sci-fi
+Li Guangjie,China,Actor,M,2000s|2010s|2020s,The Wandering Earth,58,51,42,45,38,drama|mainstream
+Liao Fan,China,Actor,M,2000s|2010s|2020s,"Black Coal, Thin Ice|Ash Is Purest White",58,51,42,45,38,award|festival
+Zhu Yilong,China,Actor,M,2010s|2020s,Lost in the Stars,58,51,42,45,38,drama|mainstream
+Yu Nan,China,Actress,F,2000s|2010s|2020s,No Man's Land,58,51,42,45,38,festival|drama
+Jiang Wu,China,Actor,M,1990s|2000s|2010s|2020s,A Touch of Sin|The Hidden Man,58,51,42,45,38,award|drama
+Meryl Streep,United States,Actress,F,1970s|1980s|1990s|2000s|2010s|2020s,The Devil Wears Prada|Julie & Julia,58,51,42,45,38,award|legend
+Leonardo DiCaprio,United States,Actor,M,1990s|2000s|2010s|2020s,Inception|The Revenant,58,51,42,45,38,global|award
+Tom Hanks,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Saving Private Ryan|The Post,58,51,42,45,38,legend|award
+Denzel Washington,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Malcolm X|Fences,58,51,42,45,38,award|legend
+Robert De Niro,United States,Actor,M,1970s|1980s|1990s|2000s|2010s|2020s,Taxi Driver|Goodfellas,58,51,42,45,38,legend|award
+Al Pacino,United States,Actor,M,1970s|1980s|1990s|2000s|2010s|2020s,The Godfather|The Irishman,58,51,42,45,38,legend|award
+Brad Pitt,United States,Actor,M,1990s|2000s|2010s|2020s,Fight Club|Once Upon a Time in Hollywood,58,51,42,45,38,global|star
+George Clooney,United States,Actor,M,1990s|2000s|2010s|2020s,Ocean's Eleven|Gravity,58,51,42,45,38,star|global
+Viola Davis,United States,Actress,F,2000s|2010s|2020s,Fences|The Woman King,58,51,42,45,38,award|legend
+Cate Blanchett,Australia,Actress,F,1990s|2000s|2010s|2020s,Blue Jasmine|TÁR,58,51,42,45,50,award|prestige
+Natalie Portman,United States,Actress,F,1990s|2000s|2010s|2020s,Black Swan|Jackie,58,51,42,45,38,prestige|award
+Scarlett Johansson,United States,Actress,F,2000s|2010s|2020s,Lost in Translation|Black Widow,58,51,42,45,38,star|global
+Emma Stone,United States,Actress,F,2000s|2010s|2020s,La La Land|Poor Things,58,51,42,45,38,award|global
+Ryan Gosling,Canada,Actor,M,1990s|2000s|2010s|2020s,La La Land|Barbie,58,51,42,45,50,star|global
+Margot Robbie,Australia,Actress,F,2010s|2020s,"Barbie|I, Tonya",58,51,42,45,50,star|global
+Jennifer Lawrence,United States,Actress,F,2010s|2020s,Silver Linings Playbook|Don't Look Up,58,51,42,45,38,star|award
+Joaquin Phoenix,United States,Actor,M,1990s|2000s|2010s|2020s,Joker|Her,58,51,42,45,38,award|prestige
+Christian Bale,United Kingdom,Actor,M,1990s|2000s|2010s|2020s,The Dark Knight|The Fighter,58,51,42,45,50,prestige|global
+Robert Downey Jr.,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Oppenheimer|Iron Man,58,51,42,45,38,star|bridge
+Samuel L. Jackson,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Pulp Fiction|The Avengers,58,51,42,45,38,star|global
+Zendaya,United States,Actress,F,2010s|2020s,Dune|Spider-Man: No Way Home,58,51,42,45,38,star|bridge
+Timothée Chalamet,United States,Actor,M,2010s|2020s,Dune|Call Me by Your Name,58,51,42,45,38,prestige|global
+Florence Pugh,United Kingdom,Actress,F,2010s|2020s,Midsommar|Oppenheimer,58,51,42,45,50,prestige|star
+Matt Damon,United States,Actor,M,1990s|2000s|2010s|2020s,The Martian|Saving Private Ryan,58,51,42,45,38,star|global
+Anne Hathaway,United States,Actress,F,2000s|2010s|2020s,Interstellar|The Devil Wears Prada,58,51,42,45,38,star|global
+Cillian Murphy,Ireland,Actor,M,2000s|2010s|2020s,Oppenheimer|Peaky Blinders,58,51,42,45,50,prestige|global
+Lupita Nyong'o,Kenya,Actress,F,2010s|2020s,Black Panther|Us,58,51,42,45,50,prestige|global
+Mahershala Ali,United States,Actor,M,2010s|2020s,Moonlight|Green Book,58,51,42,45,38,award|prestige
+Michael B. Jordan,United States,Actor,M,2010s|2020s,Creed|Black Panther,58,51,42,45,38,star|franchise
+Daniel Kaluuya,United Kingdom,Actor,M,2010s|2020s,Get Out|Judas and the Black Messiah,58,51,42,45,50,award|prestige
+Toni Collette,Australia,Actress,F,1990s|2000s|2010s|2020s,Hereditary|The Sixth Sense,58,51,42,45,50,prestige|horror
+Allison Williams,United States,Actress,F,2010s|2020s,Get Out|M3GAN,58,51,42,45,38,horror|mainstream
+Trevante Rhodes,United States,Actor,M,2010s|2020s,Moonlight,58,51,42,45,38,drama|prestige
+Naomie Harris,United Kingdom,Actress,F,2000s|2010s|2020s,Moonlight|Skyfall,58,51,42,45,50,prestige|global
+Jesse Eisenberg,United States,Actor,M,2000s|2010s|2020s,The Social Network|Zombieland,58,51,42,45,38,prestige|comic
+Andrew Garfield,United States,Actor,M,2010s|2020s,"The Social Network|Tick, Tick... Boom!",58,51,42,45,38,prestige|global
+Ben Affleck,United States,Actor,M,1990s|2000s|2010s|2020s,Gone Girl|Argo,58,51,42,45,38,director|star
+Rosamund Pike,United Kingdom,Actress,F,2000s|2010s|2020s,Gone Girl|Saltburn,58,51,42,45,50,prestige|thriller
+Ralph Fiennes,United Kingdom,Actor,M,1990s|2000s|2010s|2020s,The Grand Budapest Hotel|Schindler's List,58,51,42,45,50,prestige|global
+Saoirse Ronan,Ireland,Actress,F,2000s|2010s|2020s,Lady Bird|Little Women,58,51,42,45,50,award|prestige
+Amy Adams,United States,Actress,F,2000s|2010s|2020s,Arrival|American Hustle,58,51,42,45,38,award|prestige
+Rebecca Ferguson,Sweden,Actress,F,2010s|2020s,Dune|Mission: Impossible – Rogue Nation,58,51,42,45,50,action|global
+Bill Murray,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Lost in Translation|The Life Aquatic,58,51,42,45,38,icon|auteur
+Jeremy Renner,United States,Actor,M,2000s|2010s|2020s,The Hurt Locker|Arrival,58,51,42,45,38,action|prestige
+Anthony Mackie,United States,Actor,M,2000s|2010s|2020s,The Hurt Locker|Captain America: The Falcon and the Winter Soldier,58,51,42,45,38,franchise|bridge
+Octavia Spencer,United States,Actress,F,2000s|2010s|2020s,Hidden Figures|The Help,58,51,42,45,38,award|prestige
+Taraji P. Henson,United States,Actress,F,2000s|2010s|2020s,Hidden Figures|Empire,58,51,42,45,38,star|award
+Constance Wu,United States,Actress,F,2010s|2020s,Crazy Rich Asians|Hustlers,58,51,42,45,38,bridge|star
+Henry Golding,Malaysia,Actor,M,2010s|2020s,Crazy Rich Asians|The Gentlemen,58,51,42,45,50,bridge|global
+Awkwafina,United States,Actress,F,2010s|2020s,Crazy Rich Asians|The Farewell,58,51,42,45,38,bridge|comedy
+Simu Liu,Canada,Actor,M,2010s|2020s,Shang-Chi and the Legend of the Ten Rings|Barbie,58,51,42,45,50,bridge|franchise
+Stephanie Hsu,United States,Actress,F,2010s|2020s,Everything Everywhere All at Once|Joy Ride,58,51,42,45,38,bridge|comedy
+Ke Huy Quan,Vietnam,Actor,M,1980s|2020s,Everything Everywhere All at Once|Loki,58,51,42,45,50,bridge|award
+Zhao Shuzhen,China,Actress,F,1980s|1990s|2000s|2010s|2020s,The Farewell,58,51,42,45,38,family|bridge
+Tzi Ma,Hong Kong,Actor,M,1980s|1990s|2000s|2010s|2020s,The Farewell|Mulan,58,51,42,45,50,bridge|family
+Steven Yeun,United States,Actor,M,2010s|2020s,Minari|Nope,58,51,42,45,38,bridge|prestige
+Youn Yuh-jung,South Korea,Actress,F,1970s|1980s|1990s|2000s|2010s|2020s,Minari,58,51,42,45,50,award|global
+Frances McDormand,United States,Actress,F,1980s|1990s|2000s|2010s|2020s,"Nomadland|Three Billboards Outside Ebbing, Missouri",58,51,42,45,38,award|legend
+David Strathairn,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Nomadland,58,51,42,45,38,prestige|character
+Sigourney Weaver,United States,Actress,F,1970s|1980s|1990s|2000s|2010s|2020s,Alien|Avatar,58,51,42,45,38,legend|global
+Billy Zane,United States,Actor,M,1990s|2000s|2010s|2020s,Titanic,58,51,42,45,38,supporting|mainstream
+Mark Hamill,United States,Actor,M,1970s|1980s|1990s|2000s|2010s|2020s,Star Wars: A New Hope,58,51,42,45,38,legend|franchise
+Carrie Fisher,United States,Actress,F,1970s|1980s|1990s|2000s|2010s,Star Wars: A New Hope,58,51,42,45,38,legend|franchise
+Matthew McConaughey,United States,Actor,M,1990s|2000s|2010s|2020s,Interstellar|Dallas Buyers Club,58,51,42,45,38,prestige|global
+Jessica Chastain,United States,Actress,F,2000s|2010s|2020s,Zero Dark Thirty|The Eyes of Tammy Faye,58,51,42,45,38,prestige|award
+Chadwick Boseman,United States,Actor,M,2000s|2010s|2020s,Black Panther|Ma Rainey's Black Bottom,58,51,42,45,38,legend|bridge
+Michael Keaton,United States,Actor,M,1980s|1990s|2000s|2010s|2020s,Batman|Birdman,58,51,42,45,38,prestige|legend

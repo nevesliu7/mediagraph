@@ -1,0 +1,36 @@
+award_name,recipient_type,recipient_name,year,result,region
+Academy Awards,Film,"Crouching Tiger, Hidden Dragon",2001,Won,Global
+Academy Awards,Film,Hero,2003,Nominated,Global
+Academy Awards,Film,House of Flying Daggers,2005,Nominated,Global
+Academy Awards,Film,Everything Everywhere All at Once,2023,Won,Global
+Academy Awards,Film,Nomadland,2021,Won,Global
+Academy Awards,Film,The Hurt Locker,2010,Won,Global
+Academy Awards,Film,Black Panther,2019,Won,Global
+Academy Awards,Film,The Godfather,1973,Won,Global
+Academy Awards,Film,Titanic,1998,Won,Global
+Academy Awards,Film,The Social Network,2011,Won,Global
+Academy Awards,Film,Schindler's List,1994,Won,Global
+Academy Awards,Film,La La Land,2017,Won,Global
+Academy Awards,Person,Ang Lee,2013,Won,Global
+Academy Awards,Person,Chloé Zhao,2021,Won,Global
+Academy Awards,Person,Michelle Yeoh,2023,Won,Global
+Cannes Palme d'Or,Film,Farewell My Concubine,1993,Won,Europe
+Cannes Palme d'Or,Film,Pulp Fiction,1994,Won,Europe
+Cannes Best Screenplay,Film,A Touch of Sin,2013,Won,Europe
+Cannes Competition,Film,The Wild Goose Lake,2019,Selected,Europe
+Cannes Competition,Film,Asteroid City,2023,Selected,Europe
+Berlin Golden Bear,Film,Red Sorghum,1988,Won,Europe
+Berlin Golden Bear,Film,"Black Coal, Thin Ice",2014,Won,Europe
+Venice Golden Lion,Film,Still Life,2006,Won,Europe
+Venice Golden Lion,Film,Nomadland,2020,Won,Europe
+Golden Globe,Film,"Crouching Tiger, Hidden Dragon",2001,Won,Global
+Golden Globe,Film,Titanic,1998,Won,Global
+Golden Globe,Film,Barbie,2024,Won,Global
+Golden Horse Awards,Film,Aftershock,2010,Won,Asia
+Golden Horse Awards,Film,Let the Bullets Fly,2010,Won,Asia
+Hong Kong Film Awards,Film,Kung Fu Hustle,2005,Won,Asia
+Hong Kong Film Awards,Film,The Killer,1990,Won,Asia
+Hong Kong Film Awards,Film,The Warlords,2008,Won,Asia
+BAFTA,Film,"Crouching Tiger, Hidden Dragon",2001,Won,Europe
+BAFTA,Film,Black Panther,2019,Won,Europe
+BAFTA,Film,Dune,2022,Won,Europe

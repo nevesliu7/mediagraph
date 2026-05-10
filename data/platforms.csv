@@ -1,0 +1,245 @@
+film_title,platform,release_mode,region,note
+Red Sorghum,Theatrical,Demo availability,China,domestic
+Red Sorghum,Criterion Channel,Demo availability,China,domestic
+Raise the Red Lantern,Theatrical,Demo availability,China,festival
+Raise the Red Lantern,Criterion Channel,Demo availability,China,festival
+The Story of Qiu Ju,Theatrical,Demo availability,China,festival
+The Story of Qiu Ju,Criterion Channel,Demo availability,China,festival
+Farewell My Concubine,Theatrical,Demo availability,China,international
+Farewell My Concubine,MUBI,Demo availability,China,international
+Chungking Express,Criterion Channel,Demo availability,Hong Kong,international
+Chungking Express,Theatrical,Demo availability,Hong Kong,international
+In the Heat of the Sun,Theatrical,Demo availability,China,domestic
+In the Heat of the Sun,iQiyi,Demo availability,China,domestic
+Comrades: Almost a Love Story,Criterion Channel,Demo availability,Hong Kong,international
+Comrades: Almost a Love Story,Theatrical,Demo availability,Hong Kong,international
+The Godfather,Theatrical,Demo availability,United States,classic
+The Godfather,Paramount+,Demo availability,United States,classic
+Star Wars: A New Hope,Theatrical,Demo availability,United States,franchise
+Star Wars: A New Hope,Disney+,Demo availability,United States,franchise
+Jaws,Theatrical,Demo availability,United States,classic
+Jaws,Peacock,Demo availability,United States,classic
+Taxi Driver,Theatrical,Demo availability,United States,classic
+Taxi Driver,Criterion Channel,Demo availability,United States,classic
+The Killer,Theatrical,Demo availability,Hong Kong,international
+The Killer,Criterion Channel,Demo availability,Hong Kong,international
+Eat Drink Man Woman,Theatrical,Demo availability,Taiwan,international
+Eat Drink Man Woman,Criterion Channel,Demo availability,Taiwan,international
+"Crouching Tiger, Hidden Dragon",Theatrical,Demo availability,Taiwan/China/Hong Kong,cross-cultural
+"Crouching Tiger, Hidden Dragon",Netflix,Demo availability,Taiwan/China/Hong Kong,cross-cultural
+Hero,Theatrical,Demo availability,China,cross-cultural
+Hero,MUBI,Demo availability,China,cross-cultural
+House of Flying Daggers,Theatrical,Demo availability,China,international
+House of Flying Daggers,MUBI,Demo availability,China,international
+The Grandmaster,Theatrical,Demo availability,Hong Kong/China,international
+The Grandmaster,Criterion Channel,Demo availability,Hong Kong/China,international
+The Wild Goose Lake,Theatrical,Demo availability,China,festival
+The Wild Goose Lake,MUBI,Demo availability,China,festival
+Still Life,Theatrical,Demo availability,China,festival
+Still Life,Criterion Channel,Demo availability,China,festival
+A Touch of Sin,Theatrical,Demo availability,China,festival
+A Touch of Sin,MUBI,Demo availability,China,festival
+Ash Is Purest White,Theatrical,Demo availability,China,festival
+Ash Is Purest White,MUBI,Demo availability,China,festival
+Aftershock,Theatrical,Demo availability,China,domestic
+Aftershock,Tencent Video,Demo availability,China,domestic
+Back to 1942,Theatrical,Demo availability,China,domestic
+Back to 1942,iQiyi,Demo availability,China,domestic
+Let the Bullets Fly,Theatrical,Demo availability,China,domestic
+Let the Bullets Fly,Youku,Demo availability,China,domestic
+The Hidden Man,Theatrical,Demo availability,China,domestic
+The Hidden Man,iQiyi,Demo availability,China,domestic
+Suzhou River,Theatrical,Demo availability,China,festival
+Suzhou River,Criterion Channel,Demo availability,China,festival
+Summer Palace,Theatrical,Demo availability,China,festival
+Summer Palace,MUBI,Demo availability,China,festival
+Mystery,Theatrical,Demo availability,China,festival
+Mystery,iQiyi,Demo availability,China,festival
+Long Day's Journey into Night,Theatrical,Demo availability,China,festival
+Long Day's Journey into Night,MUBI,Demo availability,China,festival
+The World,Theatrical,Demo availability,China,festival
+The World,Criterion Channel,Demo availability,China,festival
+The Promise,Theatrical,Demo availability,China,international
+The Promise,iQiyi,Demo availability,China,international
+The Warlords,Theatrical,Demo availability,China,international
+The Warlords,Criterion Channel,Demo availability,China,international
+Dearest,Theatrical,Demo availability,China,domestic
+Dearest,Tencent Video,Demo availability,China,domestic
+A Simple Life,Theatrical,Demo availability,Hong Kong,festival
+A Simple Life,Criterion Channel,Demo availability,Hong Kong,festival
+The Golden Era,Theatrical,Demo availability,Hong Kong,festival
+The Golden Era,MUBI,Demo availability,Hong Kong,festival
+Shaolin Soccer,Theatrical,Demo availability,Hong Kong,international
+Shaolin Soccer,Netflix,Demo availability,Hong Kong,international
+Kung Fu Hustle,Theatrical,Demo availability,Hong Kong,international
+Kung Fu Hustle,Netflix,Demo availability,Hong Kong,international
+The Mermaid,Theatrical,Demo availability,China,domestic
+The Mermaid,iQiyi,Demo availability,China,domestic
+The Wandering Earth,Theatrical,Demo availability,China,cross-cultural
+The Wandering Earth,Netflix,Demo availability,China,cross-cultural
+The Wandering Earth II,Theatrical,Demo availability,China,cross-cultural
+The Wandering Earth II,Netflix,Demo availability,China,cross-cultural
+Crazy Stone,Theatrical,Demo availability,China,domestic
+Crazy Stone,iQiyi,Demo availability,China,domestic
+Crazy Alien,Theatrical,Demo availability,China,domestic
+Crazy Alien,Tencent Video,Demo availability,China,domestic
+"Black Coal, Thin Ice",Theatrical,Demo availability,China,festival
+"Black Coal, Thin Ice",MUBI,Demo availability,China,festival
+Lost in Thailand,Theatrical,Demo availability,China,domestic
+Lost in Thailand,iQiyi,Demo availability,China,domestic
+Pegasus,Theatrical,Demo availability,China,domestic
+Pegasus,Tencent Video,Demo availability,China,domestic
+The Continent,Theatrical,Demo availability,China,domestic
+The Continent,iQiyi,Demo availability,China,domestic
+Duckweed,Theatrical,Demo availability,China,domestic
+Duckweed,Tencent Video,Demo availability,China,domestic
+"Hi, Mom",Theatrical,Demo availability,China,domestic
+"Hi, Mom",iQiyi,Demo availability,China,domestic
+Better Days,Theatrical,Demo availability,China,cross-cultural
+Better Days,Netflix,Demo availability,China,cross-cultural
+The Battle at Lake Changjin,Theatrical,Demo availability,China,domestic
+The Battle at Lake Changjin,Tencent Video,Demo availability,China,domestic
+Ne Zha,Theatrical,Demo availability,China,domestic
+Ne Zha,Netflix,Demo availability,China,domestic
+Operation Red Sea,Theatrical,Demo availability,China,domestic
+Operation Red Sea,iQiyi,Demo availability,China,domestic
+The Three-Body Problem,Tencent Video,Demo availability,China,domestic
+The Flowers of War,Theatrical,Demo availability,China,international
+The Flowers of War,MUBI,Demo availability,China,international
+Heroic Age of the East,Sample Streaming,Demo availability,China,sample
+E.T. the Extra-Terrestrial,Theatrical,Demo availability,United States,classic
+E.T. the Extra-Terrestrial,Peacock,Demo availability,United States,classic
+Schindler's List,Theatrical,Demo availability,United States,prestige
+Schindler's List,Peacock,Demo availability,United States,prestige
+Saving Private Ryan,Theatrical,Demo availability,United States,prestige
+Saving Private Ryan,Paramount+,Demo availability,United States,prestige
+Goodfellas,Theatrical,Demo availability,United States,prestige
+Goodfellas,Max,Demo availability,United States,prestige
+The Irishman,Netflix,Demo availability,United States,prestige
+Inception,Theatrical,Demo availability,United States,global
+Inception,Max,Demo availability,United States,global
+Interstellar,Theatrical,Demo availability,United States,global
+Interstellar,Paramount+,Demo availability,United States,global
+Oppenheimer,Theatrical,Demo availability,United States,prestige
+Oppenheimer,Peacock,Demo availability,United States,prestige
+Pulp Fiction,Theatrical,Demo availability,United States,classic
+Pulp Fiction,Paramount+,Demo availability,United States,classic
+Django Unchained,Theatrical,Demo availability,United States,prestige
+Django Unchained,Netflix,Demo availability,United States,prestige
+Once Upon a Time in Hollywood,Theatrical,Demo availability,United States,prestige
+Once Upon a Time in Hollywood,Netflix,Demo availability,United States,prestige
+Lady Bird,Theatrical,Demo availability,United States,prestige
+Lady Bird,Netflix,Demo availability,United States,prestige
+Barbie,Theatrical,Demo availability,United States,global
+Barbie,Max,Demo availability,United States,global
+Lost in Translation,Theatrical,Demo availability,United States,prestige
+Lost in Translation,Criterion Channel,Demo availability,United States,prestige
+Marie Antoinette,Theatrical,Demo availability,United States,festival
+Marie Antoinette,Criterion Channel,Demo availability,United States,festival
+The Hurt Locker,Theatrical,Demo availability,United States,prestige
+The Hurt Locker,Amazon Prime Video,Demo availability,United States,prestige
+Zero Dark Thirty,Theatrical,Demo availability,United States,prestige
+Zero Dark Thirty,Netflix,Demo availability,United States,prestige
+Get Out,Theatrical,Demo availability,United States,cultural
+Get Out,Peacock,Demo availability,United States,cultural
+Nope,Theatrical,Demo availability,United States,cultural
+Nope,Peacock,Demo availability,United States,cultural
+Creed,Theatrical,Demo availability,United States,mainstream
+Creed,Max,Demo availability,United States,mainstream
+Black Panther,Disney+,Demo availability,United States,global
+Black Panther,Theatrical,Demo availability,United States,global
+Avatar,Theatrical,Demo availability,United States,global
+Avatar,Disney+,Demo availability,United States,global
+Titanic,Theatrical,Demo availability,United States,global
+Titanic,Paramount+,Demo availability,United States,global
+Aliens,Theatrical,Demo availability,United States,classic
+Aliens,Disney+,Demo availability,United States,classic
+Se7en,Theatrical,Demo availability,United States,prestige
+Se7en,Max,Demo availability,United States,prestige
+The Social Network,Theatrical,Demo availability,United States,prestige
+The Social Network,Netflix,Demo availability,United States,prestige
+Gone Girl,Theatrical,Demo availability,United States,prestige
+Gone Girl,Netflix,Demo availability,United States,prestige
+The Grand Budapest Hotel,Theatrical,Demo availability,United States,festival
+The Grand Budapest Hotel,Criterion Channel,Demo availability,United States,festival
+Asteroid City,Theatrical,Demo availability,United States,festival
+Asteroid City,Peacock,Demo availability,United States,festival
+Arrival,Theatrical,Demo availability,United States,prestige
+Arrival,Paramount+,Demo availability,United States,prestige
+Dune,Theatrical,Demo availability,United States,global
+Dune,Max,Demo availability,United States,global
+Blade Runner 2049,Theatrical,Demo availability,United States,prestige
+Blade Runner 2049,Netflix,Demo availability,United States,prestige
+Whiplash,Theatrical,Demo availability,United States,prestige
+Whiplash,Netflix,Demo availability,United States,prestige
+La La Land,Theatrical,Demo availability,United States,prestige
+La La Land,Netflix,Demo availability,United States,prestige
+Moonlight,Theatrical,Demo availability,United States,prestige
+Moonlight,Max,Demo availability,United States,prestige
+If Beale Street Could Talk,Theatrical,Demo availability,United States,prestige
+If Beale Street Could Talk,Amazon Prime Video,Demo availability,United States,prestige
+Do the Right Thing,Theatrical,Demo availability,United States,prestige
+Do the Right Thing,Criterion Channel,Demo availability,United States,prestige
+BlacKkKlansman,Theatrical,Demo availability,United States,prestige
+BlacKkKlansman,Peacock,Demo availability,United States,prestige
+Alien,Theatrical,Demo availability,United States,classic
+Alien,Disney+,Demo availability,United States,classic
+Gladiator,Theatrical,Demo availability,United States,prestige
+Gladiator,Peacock,Demo availability,United States,prestige
+The Martian,Theatrical,Demo availability,United States,mainstream
+The Martian,Hulu,Demo availability,United States,mainstream
+The Godfather Part II,Theatrical,Demo availability,United States,classic
+The Godfather Part II,Paramount+,Demo availability,United States,classic
+Apocalypse Now,Theatrical,Demo availability,United States,classic
+Apocalypse Now,Paramount+,Demo availability,United States,classic
+American Graffiti,Theatrical,Demo availability,United States,classic
+American Graffiti,Peacock,Demo availability,United States,classic
+There Will Be Blood,Theatrical,Demo availability,United States,prestige
+There Will Be Blood,Paramount+,Demo availability,United States,prestige
+Licorice Pizza,Theatrical,Demo availability,United States,festival
+Licorice Pizza,Amazon Prime Video,Demo availability,United States,festival
+Hereditary,Theatrical,Demo availability,United States,horror
+Hereditary,Max,Demo availability,United States,horror
+Midsommar,Theatrical,Demo availability,United States,horror
+Midsommar,Max,Demo availability,United States,horror
+Beau Is Afraid,Theatrical,Demo availability,United States,festival
+Beau Is Afraid,Apple TV+,Demo availability,United States,festival
+Nomadland,Hulu,Demo availability,United States,prestige
+Nomadland,Theatrical,Demo availability,United States,prestige
+The Rider,Theatrical,Demo availability,United States,festival
+The Rider,MUBI,Demo availability,United States,festival
+Eternals,Theatrical,Demo availability,United States,global
+Eternals,Disney+,Demo availability,United States,global
+Crazy Rich Asians,Theatrical,Demo availability,United States,bridge
+Crazy Rich Asians,Max,Demo availability,United States,bridge
+In the Heights,Max,Demo availability,United States,bridge
+Precious,Theatrical,Demo availability,United States,prestige
+Precious,Netflix,Demo availability,United States,prestige
+The Butler,Theatrical,Demo availability,United States,prestige
+The Butler,Netflix,Demo availability,United States,prestige
+Sleepless in Seattle,Theatrical,Demo availability,United States,classic
+Sleepless in Seattle,Netflix,Demo availability,United States,classic
+Julie & Julia,Theatrical,Demo availability,United States,prestige
+Julie & Julia,Netflix,Demo availability,United States,prestige
+Selma,Theatrical,Demo availability,United States,prestige
+Selma,Paramount+,Demo availability,United States,prestige
+When They See Us,Netflix,Demo availability,United States,prestige
+Everything Everywhere All at Once,Theatrical,Demo availability,United States,cross-cultural
+Everything Everywhere All at Once,Netflix,Demo availability,United States,cross-cultural
+The Farewell,Theatrical,Demo availability,United States/China,cross-cultural
+The Farewell,Amazon Prime Video,Demo availability,United States/China,cross-cultural
+Shang-Chi and the Legend of the Ten Rings,Theatrical,Demo availability,United States,cross-cultural
+Shang-Chi and the Legend of the Ten Rings,Disney+,Demo availability,United States,cross-cultural
+Mulan,Disney+,Demo availability,United States,cross-cultural
+Minari,Theatrical,Demo availability,United States,cross-cultural
+Minari,A24,Demo availability,United States,cross-cultural
+A Sample Slate for a Pan-Asian Thriller,Sample Streaming,Demo availability,Cross-market,sample
+A Sample Slate for a Pan-Asian Thriller,Theatrical,Demo availability,Cross-market,sample
+A Sample Slate for Prestige Sci-Fi,Sample Streaming,Demo availability,Cross-market,sample
+A Sample Slate for Awards-Season Ensemble Drama,Sample Streaming,Demo availability,Cross-market,sample
+A Sample Slate for Awards-Season Ensemble Drama,Theatrical,Demo availability,Cross-market,sample
+A Sample Slate for Youth Culture Crime,Sample Streaming,Demo availability,Cross-market,sample
+A Sample Slate for Festival Romance,MUBI,Demo availability,Cross-market,sample
+A Sample Slate for Festival Romance,Theatrical,Demo availability,Cross-market,sample
+A Sample Slate for Franchise Action,Disney+,Demo availability,Cross-market,sample
+A Sample Slate for Franchise Action,Theatrical,Demo availability,Cross-market,sample
