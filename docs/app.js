@@ -7,7 +7,7 @@ const FOCUS_TYPES = {
   Person: [320, 140], Film: [100, 280], Genre: [560, 120], Award: [700, 240], Platform: [520, 460],
   Country: [180, 460], Language: [760, 420], Decade: [860, 120], AudienceSegment: [960, 300], Theme: [1160, 220]
 };
-let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth';
+let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth', displayMode = 'spotlight';
 const typeOrder = ['Person','Film','Genre','Award','Platform','Country','Language','Decade','AudienceSegment','Theme'];
 
 function el(id){ return document.getElementById(id); }
@@ -45,6 +45,14 @@ function setMetricSelection(){
   document.querySelectorAll('.metric').forEach(card => {
     const label = card.querySelector('.label')?.textContent || '';
     card.classList.toggle('selected', ['People nodes','Films','Relationships','Chinese creators','American creators'].includes(label));
+  });
+}
+
+function setModeButtons(active){
+  ['spotlightBtn','exploreBtn','fullBtn'].forEach(id => {
+    const btn = el(id);
+    if (!btn) return;
+    btn.classList.toggle('active', id.replace('Btn','') === active);
   });
 }
 
@@ -128,8 +136,61 @@ function nodeMatchesFilters(n){
 function resolveId(v){ return typeof v === 'object' && v ? v.id : v; }
 
 function buildVisibility(){
-  const visible = new Set(data.nodes.filter(nodeMatchesFilters).map(d => d.id));
-  // keep endpoints of visible links only when both nodes remain visible
+  const nodeById = new Map(data.nodes.map(n => [n.id, n]));
+  const matched = data.nodes.filter(nodeMatchesFilters);
+  const matchedIds = new Set(matched.map(d => d.id));
+  const visible = new Set();
+  const rank = [...data.nodes].sort((a,b) => (b.importance || b.degree || 0) - (a.importance || a.degree || 0));
+
+  const seedCount = displayMode === 'spotlight' ? 3 : displayMode === 'explore' ? 8 : rank.length;
+  const seedIds = new Set(rank.slice(0, seedCount).map(d => d.id));
+  const anchorIds = [selectedId, data.meta?.metrics?.bridge_like_creator, data.meta?.metrics?.most_connected_person, data.meta?.metrics?.most_connected_director]
+    .filter(Boolean)
+    .flatMap(v => {
+      if (typeof v === 'string' && v.startsWith('Person:')) return [v];
+      const found = data.nodes.find(n => labelFor(n) === v || n.id === v);
+      return found ? [found.id] : [];
+    });
+
+  if (currentSearch || Object.values(currentFilters).some(Boolean)) {
+    matchedIds.forEach(id => visible.add(id));
+    data.links.forEach(l => {
+      const s = resolveId(l.source), t = resolveId(l.target);
+      if (matchedIds.has(s) || matchedIds.has(t)) { visible.add(s); visible.add(t); }
+    });
+  } else {
+    seedIds.forEach(id => visible.add(id));
+    anchorIds.forEach(id => visible.add(id));
+    data.links.forEach(l => {
+      const s = resolveId(l.source), t = resolveId(l.target);
+      if (visible.has(s) || visible.has(t)) { visible.add(s); visible.add(t); }
+    });
+
+    if (displayMode !== 'full') {
+      const cap = displayMode === 'spotlight' ? 10 : 20;
+      const prioritized = [...visible].sort((a, b) => {
+        const na = nodeById.get(a), nb = nodeById.get(b);
+        return (nb?.importance || nb?.degree || 0) - (na?.importance || na?.degree || 0);
+      });
+      const keep = new Set(prioritized.slice(0, cap));
+      [selectedId, ...anchorIds].filter(Boolean).forEach(id => keep.add(id));
+      visible.clear();
+      keep.forEach(id => visible.add(id));
+    }
+  }
+
+  if (selectedId) {
+    visible.add(selectedId);
+    data.links.forEach(l => {
+      const s = resolveId(l.source), t = resolveId(l.target);
+      if (s === selectedId || t === selectedId) { visible.add(s); visible.add(t); }
+    });
+  }
+
+  if (displayMode === 'full' && !(currentSearch || Object.values(currentFilters).some(Boolean))) {
+    data.nodes.forEach(n => visible.add(n.id));
+  }
+
   visibleNodes = data.nodes.filter(n => visible.has(n.id));
   visibleLinks = data.links.filter(l => visible.has(resolveId(l.source)) && visible.has(resolveId(l.target)));
   return visible;
@@ -341,7 +402,8 @@ function updateGraph(){
   nodeSel = nodeEnter.merge(nodeSel);
   nodeEnter.transition().duration(500).attr('opacity', 1);
 
-  labelSel = svg.select('.labels').selectAll('text').data(ranked.filter(d => d.type === 'Person' || d.type === 'Film' || d.id === selectedId || (d.importance || 0) > 150), d => d.id);
+  const labelThreshold = displayMode === 'spotlight' ? 999 : displayMode === 'explore' ? 250 : 180;
+  labelSel = svg.select('.labels').selectAll('text').data(ranked.filter(d => d.id === selectedId || (d.type === 'Person' && (d.importance || 0) > labelThreshold) || (d.type === 'Film' && (d.importance || 0) > labelThreshold + 15)), d => d.id);
   labelSel.exit().remove();
   const labelEnter = labelSel.enter().append('text').attr('fill', '#dbeafe').attr('font-size', 11).attr('font-weight', 700).attr('text-anchor', 'middle').attr('pointer-events', 'none')
     .text(d => labelFor(d).length > 24 ? `${labelFor(d).slice(0,21)}…` : labelFor(d));
@@ -362,8 +424,8 @@ function updateGraph(){
 }
 
 function sizeFor(d){
-  const base = d.type === 'Person' ? 6 : d.type === 'Film' ? 5 : 4;
-  const scale = Math.log1p(Number(d.importance || d.degree || 1)) * (d.type === 'Person' ? 2.2 : 1.8);
+  const base = d.type === 'Person' ? 9 : d.type === 'Film' ? 8 : 6;
+  const scale = Math.log1p(Number(d.importance || d.degree || 1)) * (d.type === 'Person' ? 2.6 : 2.0);
   return Math.max(base, Math.min(28, base + scale));
 }
 
@@ -488,7 +550,16 @@ async function init(){
   svg.append('g').attr('class', 'nodes');
   svg.append('g').attr('class', 'labels');
   applyForces();
+  setModeButtons(displayMode);
+  el('motionBtn').textContent = 'Motion: Smooth';
+  const initialName = data.meta?.metrics?.bridge_like_creator || 'Ang Lee';
+  const initialNode = data.nodes.find(n => labelFor(n) === initialName || n.label === initialName);
+  selectedId = null;
   updateGraph();
+  if (initialNode) {
+    el('selectedTitle').textContent = 'Curated spotlight';
+    el('selectedBody').innerHTML = '<div class="card"><span class="badge">Opening mode</span><div style="margin-top:8px;line-height:1.6;color:var(--muted)">The network opens in a curated spotlight so the first screen feels lighter. Click any bubble to expand the full graph around a creator or film.</div></div>';
+  }
   window.addEventListener('resize', () => {
     width = el('graph').clientWidth; height = el('graph').clientHeight;
     svg.attr('viewBox', `0 0 ${width} ${height}`);
@@ -500,9 +571,12 @@ async function init(){
     currentSearch = norm(e.target.value);
     updateGraph();
   });
-  el('modeBtn').addEventListener('click', () => {
+  el('spotlightBtn').addEventListener('click', () => { displayMode = 'spotlight'; setModeButtons(displayMode); updateGraph(); });
+  el('exploreBtn').addEventListener('click', () => { displayMode = 'explore'; setModeButtons(displayMode); updateGraph(); });
+  el('fullBtn').addEventListener('click', () => { displayMode = 'full'; setModeButtons(displayMode); updateGraph(); });
+  el('motionBtn').addEventListener('click', () => {
     motionMode = motionMode === 'smooth' ? 'playful' : 'smooth';
-    el('modeBtn').textContent = motionMode === 'smooth' ? 'Motion: Smooth' : 'Motion: Playful';
+    el('motionBtn').textContent = motionMode === 'smooth' ? 'Motion: Smooth' : 'Motion: Playful';
     updateGraph();
   });
   el('surpriseBtn').addEventListener('click', () => {
@@ -513,8 +587,10 @@ async function init(){
   });
   el('resetBtn').addEventListener('click', () => {
     currentFilters = {}; currentSearch = ''; selectedId = null;
+    displayMode = 'spotlight';
     motionMode = 'smooth';
-    el('modeBtn').textContent = 'Motion: Smooth';
+    setModeButtons(displayMode);
+    el('motionBtn').textContent = 'Motion: Smooth';
     document.querySelectorAll('select[data-filter]').forEach(sel => sel.value = '');
     el('searchBox').value = '';
     el('storyInput').value = 'A female-led sci-fi thriller about memory, family, and identity for a global streaming audience.';

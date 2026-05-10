@@ -15,32 +15,50 @@
   <header class="topbar">
     <div>
       <div class="eyebrow">MediaGraph</div>
-      <h1>Graph-based media intelligence for Chinese and American film networks</h1>
-      <p class="lede">Explore creators, films, awards, genres, platforms, and audience signals as a living network. Drag bubbles, filter the graph, and inspect strategy from the network itself.</p>
+      <div class="topbar-note">A graph-native media strategy prototype for cross-market film intelligence</div>
     </div>
     <div class="pill-row">
-      <span class="pill">Vercel-ready web view</span>
-      <span class="pill">Streamlit strategy engine</span>
-      <span class="pill">Neo4j-compatible graph model</span>
+      <span class="pill">Premium web demo</span>
       <span class="pill creator-pill">Creative direction by Neves Liu</span>
-    </div>
-    <div class="microbar">
-      <span>Interactive graph · 313 people nodes · 126 films · 3,996 relationships</span>
-      <span>Bridge analysis · Creative fit · Explainable strategy</span>
-      <span>Drag, hover, and filter the graph</span>
     </div>
   </header>
 
   <main class="shell">
-    <section class="hero-grid">
-      <div class="hero-copy panel">
-        <div class="metric-grid" id="metricGrid"></div>
+    <section class="hero-intro panel">
+      <div class="hero-intro-copy">
+        <div class="section-kicker">Strategy dashboard · media intelligence</div>
+        <h2>Built for first-glance clarity, executive polish, and cross-market discovery.</h2>
+        <p>MediaGraph turns Chinese and American film industries into a living network of creators, films, awards, genres, platforms, and audience signals. Start in Spotlight mode for a premium product feel, then expand into the full network when you want deeper strategy exploration.</p>
         <div class="hero-actions">
           <input id="searchBox" class="search" placeholder="Search a person, film, award, or platform…" />
           <button id="resetBtn" class="btn primary">Reset view</button>
-          <button id="modeBtn" class="btn ghost" type="button">Motion: Smooth</button>
+          <button id="spotlightBtn" class="btn ghost mode-btn active" type="button">Spotlight</button>
+          <button id="exploreBtn" class="btn ghost mode-btn" type="button">Explore</button>
+          <button id="fullBtn" class="btn ghost mode-btn" type="button">Full network</button>
+          <button id="motionBtn" class="btn ghost" type="button">Motion: Smooth</button>
           <button id="surpriseBtn" class="btn ghost" type="button">Surprise me</button>
         </div>
+        <div class="microbar">
+          <span>Interactive graph · 313 people nodes · 126 films · 3,996 relationships</span>
+          <span>Bridge analysis · Creative fit · Explainable strategy</span>
+        </div>
+      </div>
+      <div class="hero-intro-side">
+        <div class="spotlight-card">
+          <div class="badge">Opening intelligence brief</div>
+          <h3>What this dashboard is best at</h3>
+          <p>Finding bridge figures, comparing cross-market creative teams, and spotting genre or award pathways that connect Chinese-language cinema with American entertainment systems.</p>
+        <div class="spotlight-list">
+            <div><strong>Bridge creators</strong><span>Ang Lee · Chloé Zhao · Michelle Yeoh</span></div>
+            <div><strong>Bridge films</strong><span>Crouching Tiger, Hidden Dragon · Everything Everywhere All at Once</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-grid">
+      <div class="hero-copy panel">
+        <div class="metric-grid" id="metricGrid"></div>
         <div class="filters" id="filters"></div>
         <div class="card">
           <span class="badge">Strategy lens</span>
