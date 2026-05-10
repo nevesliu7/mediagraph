@@ -7,7 +7,7 @@ const FOCUS_TYPES = {
   Person: [320, 140], Film: [100, 280], Genre: [560, 120], Award: [700, 240], Platform: [520, 460],
   Country: [180, 460], Language: [760, 420], Decade: [860, 120], AudienceSegment: [960, 300], Theme: [1160, 220]
 };
-let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '';
+let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth';
 const typeOrder = ['Person','Film','Genre','Award','Platform','Country','Language','Decade','AudienceSegment','Theme'];
 
 function el(id){ return document.getElementById(id); }
@@ -39,6 +39,13 @@ function buildMetrics(meta){
   el('metricGrid').innerHTML = cards.map(([label, value, sub]) => `
     <div class="metric"><div class="label">${label}</div><div class="value">${value}</div><div class="sub">${sub}</div></div>
   `).join('');
+}
+
+function setMetricSelection(){
+  document.querySelectorAll('.metric').forEach(card => {
+    const label = card.querySelector('.label')?.textContent || '';
+    card.classList.toggle('selected', ['People nodes','Films','Relationships','Chinese creators','American creators'].includes(label));
+  });
 }
 
 function buildLegend(){
@@ -290,13 +297,12 @@ function selectNode(id, center=false){
   el('selectedBody').innerHTML = detailHTML(n);
   nodeSel.classed('selected', d => d.id === id);
   labelSel.classed('selected', d => d.id === id);
+  document.querySelectorAll('.item').forEach(elm => elm.classList.toggle('active', elm.dataset.jump === n.label));
   if (center) {
-    const [x, y] = [n.x || width/2, n.y || height/2];
-    simulation.alphaTarget(0.15).restart();
-    // gently attract the selected node to the center and its neighbors
+    simulation.alphaTarget(motionMode === 'playful' ? 0.22 : 0.15).restart();
     data.nodes.forEach(m => { m.fx = null; m.fy = null; });
     n.fx = width / 2; n.fy = height / 2;
-    setTimeout(() => { n.fx = null; n.fy = null; simulation.alpha(0.7).restart(); }, 1400);
+    setTimeout(() => { n.fx = null; n.fy = null; simulation.alpha(motionMode === 'playful' ? 0.9 : 0.7).restart(); }, motionMode === 'playful' ? 1700 : 1400);
   }
 }
 
@@ -323,6 +329,7 @@ function updateGraph(){
     .attr('fill', d => COLORS[d.type] || '#fff')
     .attr('stroke', 'rgba(255,255,255,.85)')
     .attr('stroke-width', 1.1)
+    .attr('opacity', 0)
     .call(d3.drag()
       .on('start', dragstarted)
       .on('drag', dragged)
@@ -332,6 +339,7 @@ function updateGraph(){
     .on('mouseout', hideTooltip)
     .on('click', (event, d) => { selectNode(d.id, true); });
   nodeSel = nodeEnter.merge(nodeSel);
+  nodeEnter.transition().duration(500).attr('opacity', 1);
 
   labelSel = svg.select('.labels').selectAll('text').data(ranked.filter(d => d.type === 'Person' || d.type === 'Film' || d.id === selectedId || (d.importance || 0) > 150), d => d.id);
   labelSel.exit().remove();
@@ -341,7 +349,13 @@ function updateGraph(){
 
   simulation.nodes(ranked);
   simulation.force('link').links(filteredLinks);
-  simulation.alpha(0.7).restart();
+  simulation.force('charge', d3.forceManyBody().strength(d => {
+    if (motionMode === 'playful') return d.type === 'Person' ? -220 : d.type === 'Film' ? -170 : -110;
+    return d.type === 'Person' ? -140 : d.type === 'Film' ? -120 : -80;
+  }));
+  simulation.force('collision', d3.forceCollide().radius(d => sizeFor(d) + (motionMode === 'playful' ? 6 : 4)).iterations(2));
+  simulation.force('link').distance(d => motionMode === 'playful' ? Math.max(42, distanceFor(d) - 16) : distanceFor(d));
+  simulation.alpha(motionMode === 'playful' ? 0.9 : 0.7).restart();
   nodeSel.attr('opacity', 1);
   linkSel.attr('opacity', 1);
   labelSel.attr('opacity', d => selectedId === d.id ? 1 : 0.88);
@@ -462,6 +476,7 @@ async function loadData(){
 async function init(){
   data = await loadData();
   buildMetrics(data.meta);
+  setMetricSelection();
   buildLegend();
   buildFilters(data.nodes);
   buildSidePanels();
@@ -485,8 +500,21 @@ async function init(){
     currentSearch = norm(e.target.value);
     updateGraph();
   });
+  el('modeBtn').addEventListener('click', () => {
+    motionMode = motionMode === 'smooth' ? 'playful' : 'smooth';
+    el('modeBtn').textContent = motionMode === 'smooth' ? 'Motion: Smooth' : 'Motion: Playful';
+    updateGraph();
+  });
+  el('surpriseBtn').addEventListener('click', () => {
+    const pool = data.meta.top_people.length ? data.meta.top_people : data.nodes.filter(n => n.type === 'Person');
+    const pick = pool[Math.floor(Math.random() * Math.min(pool.length, 8))];
+    const target = data.nodes.find(n => n.label === (pick.name || pick.label));
+    if (target) selectNode(target.id, true);
+  });
   el('resetBtn').addEventListener('click', () => {
     currentFilters = {}; currentSearch = ''; selectedId = null;
+    motionMode = 'smooth';
+    el('modeBtn').textContent = 'Motion: Smooth';
     document.querySelectorAll('select[data-filter]').forEach(sel => sel.value = '');
     el('searchBox').value = '';
     el('storyInput').value = 'A female-led sci-fi thriller about memory, family, and identity for a global streaming audience.';
