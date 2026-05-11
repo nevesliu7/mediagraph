@@ -7,7 +7,7 @@ const FOCUS_TYPES = {
   Person: [320, 140], Film: [100, 280], Genre: [560, 120], Award: [700, 240], Platform: [520, 460],
   Country: [180, 460], Language: [760, 420], Decade: [860, 120], AudienceSegment: [960, 300], Theme: [1160, 220]
 };
-let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth', displayMode = 'spotlight';
+let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth', displayMode = 'explore';
 const typeOrder = ['Person','Film','Genre','Award','Platform','Country','Language','Decade','AudienceSegment','Theme'];
 
 function el(id){ return document.getElementById(id); }
@@ -143,11 +143,11 @@ function buildVisibility(){
   const rank = [...data.nodes].sort((a,b) => (b.importance || b.degree || 0) - (a.importance || a.degree || 0));
 
   const pickTopByType = (type, quota) => rank.filter(d => d.type === type).slice(0, quota).map(d => d.id);
-  const seedBudget = displayMode === 'spotlight' ? 14 : displayMode === 'explore' ? 26 : rank.length;
+  const seedBudget = displayMode === 'spotlight' ? 18 : displayMode === 'explore' ? 36 : rank.length;
   const seededTypes = displayMode === 'spotlight'
-    ? { Person: 8, Film: 2, Award: 1, Platform: 1, Genre: 1, Country: 1 }
+    ? { Person: 8, Film: 4, Award: 1, Platform: 1, Genre: 2, Country: 1, Language: 1 }
     : displayMode === 'explore'
-      ? { Person: 12, Film: 4, Award: 2, Platform: 2, Genre: 2, Country: 1, Language: 1, Theme: 1, AudienceSegment: 1 }
+      ? { Person: 12, Film: 6, Award: 3, Platform: 3, Genre: 3, Country: 2, Language: 2, Theme: 2, AudienceSegment: 1 }
       : {};
   const seedIds = new Set();
   if (displayMode !== 'full') {
@@ -182,7 +182,7 @@ function buildVisibility(){
     });
 
     if (displayMode !== 'full') {
-      const cap = displayMode === 'spotlight' ? 12 : 24;
+      const cap = displayMode === 'spotlight' ? 26 : 44;
       const prioritized = [...visible].sort((a, b) => {
         const na = nodeById.get(a), nb = nodeById.get(b);
         return (nb?.importance || nb?.degree || 0) - (na?.importance || na?.degree || 0);
@@ -575,8 +575,8 @@ async function init(){
   selectedId = null;
   updateGraph();
   if (initialNode) {
-    el('selectedTitle').textContent = 'Curated spotlight';
-    el('selectedBody').innerHTML = '<div class="card"><span class="badge">Opening mode</span><div style="margin-top:8px;line-height:1.6;color:var(--muted)">The network opens in a curated spotlight so the first screen feels lighter. Click any bubble to expand the full graph around a creator or film.</div></div>';
+    el('selectedTitle').textContent = 'Curated explore';
+    el('selectedBody').innerHTML = '<div class="card"><span class="badge">Opening mode</span><div style="margin-top:8px;line-height:1.6;color:var(--muted)">The network opens in an exploratory mix of creators, films, awards, and platforms so the first screen feels lively and playful. Click any bubble to expand the full graph around a creator or film.</div></div>';
   }
   window.addEventListener('resize', () => {
     width = el('graph').clientWidth; height = el('graph').clientHeight;
@@ -605,7 +605,7 @@ async function init(){
   });
   el('resetBtn').addEventListener('click', () => {
     currentFilters = {}; currentSearch = ''; selectedId = null;
-    displayMode = 'spotlight';
+    displayMode = 'explore';
     motionMode = 'smooth';
     setModeButtons(displayMode);
     el('motionBtn').textContent = 'Motion: Smooth';

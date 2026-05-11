@@ -17,20 +17,96 @@ st.set_page_config(page_title='MediaGraph', page_icon='◉', layout='wide', init
 CSS = """
 <style>
 .stApp {
-    background: radial-gradient(circle at top left, rgba(14,165,233,0.08), transparent 30%),
-                radial-gradient(circle at top right, rgba(124,58,237,0.08), transparent 28%),
-                linear-gradient(180deg, #f8fafc 0%, #ffffff 35%, #f8fafc 100%);
+    background:
+        radial-gradient(circle at top left, rgba(14,165,233,0.08), transparent 30%),
+        radial-gradient(circle at top right, rgba(124,58,237,0.08), transparent 28%),
+        linear-gradient(180deg, #f8fafc 0%, #ffffff 28%, #f8fafc 100%);
 }
-.hero {
-    padding: 1.1rem 1.4rem;
-    border-radius: 18px;
-    background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,41,59,0.96));
+.hero-shell {
+    padding: 1.4rem 1.5rem 1.25rem;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(15,23,42,0.98), rgba(29,78,216,0.88) 58%, rgba(88,28,135,0.88));
     color: white;
-    box-shadow: 0 20px 50px rgba(15,23,42,0.15);
+    box-shadow: 0 24px 60px rgba(15,23,42,0.18);
     border: 1px solid rgba(148,163,184,0.18);
+    position: relative;
+    overflow: hidden;
 }
-.hero h1 { margin: 0; font-size: 2.2rem; letter-spacing: -0.03em; }
-.hero p { margin: 0.4rem 0 0; color: rgba(226,232,240,0.92); font-size: 1.02rem; }
+.hero-shell::after {
+    content: "";
+    position: absolute;
+    inset: auto -12% -35% auto;
+    width: 340px;
+    height: 340px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(255,255,255,0.18), rgba(255,255,255,0.02) 60%, transparent 70%);
+    pointer-events: none;
+}
+.hero-kicker {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(191,219,254,0.95);
+    margin-bottom: 0.45rem;
+}
+.hero-shell h1 {
+    margin: 0;
+    font-size: 2.45rem;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+.hero-shell p {
+    margin: 0.55rem 0 0;
+    color: rgba(226,232,240,0.95);
+    font-size: 1.02rem;
+    max-width: 60rem;
+}
+.hero-chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-top: 1rem;
+}
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.42rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.16);
+    color: rgba(255,255,255,0.95);
+    font-size: 0.8rem;
+    backdrop-filter: blur(10px);
+}
+.hero-panel {
+    height: 100%;
+    padding: 1.15rem 1.15rem 1rem;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(248,250,252,0.98));
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 18px 42px rgba(15,23,42,0.08);
+}
+.panel-label {
+    color: #2563eb;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+}
+.panel-title {
+    color: #0f172a;
+    font-size: 1.12rem;
+    font-weight: 700;
+    margin-top: 0.45rem;
+    line-height: 1.34;
+}
+.panel-list {
+    margin: 0.85rem 0 0;
+    padding-left: 1.05rem;
+    color: #334155;
+}
+.panel-list li { margin-bottom: 0.45rem; }
 .metric-card {
     padding: 0.9rem 1rem;
     border-radius: 16px;
@@ -38,8 +114,8 @@ CSS = """
     border: 1px solid #e2e8f0;
     box-shadow: 0 10px 25px rgba(15,23,42,0.05);
 }
-.metric-label { color: #64748b; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
-.metric-value { font-size: 1.55rem; font-weight: 700; color: #0f172a; line-height: 1.2; }
+.metric-label { color: #64748b; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.metric-value { font-size: 1.48rem; font-weight: 700; color: #0f172a; line-height: 1.2; }
 .metric-note { color: #64748b; font-size: 0.82rem; }
 .section-title { font-size: 1.05rem; font-weight: 700; margin: 0.2rem 0 0.5rem; color: #0f172a; }
 .section-sub { color: #475569; margin-bottom: 0.8rem; }
@@ -78,15 +154,39 @@ all_decades = sorted(set(people['active_decades'].dropna().str.split('|').explod
 all_markets = sorted(films['market_type'].dropna().unique().tolist())
 all_regions = sorted(people['country_or_region'].dropna().unique().tolist())
 
-st.markdown(
-    """
-    <div class='hero'>
-        <h1>MediaGraph</h1>
-        <p>A graph-based media intelligence system for exploring creative networks across Chinese and American film industries.</p>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+hero_left, hero_right = st.columns([1.35, 0.85])
+with hero_left:
+    st.markdown(
+        """
+        <div class='hero-shell'>
+            <div class='hero-kicker'>GRAPH INTELLIGENCE • STRATEGY PROTOTYPE</div>
+            <h1>MediaGraph</h1>
+            <p>A graph-based media intelligence system for exploring creative networks across Chinese and American film industries.</p>
+            <div class='hero-chip-row'>
+                <span class='pill'>Chinese × American market bridges</span>
+                <span class='pill'>Creative fit scoring</span>
+                <span class='pill'>Awards + platform pathways</span>
+                <span class='pill'>Explainable strategy summaries</span>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+with hero_right:
+    st.markdown(
+        """
+        <div class='hero-panel'>
+            <div class='panel-label'>Opening intelligence brief</div>
+            <div class='panel-title'>MediaGraph reads like an internal strategy surface for a studio, streamer, agency, or investor.</div>
+            <ul class='panel-list'>
+                <li>Spotlight nodes surface the highest-signal creators and titles first.</li>
+                <li>Bridge analysis exposes cross-market talent and film connections.</li>
+                <li>Every insight stays transparent and graph-grounded.</li>
+            </ul>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 st.caption('Curated demonstration dataset; expand it with verified public sources such as TMDb, IMDb, Wikidata, Wikipedia, or official award databases.')
 
 # Sidebar filters
@@ -98,7 +198,7 @@ decade_filter = st.sidebar.multiselect('Decade', all_decades, default=[])
 award_filter = st.sidebar.selectbox('Award status', ['All', 'Award-connected only', 'No awards'])
 market_filter = st.sidebar.multiselect('Market type', all_markets, default=all_markets)
 platform_filter = st.sidebar.multiselect('Platform', all_platforms, default=[])
-max_nodes = st.sidebar.slider('Max nodes in network view', 30, 140, 80, 5)
+max_nodes = st.sidebar.slider('Max nodes in network view', 60, 180, 120, 10)
 
 def _selected_people():
     df = people.copy()
@@ -160,18 +260,25 @@ most_connected_director = next((n for n, d in most_connected_director if (people
 most_bridge = top_nodes(metrics, node_type='Person', key='betweenness', limit=20)
 most_bridge_creator = next((n for n, d in most_bridge if n in set(people['name'])), '—')
 
-m1, m2, m3, m4, m5, m6, m7, m8 = st.columns(8)
-cards = [
+st.markdown("<div class='section-title'>Network snapshot</div><div class='section-sub'>The opening panel keeps the first read concise: scale, market balance, and the most strategic nodes in the graph.</div>", unsafe_allow_html=True)
+
+row1 = st.columns(4)
+row2 = st.columns(4)
+primary_cards = [
     ('People', len(people), 'curated creator nodes'),
     ('Films', len(films), 'curated film nodes'),
     ('Relationships', len(edges), 'graph edges'),
     ('Chinese-language creators', chinese_creators, 'China / Hong Kong / Taiwan'),
+]
+secondary_cards = [
     ('American creators', american_creators, 'United States'),
     ('Most connected person', most_connected_person, 'highest degree in graph'),
     ('Most connected director', most_connected_director, 'top director by degree'),
     ('Most bridge-like creator', most_bridge_creator, 'highest betweenness'),
 ]
-for col, (label, value, note) in zip([m1, m2, m3, m4, m5, m6, m7, m8], cards):
+for col, (label, value, note) in zip(row1, primary_cards):
+    col.markdown(f"<div class='metric-card'><div class='metric-label'>{label}</div><div class='metric-value'>{value}</div><div class='metric-note'>{note}</div></div>", unsafe_allow_html=True)
+for col, (label, value, note) in zip(row2, secondary_cards):
     col.markdown(f"<div class='metric-card'><div class='metric-label'>{label}</div><div class='metric-value'>{value}</div><div class='metric-note'>{note}</div></div>", unsafe_allow_html=True)
 
 st.markdown("<div class='insight-box'><div class='section-title'>Opening intelligence brief</div><div class='section-sub'>MediaGraph maps the entertainment industry as a living network of creators, films, genres, platforms, awards, and audience signals. Instead of searching titles one by one, users can explore creative ecosystems and discover strategic relationships.</div></div>", unsafe_allow_html=True)

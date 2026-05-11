@@ -100,7 +100,7 @@ def normalize_layout(G: nx.Graph, nodes):
         return H, {}
     return H, nx.spring_layout(H, seed=42, k=0.9 / max(1, len(H.nodes()) ** 0.5))
 
-def make_network_figure(G: nx.Graph, max_nodes: int = 80, title: str = 'Network graph', focus_nodes=None):
+def make_network_figure(G: nx.Graph, max_nodes: int = 120, title: str = 'Network graph', focus_nodes=None):
     metrics = compute_metrics(G)
     if focus_nodes:
         nodes = set()
