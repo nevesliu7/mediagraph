@@ -3,7 +3,8 @@ const COLORS = {
   Person: '#6d7cff', Film: '#23c4ff', Genre: '#f5b94c', Award: '#f87171', Platform: '#34d399',
   Country: '#a78bfa', Language: '#14b8a6', Decade: '#94a3b8', AudienceSegment: '#fb923c', Theme: '#38bdf8'
 };
-const HIDDEN_NODE_TYPES = new Set(['Country']);
+const CORE_NODE_TYPES = new Set(['Person', 'Film', 'Platform']);
+let showAllNodeTypes = false;
 const FOCUS_TYPES = {
   Person: [320, 140], Film: [100, 280], Genre: [560, 120], Award: [700, 240], Platform: [520, 460],
   Country: [180, 460], Language: [760, 420], Decade: [860, 120], AudienceSegment: [960, 300], Theme: [1160, 220]
@@ -20,7 +21,7 @@ function labelFor(n){ return n.label || n.title || n.name || n.id; }
 function isChinese(v){ return /china|hong kong|taiwan|macau|malaysia/i.test(String(v || '')); }
 function isAmerican(v){ return /united states|usa|u\.s\.?/i.test(String(v || '')); }
 function countMatches(nodes, fn){ return nodes.filter(fn).length; }
-function isRenderableNode(n){ return n && !HIDDEN_NODE_TYPES.has(n.type); }
+function isRenderableNode(n){ return n && (showAllNodeTypes || CORE_NODE_TYPES.has(n.type)); }
 
 function buildMetrics(meta){
   const nodeById = new Map(data.nodes.map(n => [n.id, n]));
@@ -59,8 +60,15 @@ function setModeButtons(active){
   });
 }
 
+function setTaxonomyButton(){
+  const btn = el('taxonomyBtn');
+  if (!btn) return;
+  btn.textContent = showAllNodeTypes ? 'All node types' : 'Core nodes only';
+  btn.classList.toggle('active', showAllNodeTypes);
+}
+
 function buildLegend(){
-  el('legend').innerHTML = typeOrder.filter(t => !HIDDEN_NODE_TYPES.has(t)).map(t => `<div class="key"><span class="dot" style="background:${COLORS[t]}"></span>${t}</div>`).join('');
+  el('legend').innerHTML = typeOrder.filter(t => showAllNodeTypes || CORE_NODE_TYPES.has(t)).map(t => `<div class="key"><span class="dot" style="background:${COLORS[t]}"></span>${t}</div>`).join('');
 }
 
 function buildFilters(nodes){
@@ -630,6 +638,7 @@ async function init(){
   svg.append('g').attr('class', 'labels');
   applyForces();
   setModeButtons(displayMode);
+  setTaxonomyButton();
   el('motionBtn').textContent = 'Motion: Smooth';
   const initialName = data.meta?.metrics?.bridge_like_creator || 'Ang Lee';
   const initialNode = data.nodes.find(n => labelFor(n) === initialName || n.label === initialName);
@@ -654,6 +663,7 @@ async function init(){
   el('exploreBtn').addEventListener('click', () => { displayMode = 'explore'; setModeButtons(displayMode); updateGraph(); });
   el('peopleBtn').addEventListener('click', () => { displayMode = 'people'; setModeButtons(displayMode); updateGraph(); });
   el('fullBtn').addEventListener('click', () => { displayMode = 'full'; setModeButtons(displayMode); updateGraph(); });
+  el('taxonomyBtn').addEventListener('click', () => { showAllNodeTypes = !showAllNodeTypes; setTaxonomyButton(); buildLegend(); updateGraph(); });
   el('motionBtn').addEventListener('click', () => {
     motionMode = motionMode === 'smooth' ? 'playful' : 'smooth';
     el('motionBtn').textContent = motionMode === 'smooth' ? 'Motion: Smooth' : 'Motion: Playful';
@@ -669,7 +679,9 @@ async function init(){
     currentFilters = {}; currentSearch = ''; selectedId = null;
     displayMode = 'explore';
     motionMode = 'smooth';
+    showAllNodeTypes = false;
     setModeButtons(displayMode);
+    setTaxonomyButton();
     el('motionBtn').textContent = 'Motion: Smooth';
     document.querySelectorAll('select[data-filter]').forEach(sel => sel.value = '');
     el('searchBox').value = '';
