@@ -3,12 +3,13 @@ const COLORS = {
   Person: '#6d7cff', Film: '#23c4ff', Genre: '#f5b94c', Award: '#f87171', Platform: '#34d399',
   Country: '#a78bfa', Language: '#14b8a6', Decade: '#94a3b8', AudienceSegment: '#fb923c', Theme: '#38bdf8'
 };
+const HIDDEN_NODE_TYPES = new Set(['Country']);
 const FOCUS_TYPES = {
   Person: [320, 140], Film: [100, 280], Genre: [560, 120], Award: [700, 240], Platform: [520, 460],
   Country: [180, 460], Language: [760, 420], Decade: [860, 120], AudienceSegment: [960, 300], Theme: [1160, 220]
 };
 let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth', displayMode = 'explore';
-const typeOrder = ['Person','Film','Genre','Award','Platform','Country','Language','Decade','AudienceSegment','Theme'];
+const typeOrder = ['Person','Film','Genre','Award','Platform','Language','Decade','AudienceSegment','Theme'];
 
 function el(id){ return document.getElementById(id); }
 function safe(v){ return (v === undefined || v === null || v === '') ? '—' : v; }
@@ -19,11 +20,13 @@ function labelFor(n){ return n.label || n.title || n.name || n.id; }
 function isChinese(v){ return /china|hong kong|taiwan|macau|malaysia/i.test(String(v || '')); }
 function isAmerican(v){ return /united states|usa|u\.s\.?/i.test(String(v || '')); }
 function countMatches(nodes, fn){ return nodes.filter(fn).length; }
+function isRenderableNode(n){ return n && !HIDDEN_NODE_TYPES.has(n.type); }
 
 function buildMetrics(meta){
+  const nodeById = new Map(data.nodes.map(n => [n.id, n]));
   const peopleCount = countMatches(data.nodes, n => n.type === 'Person');
   const filmCount = countMatches(data.nodes, n => n.type === 'Film');
-  const relationshipCount = data.links.length;
+  const relationshipCount = data.links.filter(l => isRenderableNode(nodeById.get(resolveId(l.source))) && isRenderableNode(nodeById.get(resolveId(l.target)))).length;
   const chineseCreators = countMatches(data.nodes, n => n.type === 'Person' && isChinese(n.country || n.country_or_region || n.region));
   const americanCreators = countMatches(data.nodes, n => n.type === 'Person' && isAmerican(n.country || n.country_or_region || n.region));
   const cards = [
@@ -57,7 +60,7 @@ function setModeButtons(active){
 }
 
 function buildLegend(){
-  el('legend').innerHTML = typeOrder.map(t => `<div class="key"><span class="dot" style="background:${COLORS[t]}"></span>${t}</div>`).join('');
+  el('legend').innerHTML = typeOrder.filter(t => !HIDDEN_NODE_TYPES.has(t)).map(t => `<div class="key"><span class="dot" style="background:${COLORS[t]}"></span>${t}</div>`).join('');
 }
 
 function buildFilters(nodes){
@@ -137,10 +140,10 @@ function resolveId(v){ return typeof v === 'object' && v ? v.id : v; }
 
 function buildVisibility(){
   const nodeById = new Map(data.nodes.map(n => [n.id, n]));
-  const matched = data.nodes.filter(nodeMatchesFilters);
+  const matched = data.nodes.filter(n => isRenderableNode(n) && nodeMatchesFilters(n));
   const matchedIds = new Set(matched.map(d => d.id));
   const visible = new Set();
-  const rank = [...data.nodes].sort((a,b) => (b.importance || b.degree || 0) - (a.importance || a.degree || 0));
+  const rank = data.nodes.filter(isRenderableNode).sort((a,b) => (b.importance || b.degree || 0) - (a.importance || a.degree || 0));
 
   if (displayMode === 'people') {
     const peopleNodes = currentSearch || Object.values(currentFilters).some(Boolean)
@@ -148,11 +151,11 @@ function buildVisibility(){
       : data.nodes.filter(n => n.type === 'Person');
     peopleNodes.forEach(n => visible.add(n.id));
     if (selectedId) visible.add(selectedId);
-    visibleNodes = data.nodes.filter(n => visible.has(n.id) && n.type === 'Person');
+    visibleNodes = data.nodes.filter(n => visible.has(n.id) && n.type === 'Person' && isRenderableNode(n));
     visibleLinks = data.links.filter(l => {
       const s = resolveId(l.source), t = resolveId(l.target);
       const sn = nodeById.get(s), tn = nodeById.get(t);
-      return visible.has(s) && visible.has(t) && sn?.type === 'Person' && tn?.type === 'Person';
+      return visible.has(s) && visible.has(t) && sn?.type === 'Person' && tn?.type === 'Person' && isRenderableNode(sn) && isRenderableNode(tn);
     });
     return visible;
   }
@@ -160,9 +163,9 @@ function buildVisibility(){
   const pickTopByType = (type, quota) => rank.filter(d => d.type === type).slice(0, quota).map(d => d.id);
   const seedBudget = displayMode === 'spotlight' ? 22 : displayMode === 'explore' ? 56 : rank.length;
   const seededTypes = displayMode === 'spotlight'
-    ? { Person: 10, Film: 5, Award: 2, Platform: 2, Genre: 2, Country: 1, Language: 1 }
+    ? { Person: 10, Film: 5, Award: 2, Platform: 2, Genre: 2, Language: 1 }
     : displayMode === 'explore'
-      ? { Person: 18, Film: 10, Award: 6, Platform: 6, Genre: 6, Country: 4, Language: 4, Theme: 4, AudienceSegment: 2 }
+      ? { Person: 18, Film: 10, Award: 6, Platform: 6, Genre: 6, Language: 4, Theme: 4, AudienceSegment: 2 }
       : {};
   const seedIds = new Set();
   if (displayMode !== 'full') {
@@ -221,11 +224,15 @@ function buildVisibility(){
   }
 
   if (displayMode === 'full' && !(currentSearch || Object.values(currentFilters).some(Boolean))) {
-    data.nodes.forEach(n => visible.add(n.id));
+    data.nodes.filter(isRenderableNode).forEach(n => visible.add(n.id));
   }
 
-  visibleNodes = data.nodes.filter(n => visible.has(n.id));
-  visibleLinks = data.links.filter(l => visible.has(resolveId(l.source)) && visible.has(resolveId(l.target)));
+  visibleNodes = data.nodes.filter(n => visible.has(n.id) && isRenderableNode(n));
+  visibleLinks = data.links.filter(l => {
+    const s = resolveId(l.source), t = resolveId(l.target);
+    const sn = nodeById.get(s), tn = nodeById.get(t);
+    return visible.has(s) && visible.has(t) && isRenderableNode(sn) && isRenderableNode(tn);
+  });
   return visible;
 }
 
