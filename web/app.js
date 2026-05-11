@@ -142,8 +142,23 @@ function buildVisibility(){
   const visible = new Set();
   const rank = [...data.nodes].sort((a,b) => (b.importance || b.degree || 0) - (a.importance || a.degree || 0));
 
-  const seedCount = displayMode === 'spotlight' ? 3 : displayMode === 'explore' ? 8 : rank.length;
-  const seedIds = new Set(rank.slice(0, seedCount).map(d => d.id));
+  const pickTopByType = (type, quota) => rank.filter(d => d.type === type).slice(0, quota).map(d => d.id);
+  const seedBudget = displayMode === 'spotlight' ? 14 : displayMode === 'explore' ? 26 : rank.length;
+  const seededTypes = displayMode === 'spotlight'
+    ? { Person: 8, Film: 2, Award: 1, Platform: 1, Genre: 1, Country: 1 }
+    : displayMode === 'explore'
+      ? { Person: 12, Film: 4, Award: 2, Platform: 2, Genre: 2, Country: 1, Language: 1, Theme: 1, AudienceSegment: 1 }
+      : {};
+  const seedIds = new Set();
+  if (displayMode !== 'full') {
+    Object.entries(seededTypes).forEach(([type, quota]) => pickTopByType(type, quota).forEach(id => seedIds.add(id)));
+    for (const node of rank) {
+      if (seedIds.size >= seedBudget) break;
+      seedIds.add(node.id);
+    }
+  } else {
+    rank.forEach(n => seedIds.add(n.id));
+  }
   const anchorIds = [selectedId, data.meta?.metrics?.bridge_like_creator, data.meta?.metrics?.most_connected_person, data.meta?.metrics?.most_connected_director]
     .filter(Boolean)
     .flatMap(v => {
@@ -167,13 +182,16 @@ function buildVisibility(){
     });
 
     if (displayMode !== 'full') {
-      const cap = displayMode === 'spotlight' ? 10 : 20;
+      const cap = displayMode === 'spotlight' ? 12 : 24;
       const prioritized = [...visible].sort((a, b) => {
         const na = nodeById.get(a), nb = nodeById.get(b);
         return (nb?.importance || nb?.degree || 0) - (na?.importance || na?.degree || 0);
       });
-      const keep = new Set(prioritized.slice(0, cap));
-      [selectedId, ...anchorIds].filter(Boolean).forEach(id => keep.add(id));
+      const keep = new Set([...seedIds, ...anchorIds].filter(Boolean));
+      for (const id of prioritized) {
+        if (keep.size >= cap) break;
+        keep.add(id);
+      }
       visible.clear();
       keep.forEach(id => visible.add(id));
     }
