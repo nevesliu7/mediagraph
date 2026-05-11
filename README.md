@@ -3,7 +3,7 @@
 
 A graph-based media intelligence system for exploring creative networks across Chinese and American film industries.
 
-Curated demo dataset: 204 people, 135 films, 3,715 relationships.
+Curated demo dataset: 204 people in CSV, 338 people nodes in the interactive graph, 135 films, 3,715 relationships.
 
 [Live demo](https://mediagraph-web.vercel.app) · [Screenshot placeholder](assets/screenshots/)
 
@@ -250,7 +250,7 @@ Built MediaGraph, a hybrid Vercel-ready bubble graph + Streamlit analyst prototy
 
 MediaGraph is designed as a two-layer portfolio product:
 
-- Web experience: `web/` contains a Vercel-ready static site with draggable bubble-network exploration.
+- Web experience: `web/` contains a Vercel-ready static site with draggable bubble-network exploration and a people-only mode.
 - Analyst view: `app.py` runs the deeper Streamlit strategy workspace with fit scoring, bridge analysis, and graph explanations.
 
 ### Suggested deployment setup
