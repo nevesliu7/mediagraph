@@ -5,7 +5,7 @@ A graph-based media intelligence system for exploring creative networks across C
 
 Curated demo dataset: 204 people in CSV, 338 people nodes in the interactive graph, 135 films, 3,715 relationships.
 
-[Live demo](https://mediagraph-web.vercel.app) · [Screenshot placeholder](assets/screenshots/)
+[Live demo](https://mediagraph-web.vercel.app) · [Dashboard](https://mediagraph.streamlit.app/)
 
 ## Why I built this
 
