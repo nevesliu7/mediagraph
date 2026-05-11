@@ -3,7 +3,7 @@
 
 A graph-based media intelligence system for exploring creative networks across Chinese and American film industries.
 
-Curated demo dataset: 194 people, 126 films, 3,521 relationships.
+Curated demo dataset: 204 people, 135 films, 3,715 relationships.
 
 [Live demo](https://mediagraph-web.vercel.app) · [Screenshot placeholder](assets/screenshots/)
 

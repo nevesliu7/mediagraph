@@ -49,7 +49,7 @@ function setMetricSelection(){
 }
 
 function setModeButtons(active){
-  ['spotlightBtn','exploreBtn','fullBtn'].forEach(id => {
+  ['spotlightBtn','exploreBtn','peopleBtn','fullBtn'].forEach(id => {
     const btn = el(id);
     if (!btn) return;
     btn.classList.toggle('active', id.replace('Btn','') === active);
@@ -142,12 +142,27 @@ function buildVisibility(){
   const visible = new Set();
   const rank = [...data.nodes].sort((a,b) => (b.importance || b.degree || 0) - (a.importance || a.degree || 0));
 
+  if (displayMode === 'people') {
+    const peopleNodes = currentSearch || Object.values(currentFilters).some(Boolean)
+      ? matched.filter(n => n.type === 'Person')
+      : data.nodes.filter(n => n.type === 'Person');
+    peopleNodes.forEach(n => visible.add(n.id));
+    if (selectedId) visible.add(selectedId);
+    visibleNodes = data.nodes.filter(n => visible.has(n.id) && n.type === 'Person');
+    visibleLinks = data.links.filter(l => {
+      const s = resolveId(l.source), t = resolveId(l.target);
+      const sn = nodeById.get(s), tn = nodeById.get(t);
+      return visible.has(s) && visible.has(t) && sn?.type === 'Person' && tn?.type === 'Person';
+    });
+    return visible;
+  }
+
   const pickTopByType = (type, quota) => rank.filter(d => d.type === type).slice(0, quota).map(d => d.id);
-  const seedBudget = displayMode === 'spotlight' ? 18 : displayMode === 'explore' ? 36 : rank.length;
+  const seedBudget = displayMode === 'spotlight' ? 22 : displayMode === 'explore' ? 56 : rank.length;
   const seededTypes = displayMode === 'spotlight'
-    ? { Person: 8, Film: 4, Award: 1, Platform: 1, Genre: 2, Country: 1, Language: 1 }
+    ? { Person: 10, Film: 5, Award: 2, Platform: 2, Genre: 2, Country: 1, Language: 1 }
     : displayMode === 'explore'
-      ? { Person: 12, Film: 6, Award: 3, Platform: 3, Genre: 3, Country: 2, Language: 2, Theme: 2, AudienceSegment: 1 }
+      ? { Person: 18, Film: 10, Award: 6, Platform: 6, Genre: 6, Country: 4, Language: 4, Theme: 4, AudienceSegment: 2 }
       : {};
   const seedIds = new Set();
   if (displayMode !== 'full') {
@@ -405,7 +420,7 @@ function updateGraph(){
   nodeSel.exit().remove();
   const nodeEnter = nodeSel.enter().append('circle')
     .attr('r', d => sizeFor(d))
-    .attr('fill', d => COLORS[d.type] || '#fff')
+    .attr('fill', d => nodeColor(d))
     .attr('stroke', 'rgba(255,255,255,.85)')
     .attr('stroke-width', 1.1)
     .attr('opacity', 0)
@@ -420,7 +435,7 @@ function updateGraph(){
   nodeSel = nodeEnter.merge(nodeSel);
   nodeEnter.transition().duration(500).attr('opacity', 1);
 
-  const labelThreshold = displayMode === 'spotlight' ? 999 : displayMode === 'explore' ? 250 : 180;
+  const labelThreshold = displayMode === 'people' ? 100 : displayMode === 'spotlight' ? 999 : displayMode === 'explore' ? 210 : 180;
   labelSel = svg.select('.labels').selectAll('text').data(ranked.filter(d => d.id === selectedId || (d.type === 'Person' && (d.importance || 0) > labelThreshold) || (d.type === 'Film' && (d.importance || 0) > labelThreshold + 15)), d => d.id);
   labelSel.exit().remove();
   const labelEnter = labelSel.enter().append('text').attr('fill', '#dbeafe').attr('font-size', 11).attr('font-weight', 700).attr('text-anchor', 'middle').attr('pointer-events', 'none')
@@ -462,10 +477,52 @@ function showTooltip(event, d){
 }
 function hideTooltip(){ el('tooltip').classList.add('hidden'); }
 
-function dragstarted(event, d){
-  if (!event.active) simulation.alphaTarget(0.25).restart();
-  d.fx = d.x; d.fy = d.y;
+function hashText(str){
+  let h = 0;
+  for (const ch of String(str || '')) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return h;
 }
+
+function sizeFor(d){
+  if (displayMode === 'people' && d.type === 'Person') {
+    const score = Number(d.cross_market_score || d.international_recognition_score || d.degree || 1);
+    return 8 + Math.log1p(score) * 1.7;
+  }
+  const base = d.type === 'Person' ? 9 : d.type === 'Film' ? 8 : 6;
+  const scale = Math.log1p(Number(d.importance || d.degree || 1)) * (d.type === 'Person' ? 2.6 : 2.0);
+  return Math.max(base, Math.min(28, base + scale));
+}
+
+function nodeColor(d){
+  if (displayMode === 'people' && d.type === 'Person') {
+    const role = norm(d.primary_role || '');
+    if (role.includes('director')) return '#b66dff';
+    if (role.includes('actress')) return '#ff7aa8';
+    if (role.includes('actor')) return '#4fb8ff';
+    if (role.includes('writer')) return '#f59e0b';
+    return '#7dd3fc';
+  }
+  return COLORS[d.type] || '#fff';
+}
+
+function anchorX(d){
+  if (displayMode === 'people' && d.type === 'Person') {
+    const anchors = [150, 320, 490, 660, 830, 1000, 1170, 200, 540, 900];
+    return anchors[hashText(`${labelFor(d)}:${d.primary_role}`) % anchors.length];
+  }
+  return selectedId && d.id === selectedId ? width/2 : (FOCUS_TYPES[d.type]?.[0] || width/2);
+}
+
+function anchorY(d){
+  if (displayMode === 'people' && d.type === 'Person') {
+    const anchors = [150, 210, 260, 330, 390, 450, 520];
+    return anchors[hashText(`${d.country_or_region || ''}:${labelFor(d)}`) % anchors.length];
+  }
+  return selectedId && d.id === selectedId ? height/2 : (FOCUS_TYPES[d.type]?.[1] || height/2);
+}
+
+function distanceFor(d){ return d.relationship === 'DIRECTED' || d.relationship === 'ACTED_IN' ? 64 : 84; }
+function dragstarted(event, d){ if (!event.active) simulation.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; }
 function dragged(event, d){ d.fx = event.x; d.fy = event.y; }
 function dragended(event, d){ if (!event.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
 
@@ -478,9 +535,6 @@ function applyForces(){
     .force('y', d3.forceY(d => anchorY(d)).strength(.06))
     .on('tick', ticked);
 }
-function distanceFor(d){ return d.relationship === 'DIRECTED' || d.relationship === 'ACTED_IN' ? 64 : 84; }
-function anchorX(d){ return selectedId && d.id === selectedId ? width/2 : (FOCUS_TYPES[d.type]?.[0] || width/2); }
-function anchorY(d){ return selectedId && d.id === selectedId ? height/2 : (FOCUS_TYPES[d.type]?.[1] || height/2); }
 
 function ticked(){
   nodeSel.attr('cx', d => d.x = Math.max(20, Math.min(width-20, d.x))).attr('cy', d => d.y = Math.max(20, Math.min(height-20, d.y)));
@@ -575,7 +629,7 @@ async function init(){
   selectedId = null;
   updateGraph();
   if (initialNode) {
-    el('selectedTitle').textContent = 'Curated explore';
+    el('selectedTitle').textContent = 'Playground';
     el('selectedBody').innerHTML = '<div class="card"><span class="badge">Opening mode</span><div style="margin-top:8px;line-height:1.6;color:var(--muted)">The network opens in an exploratory mix of creators, films, awards, and platforms so the first screen feels lively and playful. Click any bubble to expand the full graph around a creator or film.</div></div>';
   }
   window.addEventListener('resize', () => {
@@ -591,6 +645,7 @@ async function init(){
   });
   el('spotlightBtn').addEventListener('click', () => { displayMode = 'spotlight'; setModeButtons(displayMode); updateGraph(); });
   el('exploreBtn').addEventListener('click', () => { displayMode = 'explore'; setModeButtons(displayMode); updateGraph(); });
+  el('peopleBtn').addEventListener('click', () => { displayMode = 'people'; setModeButtons(displayMode); updateGraph(); });
   el('fullBtn').addEventListener('click', () => { displayMode = 'full'; setModeButtons(displayMode); updateGraph(); });
   el('motionBtn').addEventListener('click', () => {
     motionMode = motionMode === 'smooth' ? 'playful' : 'smooth';
