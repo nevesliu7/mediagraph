@@ -11,7 +11,7 @@ Curated demo dataset: 204 people in CSV, 338 people nodes in the interactive gra
 
 Most media tools treat films, creators, awards, genres, and platforms as separate tables. MediaGraph models the industry as a connected network so you can see how talent, taste, recognition, and distribution shape strategic opportunities.
 
-The goal is to feel like an internal strategy product for a streaming platform, studio, talent agency, or entertainment investor, not a basic movie browser.
+The goal is to feel like an internal strategy product for a streaming platform, studio, talent agency, or entertainment investor.
 
 ## What it does
 
@@ -228,23 +228,6 @@ MediaGraph demonstrates:
 - interactive visualization and data storytelling
 - product-oriented UX for a recruiter-facing portfolio
 
-## Future improvements
-
-- Replace demo data with verified public datasets from TMDb, IMDb, Wikidata, or official award feeds
-- Connect the app to Neo4j directly for graph queries
-- Add saved searches and bookmarks
-- Add deeper community detection and path explanations
-- Add richer filtering by audience segment and distribution window
-
-## Repository metadata
-
-- Recommended repo name: `mediagraph`
-- Recommended repository description: Graph-based media intelligence prototype for exploring creative networks, cross-market talent bridges, and content strategy across Chinese and American film industries.
-
-## Resume bullet
-
-Built MediaGraph, a hybrid Vercel-ready bubble graph + Streamlit analyst prototype that maps Chinese and American film ecosystems, scores director-actor creative fit, and surfaces cross-market talent and award pathways through explainable network analysis.
-
 
 ## Hybrid web experience
 
@@ -258,13 +241,3 @@ MediaGraph is designed as a two-layer portfolio product:
 - GitHub repo: source of truth for code, data, schema, and documentation
 - Vercel: deploy the `web/` directory as the public product-facing site
 - Streamlit Community Cloud: deploy `app.py` as the analyst console
-
-### Why this split works
-
-- The web site feels like a polished product with bubbles, hover, drag, and selection.
-- Streamlit is better for fast iteration on strategy logic, score explanation, and analyst workflows.
-- Both views share the same curated CSV data model.
-
-### Vercel setup
-
-Set the project Root Directory to `web/` so the static site serves `index.html`, `app.js`, `styles.css`, and `graph-data.json`.
