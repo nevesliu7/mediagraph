@@ -1,0 +1,352 @@
+entity_type,entity_name,source_type,source_title,source_url
+award,Academy Awards,Official awards database,Academy Awards,https://awardsdatabase.oscars.org/
+award,BAFTA,Official awards database,BAFTA,https://www.bafta.org/awards/database
+award,Berlin Golden Bear,Official festival award page,Berlinale,https://www.berlinale.de/en/
+award,Cannes Best Screenplay,Official festival award page,Cannes awards,https://www.festival-cannes.com/en/
+award,Cannes Competition,Official festival page,Cannes,https://www.festival-cannes.com/en/
+award,Cannes Palme d'Or,Official festival award page,Cannes awards,https://www.festival-cannes.com/en/
+award,Golden Globe,Official awards database,Golden Globe,https://goldenglobes.com/awards-database/
+award,Golden Horse Awards,Official awards site,Golden Horse Awards,https://www.goldenhorse.org.tw/awards/?lang=en
+award,Golden Trailer Awards,Official awards site,Golden Trailer Awards,https://goldentrailer.com/
+award,Hong Kong Film Awards,Official awards site,Hong Kong Film Awards,https://www.hkfaa.com/winnerlist.html
+award,Saturn Awards,Official awards site,Saturn Awards,https://www.saturnawards.org/
+award,Venice Golden Lion,Official festival award page,Venice Biennale,https://www.labiennale.org/en/cinema
+film,A Sample Slate for a Pan-Asian Thriller,Wikipedia,A Sample Slate for a Pan-Asian Thriller,https://en.wikipedia.org/wiki/A_Sample_Slate_for_a_Pan-Asian_Thriller
+film,A Sample Slate for Awards-Season Ensemble Drama,Wikipedia,A Sample Slate for Awards-Season Ensemble Drama,https://en.wikipedia.org/wiki/A_Sample_Slate_for_Awards-Season_Ensemble_Drama
+film,A Sample Slate for Festival Romance,Wikipedia,A Sample Slate for Festival Romance,https://en.wikipedia.org/wiki/A_Sample_Slate_for_Festival_Romance
+film,A Sample Slate for Franchise Action,Wikipedia,A Sample Slate for Franchise Action,https://en.wikipedia.org/wiki/A_Sample_Slate_for_Franchise_Action
+film,A Sample Slate for Prestige Sci-Fi,Wikipedia,A Sample Slate for Prestige Sci-Fi,https://en.wikipedia.org/wiki/A_Sample_Slate_for_Prestige_Sci-Fi
+film,A Sample Slate for Youth Culture Crime,Wikipedia,A Sample Slate for Youth Culture Crime,https://en.wikipedia.org/wiki/A_Sample_Slate_for_Youth_Culture_Crime
+film,A Simple Life,Wikipedia,A Simple Life,https://en.wikipedia.org/wiki/A_Simple_Life
+film,A Touch of Sin,Wikipedia,A Touch of Sin,https://en.wikipedia.org/wiki/A_Touch_of_Sin
+film,Aftershock,Wikipedia,Aftershock,https://en.wikipedia.org/wiki/Aftershock_(2010_film)
+film,Alien,Wikipedia,Alien,https://en.wikipedia.org/wiki/Alien
+film,Aliens,Wikipedia,Aliens,https://en.wikipedia.org/wiki/Aliens
+film,American Graffiti,Wikipedia,American Graffiti,https://en.wikipedia.org/wiki/American_Graffiti
+film,Apocalypse Now,Wikipedia,Apocalypse Now,https://en.wikipedia.org/wiki/Apocalypse_Now
+film,Arrival,Wikipedia,Arrival,https://en.wikipedia.org/wiki/Arrival
+film,Ash Is Purest White,Wikipedia,Ash Is Purest White,https://en.wikipedia.org/wiki/Ash_Is_Purest_White
+film,Asteroid City,Wikipedia,Asteroid City,https://en.wikipedia.org/wiki/Asteroid_City
+film,Avatar,Wikipedia,Avatar,https://en.wikipedia.org/wiki/Avatar
+film,Back to 1942,Wikipedia,Back to 1942,https://en.wikipedia.org/wiki/Back_to_1942
+film,Barbie,Wikipedia,Barbie,https://en.wikipedia.org/wiki/Barbie
+film,Beau Is Afraid,Wikipedia,Beau Is Afraid,https://en.wikipedia.org/wiki/Beau_Is_Afraid
+film,Better Days,Wikipedia,Better Days,https://en.wikipedia.org/wiki/Better_Days
+film,"Black Coal, Thin Ice",Wikipedia,"Black Coal, Thin Ice","https://en.wikipedia.org/wiki/Black_Coal,_Thin_Ice"
+film,Black Panther,Wikipedia,Black Panther,https://en.wikipedia.org/wiki/Black_Panther_(film)
+film,BlacKkKlansman,Wikipedia,BlacKkKlansman,https://en.wikipedia.org/wiki/BlacKkKlansman
+film,Blade Runner 2049,Wikipedia,Blade Runner 2049,https://en.wikipedia.org/wiki/Blade_Runner_2049
+film,Chungking Express,Wikipedia,Chungking Express,https://en.wikipedia.org/wiki/Chungking_Express
+film,Comrades: Almost a Love Story,Wikipedia,Comrades: Almost a Love Story,https://en.wikipedia.org/wiki/Comrades%3A_Almost_a_Love_Story
+film,Crazy Alien,Wikipedia,Crazy Alien,https://en.wikipedia.org/wiki/Crazy_Alien
+film,Crazy Rich Asians,Wikipedia,Crazy Rich Asians,https://en.wikipedia.org/wiki/Crazy_Rich_Asians
+film,Crazy Stone,Wikipedia,Crazy Stone,https://en.wikipedia.org/wiki/Crazy_Stone
+film,Creed,Wikipedia,Creed,https://en.wikipedia.org/wiki/Creed
+film,"Crouching Tiger, Hidden Dragon",Wikipedia,"Crouching Tiger, Hidden Dragon","https://en.wikipedia.org/wiki/Crouching_Tiger,_Hidden_Dragon"
+film,Deadpool Wolverine,Wikipedia,Deadpool Wolverine,https://en.wikipedia.org/wiki/Deadpool_%26_Wolverine
+film,Dearest,Wikipedia,Dearest,https://en.wikipedia.org/wiki/Dearest
+film,Django Unchained,Wikipedia,Django Unchained,https://en.wikipedia.org/wiki/Django_Unchained
+film,Do the Right Thing,Wikipedia,Do the Right Thing,https://en.wikipedia.org/wiki/Do_the_Right_Thing
+film,Doctor Strange,Wikipedia,Doctor Strange,https://en.wikipedia.org/wiki/Doctor_Strange
+film,Duckweed,Wikipedia,Duckweed,https://en.wikipedia.org/wiki/Duckweed
+film,Dune,Wikipedia,Dune,https://en.wikipedia.org/wiki/Dune_(2021_film)
+film,E.T. the Extra-Terrestrial,Wikipedia,E.T. the Extra-Terrestrial,https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial
+film,Eat Drink Man Woman,Wikipedia,Eat Drink Man Woman,https://en.wikipedia.org/wiki/Eat_Drink_Man_Woman
+film,Eternals,Wikipedia,Eternals,https://en.wikipedia.org/wiki/Eternals
+film,Everything Everywhere All at Once,Wikipedia,Everything Everywhere All at Once,https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once
+film,Farewell My Concubine,Wikipedia,Farewell My Concubine,https://en.wikipedia.org/wiki/Farewell_My_Concubine
+film,Fast X,Wikipedia,Fast X,https://en.wikipedia.org/wiki/Fast_X
+film,Get Out,Wikipedia,Get Out,https://en.wikipedia.org/wiki/Get_Out
+film,Gladiator,Wikipedia,Gladiator,https://en.wikipedia.org/wiki/Gladiator
+film,Gladiator II,Wikipedia,Gladiator II,https://en.wikipedia.org/wiki/Gladiator_II
+film,Gone Girl,Wikipedia,Gone Girl,https://en.wikipedia.org/wiki/Gone_Girl
+film,Goodfellas,Wikipedia,Goodfellas,https://en.wikipedia.org/wiki/Goodfellas
+film,Hereditary,Wikipedia,Hereditary,https://en.wikipedia.org/wiki/Hereditary
+film,Hero,Wikipedia,Hero,https://en.wikipedia.org/wiki/Hero_(2002_film)
+film,Heroic Age of the East,Wikipedia,Heroic Age of the East,https://en.wikipedia.org/wiki/Heroic_Age_of_the_East
+film,"Hi, Mom",Wikipedia,"Hi, Mom","https://en.wikipedia.org/wiki/Hi,_Mom"
+film,House of Flying Daggers,Wikipedia,House of Flying Daggers,https://en.wikipedia.org/wiki/House_of_Flying_Daggers
+film,If Beale Street Could Talk,Wikipedia,If Beale Street Could Talk,https://en.wikipedia.org/wiki/If_Beale_Street_Could_Talk
+film,In the Heat of the Sun,Wikipedia,In the Heat of the Sun,https://en.wikipedia.org/wiki/In_the_Heat_of_the_Sun
+film,In the Heights,Wikipedia,In the Heights,https://en.wikipedia.org/wiki/In_the_Heights
+film,Inception,Wikipedia,Inception,https://en.wikipedia.org/wiki/Inception
+film,Interstellar,Wikipedia,Interstellar,https://en.wikipedia.org/wiki/Interstellar
+film,Jaws,Wikipedia,Jaws,https://en.wikipedia.org/wiki/Jaws
+film,John Wick Chapter 4,Wikipedia,John Wick Chapter 4,https://en.wikipedia.org/wiki/John_Wick%3A_Chapter_4
+film,Julie & Julia,Wikipedia,Julie & Julia,https://en.wikipedia.org/wiki/Julie_%26_Julia
+film,Kung Fu Hustle,Wikipedia,Kung Fu Hustle,https://en.wikipedia.org/wiki/Kung_Fu_Hustle
+film,La La Land,Wikipedia,La La Land,https://en.wikipedia.org/wiki/La_La_Land
+film,Lady Bird,Wikipedia,Lady Bird,https://en.wikipedia.org/wiki/Lady_Bird
+film,Let the Bullets Fly,Wikipedia,Let the Bullets Fly,https://en.wikipedia.org/wiki/Let_the_Bullets_Fly
+film,Licorice Pizza,Wikipedia,Licorice Pizza,https://en.wikipedia.org/wiki/Licorice_Pizza
+film,Long Day's Journey into Night,Wikipedia,Long Day's Journey into Night,https://en.wikipedia.org/wiki/Long_Day%27s_Journey_into_Night
+film,Lost in Thailand,Wikipedia,Lost in Thailand,https://en.wikipedia.org/wiki/Lost_in_Thailand
+film,Lost in Translation,Wikipedia,Lost in Translation,https://en.wikipedia.org/wiki/Lost_in_Translation
+film,Marie Antoinette,Wikipedia,Marie Antoinette,https://en.wikipedia.org/wiki/Marie_Antoinette
+film,Midsommar,Wikipedia,Midsommar,https://en.wikipedia.org/wiki/Midsommar
+film,Minari,Wikipedia,Minari,https://en.wikipedia.org/wiki/Minari
+film,Moonlight,Wikipedia,Moonlight,https://en.wikipedia.org/wiki/Moonlight_(2016_film)
+film,Mulan,Wikipedia,Mulan,https://en.wikipedia.org/wiki/Mulan
+film,Mystery,Wikipedia,Mystery,https://en.wikipedia.org/wiki/Mystery
+film,Ne Zha,Wikipedia,Ne Zha,https://en.wikipedia.org/wiki/Ne_Zha
+film,Nomadland,Wikipedia,Nomadland,https://en.wikipedia.org/wiki/Nomadland
+film,Nope,Wikipedia,Nope,https://en.wikipedia.org/wiki/Nope
+film,Once Upon a Time in Hollywood,Wikipedia,Once Upon a Time in Hollywood,https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_Hollywood
+film,Operation Red Sea,Wikipedia,Operation Red Sea,https://en.wikipedia.org/wiki/Operation_Red_Sea
+film,Oppenheimer,Wikipedia,Oppenheimer,https://en.wikipedia.org/wiki/Oppenheimer
+film,Pegasus,Wikipedia,Pegasus,https://en.wikipedia.org/wiki/Pegasus
+film,Precious,Wikipedia,Precious,https://en.wikipedia.org/wiki/Precious
+film,Pulp Fiction,Wikipedia,Pulp Fiction,https://en.wikipedia.org/wiki/Pulp_Fiction
+film,Raise the Red Lantern,Wikipedia,Raise the Red Lantern,https://en.wikipedia.org/wiki/Raise_the_Red_Lantern
+film,Red Sorghum,Wikipedia,Red Sorghum,https://en.wikipedia.org/wiki/Red_Sorghum
+film,Saving Private Ryan,Wikipedia,Saving Private Ryan,https://en.wikipedia.org/wiki/Saving_Private_Ryan
+film,Schindler's List,Wikipedia,Schindler's List,https://en.wikipedia.org/wiki/Schindler%27s_List
+film,Se7en,Wikipedia,Se7en,https://en.wikipedia.org/wiki/Se7en
+film,Selma,Wikipedia,Selma,https://en.wikipedia.org/wiki/Selma
+film,Shang-Chi and the Legend of the Ten Rings,Wikipedia,Shang-Chi and the Legend of the Ten Rings,https://en.wikipedia.org/wiki/Shang-Chi_and_the_Legend_of_the_Ten_Rings
+film,Shaolin Soccer,Wikipedia,Shaolin Soccer,https://en.wikipedia.org/wiki/Shaolin_Soccer
+film,Sleepless in Seattle,Wikipedia,Sleepless in Seattle,https://en.wikipedia.org/wiki/Sleepless_in_Seattle
+film,Star Wars: A New Hope,Wikipedia,Star Wars: A New Hope,https://en.wikipedia.org/wiki/Star_Wars_(film)
+film,Still Life,Wikipedia,Still Life,https://en.wikipedia.org/wiki/Still_Life_(2006_film)
+film,Summer Palace,Wikipedia,Summer Palace,https://en.wikipedia.org/wiki/Summer_Palace
+film,Suzhou River,Wikipedia,Suzhou River,https://en.wikipedia.org/wiki/Suzhou_River
+film,Taxi Driver,Wikipedia,Taxi Driver,https://en.wikipedia.org/wiki/Taxi_Driver
+film,The Battle at Lake Changjin,Wikipedia,The Battle at Lake Changjin,https://en.wikipedia.org/wiki/The_Battle_at_Lake_Changjin
+film,The Butler,Wikipedia,The Butler,https://en.wikipedia.org/wiki/The_Butler
+film,The Continent,Wikipedia,The Continent,https://en.wikipedia.org/wiki/The_Continent
+film,The Dark Knight,Wikipedia,The Dark Knight,https://en.wikipedia.org/wiki/The_Dark_Knight
+film,The Farewell,Wikipedia,The Farewell,https://en.wikipedia.org/wiki/The_Farewell
+film,The Flowers of War,Wikipedia,The Flowers of War,https://en.wikipedia.org/wiki/The_Flowers_of_War
+film,The Godfather,Wikipedia,The Godfather,https://en.wikipedia.org/wiki/The_Godfather
+film,The Godfather Part II,Wikipedia,The Godfather Part II,https://en.wikipedia.org/wiki/The_Godfather_Part_II
+film,The Golden Era,Wikipedia,The Golden Era,https://en.wikipedia.org/wiki/The_Golden_Era
+film,The Grand Budapest Hotel,Wikipedia,The Grand Budapest Hotel,https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel
+film,The Grandmaster,Wikipedia,The Grandmaster,https://en.wikipedia.org/wiki/The_Grandmaster_(film)
+film,The Hidden Man,Wikipedia,The Hidden Man,https://en.wikipedia.org/wiki/The_Hidden_Man
+film,The Hurt Locker,Wikipedia,The Hurt Locker,https://en.wikipedia.org/wiki/The_Hurt_Locker
+film,The Irishman,Wikipedia,The Irishman,https://en.wikipedia.org/wiki/The_Irishman
+film,The Killer,Wikipedia,The Killer,https://en.wikipedia.org/wiki/The_Killer_(1989_film)
+film,The Martian,Wikipedia,The Martian,https://en.wikipedia.org/wiki/The_Martian
+film,The Matrix Resurrections,Wikipedia,The Matrix Resurrections,https://en.wikipedia.org/wiki/The_Matrix_Resurrections
+film,The Mermaid,Wikipedia,The Mermaid,https://en.wikipedia.org/wiki/The_Mermaid
+film,The Promise,Wikipedia,The Promise,https://en.wikipedia.org/wiki/The_Promise
+film,The Rider,Wikipedia,The Rider,https://en.wikipedia.org/wiki/The_Rider
+film,The Social Network,Wikipedia,The Social Network,https://en.wikipedia.org/wiki/The_Social_Network
+film,The Story of Qiu Ju,Wikipedia,The Story of Qiu Ju,https://en.wikipedia.org/wiki/The_Story_of_Qiu_Ju
+film,The Three-Body Problem,Wikipedia,The Three-Body Problem,https://en.wikipedia.org/wiki/The_Three-Body_Problem
+film,The Wandering Earth,Wikipedia,The Wandering Earth,https://en.wikipedia.org/wiki/The_Wandering_Earth
+film,The Wandering Earth II,Wikipedia,The Wandering Earth II,https://en.wikipedia.org/wiki/The_Wandering_Earth_II
+film,The Warlords,Wikipedia,The Warlords,https://en.wikipedia.org/wiki/The_Warlords
+film,The Wild Goose Lake,Wikipedia,The Wild Goose Lake,https://en.wikipedia.org/wiki/The_Wild_Goose_Lake
+film,The World,Wikipedia,The World,https://en.wikipedia.org/wiki/The_World
+film,There Will Be Blood,Wikipedia,There Will Be Blood,https://en.wikipedia.org/wiki/There_Will_Be_Blood
+film,Titanic,Wikipedia,Titanic,https://en.wikipedia.org/wiki/Titanic
+film,Top Gun Maverick,Wikipedia,Top Gun Maverick,https://en.wikipedia.org/wiki/Top_Gun%3A_Maverick
+film,When They See Us,Wikipedia,When They See Us,https://en.wikipedia.org/wiki/When_They_See_Us
+film,Whiplash,Wikipedia,Whiplash,https://en.wikipedia.org/wiki/Whiplash
+film,Wicked,Wikipedia,Wicked,https://en.wikipedia.org/wiki/Wicked_(2024_film)
+film,Zero Dark Thirty,Wikipedia,Zero Dark Thirty,https://en.wikipedia.org/wiki/Zero_Dark_Thirty
+person,Adam Driver,Wikipedia,Adam Driver,https://en.wikipedia.org/wiki/Adam_Driver
+person,Al Pacino,Wikipedia,Al Pacino,https://en.wikipedia.org/wiki/Al_Pacino
+person,Allison Williams,Wikipedia,Allison Williams,https://en.wikipedia.org/wiki/Allison_Williams
+person,Amy Adams,Wikipedia,Amy Adams,https://en.wikipedia.org/wiki/Amy_Adams
+person,Andrew Garfield,Wikipedia,Andrew Garfield,https://en.wikipedia.org/wiki/Andrew_Garfield
+person,Andy Lau,Wikipedia,Andy Lau,https://en.wikipedia.org/wiki/Andy_Lau
+person,Ang Lee,Wikipedia,Ang Lee,https://en.wikipedia.org/wiki/Ang_Lee
+person,Ann Hui,Wikipedia,Ann Hui,https://en.wikipedia.org/wiki/Ann_Hui
+person,Anne Hathaway,Wikipedia,Anne Hathaway,https://en.wikipedia.org/wiki/Anne_Hathaway
+person,Anthony Mackie,Wikipedia,Anthony Mackie,https://en.wikipedia.org/wiki/Anthony_Mackie
+person,Ari Aster,Wikipedia,Ari Aster,https://en.wikipedia.org/wiki/Ari_Aster
+person,Ariana Grande,Wikipedia,Ariana Grande,https://en.wikipedia.org/wiki/Ariana_Grande
+person,Ava DuVernay,Wikipedia,Ava DuVernay,https://en.wikipedia.org/wiki/Ava_DuVernay
+person,Awkwafina,Wikipedia,Awkwafina,https://en.wikipedia.org/wiki/Awkwafina
+person,Barry Jenkins,Wikipedia,Barry Jenkins,https://en.wikipedia.org/wiki/Barry_Jenkins
+person,Ben Affleck,Wikipedia,Ben Affleck,https://en.wikipedia.org/wiki/Ben_Affleck
+person,Benedict Cumberbatch,Wikipedia,Benedict Cumberbatch,https://en.wikipedia.org/wiki/Benedict_Cumberbatch
+person,Bi Gan,Wikipedia,Bi Gan,https://en.wikipedia.org/wiki/Bi_Gan
+person,Bill Murray,Wikipedia,Bill Murray,https://en.wikipedia.org/wiki/Bill_Murray
+person,Billy Zane,Wikipedia,Billy Zane,https://en.wikipedia.org/wiki/Billy_Zane
+person,Brad Pitt,Wikipedia,Brad Pitt,https://en.wikipedia.org/wiki/Brad_Pitt
+person,Brigitte Lin,Wikipedia,Brigitte Lin,https://en.wikipedia.org/wiki/Brigitte_Lin
+person,Carrie Fisher,Wikipedia,Carrie Fisher,https://en.wikipedia.org/wiki/Carrie_Fisher
+person,Cate Blanchett,Wikipedia,Cate Blanchett,https://en.wikipedia.org/wiki/Cate_Blanchett
+person,Cecilia Cheung,Wikipedia,Cecilia Cheung,https://en.wikipedia.org/wiki/Cecilia_Cheung
+person,Chadwick Boseman,Wikipedia,Chadwick Boseman,https://en.wikipedia.org/wiki/Chadwick_Boseman
+person,Chen Daoming,Wikipedia,Chen Daoming,https://en.wikipedia.org/wiki/Chen_Daoming
+person,Chen Kaige,Wikipedia,Chen Kaige,https://en.wikipedia.org/wiki/Chen_Kaige
+person,Chen Kun,Wikipedia,Chen Kun,https://en.wikipedia.org/wiki/Chen_Kun
+person,Chen Sicheng,Wikipedia,Chen Sicheng,https://en.wikipedia.org/wiki/Chen_Sicheng
+person,Chien-lien Wu,Wikipedia,Chien-lien Wu,https://en.wikipedia.org/wiki/Chien-lien_Wu
+person,Chloé Zhao,Wikipedia,Chloé Zhao,https://en.wikipedia.org/wiki/Chlo%C3%A9_Zhao
+person,Chow Yun-fat,Wikipedia,Chow Yun-fat,https://en.wikipedia.org/wiki/Chow_Yun-fat
+person,Christian Bale,Wikipedia,Christian Bale,https://en.wikipedia.org/wiki/Christian_Bale
+person,Christopher Nolan,Wikipedia,Christopher Nolan,https://en.wikipedia.org/wiki/Christopher_Nolan
+person,Cillian Murphy,Wikipedia,Cillian Murphy,https://en.wikipedia.org/wiki/Cillian_Murphy
+person,Constance Wu,Wikipedia,Constance Wu,https://en.wikipedia.org/wiki/Constance_Wu
+person,Damien Chazelle,Wikipedia,Damien Chazelle,https://en.wikipedia.org/wiki/Damien_Chazelle
+person,Daniel Kaluuya,Wikipedia,Daniel Kaluuya,https://en.wikipedia.org/wiki/Daniel_Kaluuya
+person,Daniel Kwan,Wikipedia,Daniel Kwan,https://en.wikipedia.org/wiki/Daniel_Kwan
+person,Daniel Scheinert,Wikipedia,Daniel Scheinert,https://en.wikipedia.org/wiki/Daniel_Scheinert
+person,Dante Lam,Wikipedia,Dante Lam,https://en.wikipedia.org/wiki/Dante_Lam
+person,David Fincher,Wikipedia,David Fincher,https://en.wikipedia.org/wiki/David_Fincher
+person,David Strathairn,Wikipedia,David Strathairn,https://en.wikipedia.org/wiki/David_Strathairn
+person,Deng Chao,Wikipedia,Deng Chao,https://en.wikipedia.org/wiki/Deng_Chao
+person,Denis Villeneuve,Wikipedia,Denis Villeneuve,https://en.wikipedia.org/wiki/Denis_Villeneuve
+person,Denzel Washington,Wikipedia,Denzel Washington,https://en.wikipedia.org/wiki/Denzel_Washington
+person,Derek Tsang,Wikipedia,Derek Tsang,https://en.wikipedia.org/wiki/Derek_Tsang
+person,Diao Yinan,Wikipedia,Diao Yinan,https://en.wikipedia.org/wiki/Diao_Yinan
+person,Dilraba Dilmurat,Wikipedia,Dilraba Dilmurat,https://en.wikipedia.org/wiki/Dilraba_Dilmurat
+person,Donnie Yen,Wikipedia,Donnie Yen,https://en.wikipedia.org/wiki/Donnie_Yen
+person,Emma Stone,Wikipedia,Emma Stone,https://en.wikipedia.org/wiki/Emma_Stone
+person,Eric Tsang,Wikipedia,Eric Tsang,https://en.wikipedia.org/wiki/Eric_Tsang
+person,Fan Bingbing,Wikipedia,Fan Bingbing,https://en.wikipedia.org/wiki/Fan_Bingbing
+person,Faye Wong,Wikipedia,Faye Wong,https://en.wikipedia.org/wiki/Faye_Wong
+person,Feng Xiaogang,Wikipedia,Feng Xiaogang,https://en.wikipedia.org/wiki/Feng_Xiaogang
+person,Florence Pugh,Wikipedia,Florence Pugh,https://en.wikipedia.org/wiki/Florence_Pugh
+person,Frances McDormand,Wikipedia,Frances McDormand,https://en.wikipedia.org/wiki/Frances_McDormand
+person,Francis Ford Coppola,Wikipedia,Francis Ford Coppola,https://en.wikipedia.org/wiki/Francis_Ford_Coppola
+person,Frant Gwo,Wikipedia,Frant Gwo,https://en.wikipedia.org/wiki/Frant_Gwo
+person,Ge You,Wikipedia,Ge You,https://en.wikipedia.org/wiki/Ge_You
+person,George Clooney,Wikipedia,George Clooney,https://en.wikipedia.org/wiki/George_Clooney
+person,George Lucas,Wikipedia,George Lucas,https://en.wikipedia.org/wiki/George_Lucas
+person,Gong Li,Wikipedia,Gong Li,https://en.wikipedia.org/wiki/Gong_Li
+person,Greta Gerwig,Wikipedia,Greta Gerwig,https://en.wikipedia.org/wiki/Greta_Gerwig
+person,Guo Fan,Wikipedia,Guo Fan,https://en.wikipedia.org/wiki/Guo_Fan
+person,Gwei Lun-mei,Wikipedia,Gwei Lun-mei,https://en.wikipedia.org/wiki/Gwei_Lun-mei
+person,Hao Lei,Wikipedia,Hao Lei,https://en.wikipedia.org/wiki/Hao_Lei
+person,Henry Golding,Wikipedia,Henry Golding,https://en.wikipedia.org/wiki/Henry_Golding
+person,Hiroyuki Sanada,Wikipedia,Hiroyuki Sanada,https://en.wikipedia.org/wiki/Hiroyuki_Sanada
+person,Hu Ge,Wikipedia,Hu Ge,https://en.wikipedia.org/wiki/Hu_Ge
+person,Huang Bo,Wikipedia,Huang Bo,https://en.wikipedia.org/wiki/Huang_Bo
+person,Huang Jue,Wikipedia,Huang Jue,https://en.wikipedia.org/wiki/Huang_Jue
+person,Huang Shengyi,Wikipedia,Huang Shengyi,https://en.wikipedia.org/wiki/Huang_Shengyi
+person,Huang Xuan,Wikipedia,Huang Xuan,https://en.wikipedia.org/wiki/Huang_Xuan
+person,Jackie Chan,Wikipedia,Jackie Chan,https://en.wikipedia.org/wiki/Jackie_Chan
+person,Jackson Yee,Wikipedia,Jackson Yee,https://en.wikipedia.org/wiki/Jackson_Yee
+person,James Cameron,Wikipedia,James Cameron,https://en.wikipedia.org/wiki/James_Cameron
+person,Jang Dong-gun,Wikipedia,Jang Dong-gun,https://en.wikipedia.org/wiki/Jang_Dong-gun
+person,Jason Statham,Wikipedia,Jason Statham,https://en.wikipedia.org/wiki/Jason_Statham
+person,Jennifer Lawrence,Wikipedia,Jennifer Lawrence,https://en.wikipedia.org/wiki/Jennifer_Lawrence
+person,Jeremy Renner,Wikipedia,Jeremy Renner,https://en.wikipedia.org/wiki/Jeremy_Renner
+person,Jesse Eisenberg,Wikipedia,Jesse Eisenberg,https://en.wikipedia.org/wiki/Jesse_Eisenberg
+person,Jessica Chastain,Wikipedia,Jessica Chastain,https://en.wikipedia.org/wiki/Jessica_Chastain
+person,Jet Li,Wikipedia,Jet Li,https://en.wikipedia.org/wiki/Jet_Li
+person,Jia Ling,Wikipedia,Jia Ling,https://en.wikipedia.org/wiki/Jia_Ling
+person,Jia Zhangke,Wikipedia,Jia Zhangke,https://en.wikipedia.org/wiki/Jia_Zhangke
+person,Jiang Wen,Wikipedia,Jiang Wen,https://en.wikipedia.org/wiki/Jiang_Wen
+person,Jiang Wu,Wikipedia,Jiang Wu,https://en.wikipedia.org/wiki/Jiang_Wu
+person,Jiaozi,Wikipedia,Jiaozi,https://en.wikipedia.org/wiki/Jiaozi
+person,Joaquin Phoenix,Wikipedia,Joaquin Phoenix,https://en.wikipedia.org/wiki/Joaquin_Phoenix
+person,John Woo,Wikipedia,John Woo,https://en.wikipedia.org/wiki/John_Woo
+person,Jon M. Chu,Wikipedia,Jon M. Chu,https://en.wikipedia.org/wiki/Jon_M._Chu
+person,Jordan Peele,Wikipedia,Jordan Peele,https://en.wikipedia.org/wiki/Jordan_Peele
+person,Kathryn Bigelow,Wikipedia,Kathryn Bigelow,https://en.wikipedia.org/wiki/Kathryn_Bigelow
+person,Ke Huy Quan,Wikipedia,Ke Huy Quan,https://en.wikipedia.org/wiki/Ke_Huy_Quan
+person,Keanu Reeves,Wikipedia,Keanu Reeves,https://en.wikipedia.org/wiki/Keanu_Reeves
+person,Lee Daniels,Wikipedia,Lee Daniels,https://en.wikipedia.org/wiki/Lee_Daniels
+person,Lee Isaac Chung,Wikipedia,Lee Isaac Chung,https://en.wikipedia.org/wiki/Lee_Isaac_Chung
+person,Lei Jiayin,Wikipedia,Lei Jiayin,https://en.wikipedia.org/wiki/Lei_Jiayin
+person,Leon Lai,Wikipedia,Leon Lai,https://en.wikipedia.org/wiki/Leon_Lai
+person,Leonardo DiCaprio,Wikipedia,Leonardo DiCaprio,https://en.wikipedia.org/wiki/Leonardo_DiCaprio
+person,Li Bingbing,Wikipedia,Li Bingbing,https://en.wikipedia.org/wiki/Li_Bingbing
+person,Li Guangjie,Wikipedia,Li Guangjie,https://en.wikipedia.org/wiki/Li_Guangjie
+person,Liao Fan,Wikipedia,Liao Fan,https://en.wikipedia.org/wiki/Liao_Fan
+person,Liu Haoran,Wikipedia,Liu Haoran,https://en.wikipedia.org/wiki/Liu_Haoran
+person,Liu Yifei,Wikipedia,Liu Yifei,https://en.wikipedia.org/wiki/Liu_Yifei
+person,Lou Ye,Wikipedia,Lou Ye,https://en.wikipedia.org/wiki/Lou_Ye
+person,Lulu Wang,Wikipedia,Lulu Wang,https://en.wikipedia.org/wiki/Lulu_Wang
+person,Lupita Nyong'o,Wikipedia,Lupita Nyong'o,https://en.wikipedia.org/wiki/Lupita_Nyong%27o
+person,Ma Li,Wikipedia,Ma Li,https://en.wikipedia.org/wiki/Ma_Li
+person,Maggie Cheung,Wikipedia,Maggie Cheung,https://en.wikipedia.org/wiki/Maggie_Cheung
+person,Mahershala Ali,Wikipedia,Mahershala Ali,https://en.wikipedia.org/wiki/Mahershala_Ali
+person,Margot Robbie,Wikipedia,Margot Robbie,https://en.wikipedia.org/wiki/Margot_Robbie
+person,Mark Hamill,Wikipedia,Mark Hamill,https://en.wikipedia.org/wiki/Mark_Hamill
+person,Martin Scorsese,Wikipedia,Martin Scorsese,https://en.wikipedia.org/wiki/Martin_Scorsese
+person,Matt Damon,Wikipedia,Matt Damon,https://en.wikipedia.org/wiki/Matt_Damon
+person,Matthew McConaughey,Wikipedia,Matthew McConaughey,https://en.wikipedia.org/wiki/Matthew_McConaughey
+person,Meryl Streep,Wikipedia,Meryl Streep,https://en.wikipedia.org/wiki/Meryl_Streep
+person,Miao Miao,Wikipedia,Miao Miao,https://en.wikipedia.org/wiki/Miao_Miao
+person,Michael B. Jordan,Wikipedia,Michael B. Jordan,https://en.wikipedia.org/wiki/Michael_B._Jordan
+person,Michael Keaton,Wikipedia,Michael Keaton,https://en.wikipedia.org/wiki/Michael_Keaton
+person,Michelle Yeoh,Wikipedia,Michelle Yeoh,https://en.wikipedia.org/wiki/Michelle_Yeoh
+person,Naomie Harris,Wikipedia,Naomie Harris,https://en.wikipedia.org/wiki/Naomie_Harris
+person,Natalie Portman,Wikipedia,Natalie Portman,https://en.wikipedia.org/wiki/Natalie_Portman
+person,Ng Man-tat,Wikipedia,Ng Man-tat,https://en.wikipedia.org/wiki/Ng_Man-tat
+person,Ni Ni,Wikipedia,Ni Ni,https://en.wikipedia.org/wiki/Ni_Ni
+person,Niki Caro,Wikipedia,Niki Caro,https://en.wikipedia.org/wiki/Niki_Caro
+person,Ning Hao,Wikipedia,Ning Hao,https://en.wikipedia.org/wiki/Ning_Hao
+person,Nora Ephron,Wikipedia,Nora Ephron,https://en.wikipedia.org/wiki/Nora_Ephron
+person,Octavia Spencer,Wikipedia,Octavia Spencer,https://en.wikipedia.org/wiki/Octavia_Spencer
+person,Paul Thomas Anderson,Wikipedia,Paul Thomas Anderson,https://en.wikipedia.org/wiki/Paul_Thomas_Anderson
+person,Pedro Pascal,Wikipedia,Pedro Pascal,https://en.wikipedia.org/wiki/Pedro_Pascal
+person,Peter Chan,Wikipedia,Peter Chan,https://en.wikipedia.org/wiki/Peter_Chan
+person,Qin Hao,Wikipedia,Qin Hao,https://en.wikipedia.org/wiki/Qin_Hao
+person,Qu Chuxiao,Wikipedia,Qu Chuxiao,https://en.wikipedia.org/wiki/Qu_Chuxiao
+person,Quentin Tarantino,Wikipedia,Quentin Tarantino,https://en.wikipedia.org/wiki/Quentin_Tarantino
+person,Ralph Fiennes,Wikipedia,Ralph Fiennes,https://en.wikipedia.org/wiki/Ralph_Fiennes
+person,Rebecca Ferguson,Wikipedia,Rebecca Ferguson,https://en.wikipedia.org/wiki/Rebecca_Ferguson
+person,Ridley Scott,Wikipedia,Ridley Scott,https://en.wikipedia.org/wiki/Ridley_Scott
+person,Rihanna,Wikipedia,Rihanna,https://en.wikipedia.org/wiki/Rihanna
+person,Robert De Niro,Wikipedia,Robert De Niro,https://en.wikipedia.org/wiki/Robert_De_Niro
+person,Robert Downey Jr.,Wikipedia,Robert Downey Jr.,https://en.wikipedia.org/wiki/Robert_Downey_Jr.
+person,Rosamund Kwan,Wikipedia,Rosamund Kwan,https://en.wikipedia.org/wiki/Rosamund_Kwan
+person,Rosamund Pike,Wikipedia,Rosamund Pike,https://en.wikipedia.org/wiki/Rosamund_Pike
+person,Ryan Coogler,Wikipedia,Ryan Coogler,https://en.wikipedia.org/wiki/Ryan_Coogler
+person,Ryan Gosling,Wikipedia,Ryan Gosling,https://en.wikipedia.org/wiki/Ryan_Gosling
+person,Ryan Reynolds,Wikipedia,Ryan Reynolds,https://en.wikipedia.org/wiki/Ryan_Reynolds
+person,Samuel L. Jackson,Wikipedia,Samuel L. Jackson,https://en.wikipedia.org/wiki/Samuel_L._Jackson
+person,Saoirse Ronan,Wikipedia,Saoirse Ronan,https://en.wikipedia.org/wiki/Saoirse_Ronan
+person,Scarlett Johansson,Wikipedia,Scarlett Johansson,https://en.wikipedia.org/wiki/Scarlett_Johansson
+person,Shen Teng,Wikipedia,Shen Teng,https://en.wikipedia.org/wiki/Shen_Teng
+person,Show Luo,Wikipedia,Show Luo,https://en.wikipedia.org/wiki/Show_Luo
+person,Shu Qi,Wikipedia,Shu Qi,https://en.wikipedia.org/wiki/Shu_Qi
+person,Sigourney Weaver,Wikipedia,Sigourney Weaver,https://en.wikipedia.org/wiki/Sigourney_Weaver
+person,Sihung Lung,Wikipedia,Sihung Lung,https://en.wikipedia.org/wiki/Sihung_Lung
+person,Simu Liu,Wikipedia,Simu Liu,https://en.wikipedia.org/wiki/Simu_Liu
+person,Sofia Coppola,Wikipedia,Sofia Coppola,https://en.wikipedia.org/wiki/Sofia_Coppola
+person,Spike Lee,Wikipedia,Spike Lee,https://en.wikipedia.org/wiki/Spike_Lee
+person,Stephanie Hsu,Wikipedia,Stephanie Hsu,https://en.wikipedia.org/wiki/Stephanie_Hsu
+person,Stephen Chow,Wikipedia,Stephen Chow,https://en.wikipedia.org/wiki/Stephen_Chow
+person,Steven Spielberg,Wikipedia,Steven Spielberg,https://en.wikipedia.org/wiki/Steven_Spielberg
+person,Steven Yeun,Wikipedia,Steven Yeun,https://en.wikipedia.org/wiki/Steven_Yeun
+person,Sun Li,Wikipedia,Sun Li,https://en.wikipedia.org/wiki/Sun_Li
+person,Takeshi Kaneshiro,Wikipedia,Takeshi Kaneshiro,https://en.wikipedia.org/wiki/Takeshi_Kaneshiro
+person,Tang Wei,Wikipedia,Tang Wei,https://en.wikipedia.org/wiki/Tang_Wei
+person,Taraji P. Henson,Wikipedia,Taraji P. Henson,https://en.wikipedia.org/wiki/Taraji_P._Henson
+person,Tilda Swinton,Wikipedia,Tilda Swinton,https://en.wikipedia.org/wiki/Tilda_Swinton
+person,Timothée Chalamet,Wikipedia,Timothée Chalamet,https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet
+person,Tom Cruise,Wikipedia,Tom Cruise,https://en.wikipedia.org/wiki/Tom_Cruise
+person,Tom Hanks,Wikipedia,Tom Hanks,https://en.wikipedia.org/wiki/Tom_Hanks
+person,Tong Dawei,Wikipedia,Tong Dawei,https://en.wikipedia.org/wiki/Tong_Dawei
+person,Toni Collette,Wikipedia,Toni Collette,https://en.wikipedia.org/wiki/Toni_Collette
+person,Tony Leung Chiu-wai,Wikipedia,Tony Leung Chiu-wai,https://en.wikipedia.org/wiki/Tony_Leung_Chiu-wai
+person,Tony Leung Ka-fai,Wikipedia,Tony Leung Ka-fai,https://en.wikipedia.org/wiki/Tony_Leung_Ka-fai
+person,Trevante Rhodes,Wikipedia,Trevante Rhodes,https://en.wikipedia.org/wiki/Trevante_Rhodes
+person,Tsui Hark,Wikipedia,Tsui Hark,https://en.wikipedia.org/wiki/Tsui_Hark
+person,Tzi Ma,Wikipedia,Tzi Ma,https://en.wikipedia.org/wiki/Tzi_Ma
+person,Viola Davis,Wikipedia,Viola Davis,https://en.wikipedia.org/wiki/Viola_Davis
+person,Wang Baoqiang,Wikipedia,Wang Baoqiang,https://en.wikipedia.org/wiki/Wang_Baoqiang
+person,Wes Anderson,Wikipedia,Wes Anderson,https://en.wikipedia.org/wiki/Wes_Anderson
+person,Wong Kar-wai,Wikipedia,Wong Kar-wai,https://en.wikipedia.org/wiki/Wong_Kar-wai
+person,Wu Jing,Wikipedia,Wu Jing,https://en.wikipedia.org/wiki/Wu_Jing
+person,Xu Fan,Wikipedia,Xu Fan,https://en.wikipedia.org/wiki/Xu_Fan
+person,Xu Zheng,Wikipedia,Xu Zheng,https://en.wikipedia.org/wiki/Xu_Zheng
+person,Yang Kuei-mei,Wikipedia,Yang Kuei-mei,https://en.wikipedia.org/wiki/Yang_Kuei-mei
+person,Youn Yuh-jung,Wikipedia,Youn Yuh-jung,https://en.wikipedia.org/wiki/Youn_Yuh-jung
+person,Yu Nan,Wikipedia,Yu Nan,https://en.wikipedia.org/wiki/Yu_Nan
+person,Yuen Biao,Wikipedia,Yuen Biao,https://en.wikipedia.org/wiki/Yuen_Biao
+person,Yuen Wah,Wikipedia,Yuen Wah,https://en.wikipedia.org/wiki/Yuen_Wah
+person,Zendaya,Wikipedia,Zendaya,https://en.wikipedia.org/wiki/Zendaya
+person,Zhang Fengyi,Wikipedia,Zhang Fengyi,https://en.wikipedia.org/wiki/Zhang_Fengyi
+person,Zhang Guoli,Wikipedia,Zhang Guoli,https://en.wikipedia.org/wiki/Zhang_Guoli
+person,Zhang Jingchu,Wikipedia,Zhang Jingchu,https://en.wikipedia.org/wiki/Zhang_Jingchu
+person,Zhang Yi,Wikipedia,Zhang Yi,https://en.wikipedia.org/wiki/Zhang_Yi
+person,Zhang Yimou,Wikipedia,Zhang Yimou,https://en.wikipedia.org/wiki/Zhang_Yimou
+person,Zhang Ziyi,Wikipedia,Zhang Ziyi,https://en.wikipedia.org/wiki/Zhang_Ziyi
+person,Zhao Shuzhen,Wikipedia,Zhao Shuzhen,https://en.wikipedia.org/wiki/Zhao_Shuzhen
+person,Zhao Tao,Wikipedia,Zhao Tao,https://en.wikipedia.org/wiki/Zhao_Tao
+person,Zhao Wei,Wikipedia,Zhao Wei,https://en.wikipedia.org/wiki/Zhao_Wei
+person,Zheng Kai,Wikipedia,Zheng Kai,https://en.wikipedia.org/wiki/Zheng_Kai
+person,Zhong Chuxi,Wikipedia,Zhong Chuxi,https://en.wikipedia.org/wiki/Zhong_Chuxi
+person,Zhou Xun,Wikipedia,Zhou Xun,https://en.wikipedia.org/wiki/Zhou_Xun
+person,Zhu Yilong,Wikipedia,Zhu Yilong,https://en.wikipedia.org/wiki/Zhu_Yilong

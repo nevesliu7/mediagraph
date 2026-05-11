@@ -127,6 +127,45 @@ CSS = """
     box-shadow: 0 10px 24px rgba(15,23,42,0.05);
 }
 .small-muted { color: #64748b; font-size: 0.9rem; }
+
+/* Streamlit tabs: force readable labels on the light page background */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.35rem;
+}
+.stTabs [data-baseweb="tab"] {
+    color: #334155 !important;
+    background: rgba(255,255,255,0.72) !important;
+    border: 1px solid #cbd5e1 !important;
+    border-bottom: 1px solid #cbd5e1 !important;
+    border-radius: 999px !important;
+    padding: 0.4rem 0.85rem !important;
+    margin-right: 0.2rem;
+    transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+.stTabs [data-baseweb="tab"]:hover {
+    color: #0f172a !important;
+    background: rgba(255,255,255,0.96) !important;
+    border-color: #94a3b8 !important;
+}
+.stTabs [data-baseweb="tab"] p,
+.stTabs [data-baseweb="tab"] span,
+.stTabs [data-baseweb="tab"] div {
+    color: inherit !important;
+    opacity: 1 !important;
+}
+.stTabs [aria-selected="true"] {
+    color: #0f172a !important;
+    background: #ffffff !important;
+    border-color: #93c5fd !important;
+    box-shadow: 0 8px 24px rgba(37,99,235,0.12);
+}
+.stTabs [aria-selected="true"] p,
+.stTabs [aria-selected="true"] span,
+.stTabs [aria-selected="true"] div {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+    opacity: 1 !important;
+}
 </style>
 """
 st.markdown(CSS, unsafe_allow_html=True)
@@ -187,7 +226,7 @@ with hero_right:
         """,
         unsafe_allow_html=True,
     )
-st.caption('Curated demonstration dataset; expand it with verified public sources such as TMDb, IMDb, Wikidata, Wikipedia, or official award databases.')
+st.caption('Curated demonstration dataset; verified public references for featured bridge figures and films are documented in data/public_sources.md and README.')
 
 # Sidebar filters
 st.sidebar.header('Network filters')
@@ -331,6 +370,8 @@ with tabs[1]:
             'collaboration_score': pprof.get('collaboration_score', ''),
             'cross_market_score': pprof.get('cross_market_score', ''),
         })
+        if pprof.get('source_url'):
+            st.markdown(f"**Public source**: [{pprof.get('source_type', 'Source')}]({pprof['source_url']})")
         st.markdown("<div class='section-title'>Known works, repeated collaborators, and platform footprint</div>", unsafe_allow_html=True)
         repeat = pprof['collaborators'].most_common(8)
         st.dataframe(pd.DataFrame(repeat, columns=['collaborator', 'count']), use_container_width=True, hide_index=True)

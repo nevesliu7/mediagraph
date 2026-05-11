@@ -22,6 +22,16 @@ The goal is to feel like an internal strategy product for a streaming platform, 
 - Generates graph-grounded strategy summaries from retrieved network facts
 - Supports an optional Neo4j workflow with reusable Cypher examples
 
+## Verified public source coverage
+
+The opening hero examples now point to public references in `data/public_sources.md`, and the repo includes a source map at `data/public_source_map.csv` that attaches public URLs to people, films, and awards.
+
+- Featured bridge creators: Ang Lee, Chloé Zhao, Michelle Yeoh
+- Featured bridge films: Crouching Tiger, Hidden Dragon; Everything Everywhere All at Once
+- Official award databases are linked for the major awards / recognition layer
+
+The broader CSV graph is still a curated demo dataset, but this adds a concrete verified source trail for the public-facing story.
+
 ## Key features
 
 ### 1) Opening intelligence brief

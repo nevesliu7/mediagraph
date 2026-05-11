@@ -33,6 +33,25 @@ def load_data(data_dir: str):
     platforms = load_table(p / 'platforms.csv')
     audience = load_table(p / 'audience_signals.csv')
     edges = load_table(p / 'edges.csv')
+    source_map_path = p / 'public_source_map.csv'
+    if source_map_path.exists():
+        source_map = load_table(source_map_path)
+        def attach_sources(df, key_col, entity_type):
+            subset = source_map[source_map['entity_type'] == entity_type][['entity_name', 'source_type', 'source_title', 'source_url']].copy()
+            if subset.empty:
+                for col in ['source_type', 'source_title', 'source_url']:
+                    if col not in df.columns:
+                        df[col] = ''
+                return df
+            subset = subset.rename(columns={'entity_name': key_col})
+            merged = df.merge(subset, on=key_col, how='left')
+            for col in ['source_type', 'source_title', 'source_url']:
+                if col not in merged.columns:
+                    merged[col] = ''
+            return merged
+        people = attach_sources(people, 'name', 'person')
+        films = attach_sources(films, 'title', 'film')
+        awards = attach_sources(awards, 'award_name', 'award')
     return people, films, roles, awards, platforms, audience, edges
 
 def build_graph(edges: pd.DataFrame, people: pd.DataFrame | None = None, films: pd.DataFrame | None = None):
