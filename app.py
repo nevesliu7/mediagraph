@@ -198,7 +198,8 @@ decade_filter = st.sidebar.multiselect('Decade', all_decades, default=[])
 award_filter = st.sidebar.selectbox('Award status', ['All', 'Award-connected only', 'No awards'])
 market_filter = st.sidebar.multiselect('Market type', all_markets, default=all_markets)
 platform_filter = st.sidebar.multiselect('Platform', all_platforms, default=[])
-max_nodes = st.sidebar.slider('Max nodes in network view', 60, 180, 120, 10)
+network_mode = st.sidebar.radio('Network mode', ['Mixed graph', 'People only'], index=0)
+max_nodes = st.sidebar.slider('Max nodes in network view', 60, 338, 180 if network_mode == 'Mixed graph' else 338, 10)
 
 def _selected_people():
     df = people.copy()
@@ -296,8 +297,14 @@ tabs = st.tabs([
 ])
 
 with tabs[0]:
-    st.markdown("<div class='section-title'>Global creative network</div><div class='section-sub'>This view shows how creators, films, genres, and institutions cluster together. Larger nodes have more connections. Bridge nodes often connect different countries, genres, or creative communities.</div>", unsafe_allow_html=True)
-    fig = make_network_figure(Gf, max_nodes=max_nodes, title='Global creative network')
+    if network_mode == 'People only':
+        st.markdown("<div class='section-title'>People-only creative network</div><div class='section-sub'>This view expands the creator layer so you can explore the full 338-person graph. It is useful for talent adjacency, bridge creators, and collaboration neighborhoods.</div>", unsafe_allow_html=True)
+        person_nodes = [n for n in graph.nodes if graph.nodes[n].get('node_type') == 'Person']
+        people_graph = graph.subgraph(person_nodes).copy()
+        fig = make_network_figure(people_graph, max_nodes=max_nodes, title='People-only creative network')
+    else:
+        st.markdown("<div class='section-title'>Global creative network</div><div class='section-sub'>This view shows how creators, films, genres, and institutions cluster together. Larger nodes have more connections. Bridge nodes often connect different countries, genres, or creative communities.</div>", unsafe_allow_html=True)
+        fig = make_network_figure(Gf, max_nodes=max_nodes, title='Global creative network')
     st.plotly_chart(fig, use_container_width=True)
 
 with tabs[1]:
