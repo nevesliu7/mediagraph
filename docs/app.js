@@ -9,7 +9,7 @@ const FOCUS_TYPES = {
   Person: [320, 140], Film: [100, 280], Genre: [560, 120], Award: [700, 240], Platform: [520, 460],
   Country: [180, 460], Language: [760, 420], Decade: [860, 120], AudienceSegment: [960, 300], Theme: [1160, 220]
 };
-let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth', displayMode = 'explore';
+let data, svg, width, height, simulation, linkSel, nodeSel, labelSel, selectedId = null, visibleNodes = [], visibleLinks = [], currentFilters = {}, currentSearch = '', motionMode = 'smooth', displayMode = 'full';
 const typeOrder = ['Person','Film','Genre','Award','Platform','Language','Decade','AudienceSegment','Theme'];
 
 function el(id){ return document.getElementById(id); }
@@ -646,7 +646,7 @@ async function init(){
   updateGraph();
   if (initialNode) {
     el('selectedTitle').textContent = 'Playground';
-    el('selectedBody').innerHTML = '<div class="card"><span class="badge">Opening mode</span><div style="margin-top:8px;line-height:1.6;color:var(--muted)">The network opens in an exploratory mix of creators, films, awards, and platforms so the first screen feels lively and playful. Click any bubble to expand the full graph around a creator or film.</div></div>';
+    el('selectedBody').innerHTML = '<div class="card"><span class="badge">Opening mode</span><div style="margin-top:8px;line-height:1.6;color:var(--muted)">The network opens in a core mix of creators, films, and platforms so the first screen stays focused. Use the taxonomy toggle if you want to expand all node types.</div></div>';
   }
   window.addEventListener('resize', () => {
     width = el('graph').clientWidth; height = el('graph').clientHeight;
@@ -677,7 +677,7 @@ async function init(){
   });
   el('resetBtn').addEventListener('click', () => {
     currentFilters = {}; currentSearch = ''; selectedId = null;
-    displayMode = 'explore';
+    displayMode = 'full';
     motionMode = 'smooth';
     showAllNodeTypes = false;
     setModeButtons(displayMode);
